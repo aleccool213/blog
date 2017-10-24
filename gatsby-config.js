@@ -49,5 +49,59 @@ module.exports = {
         pathToConfigModule: "src/utils/typography",
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Coffee Driven Development",
+        short_name: "CDD",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "minimal-ui",
+        icons: [
+          {
+            src: `/favicons/coffee/favicon-36.png`,
+            sizes: `36x36`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-48.png`,
+            sizes: `48x48`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-57.png`,
+            sizes: `57x57`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-60.png`,
+            sizes: `60x60`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-72.png`,
+            sizes: `72x72`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-76.png`,
+            sizes: `76x76`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-96.png`,
+            sizes: `96x96`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/coffee/favicon-192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
+
   ],
 }
