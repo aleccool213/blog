@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Coffee Driven Development",
+    author: "Alec Brunelle",
   },
   plugins: [
     {
@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: 'UA-108436339-1'
       },
     },
     `gatsby-plugin-offline`,
@@ -60,6 +60,33 @@ module.exports = {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: "src/utils/typography",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Coffee Driven Development",
+        short_name: "CDD",
+        start_url: "/",
+        background_color: "#FFFFFA",
+        theme_color: "#8B4513",
+        display: "minimal-ui",
+        icons: [
+          {
+            // Everything in /static will be copied to an equivalent
+            // directory in /public during development and build, so
+            // assuming your favicons are in /static/favicons,
+            // you can reference them here
+            src: `/favicons/favicon.ico`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/favicon.ico`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
     },
   ],
