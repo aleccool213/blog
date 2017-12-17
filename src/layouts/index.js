@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 
 import { rhythm, scale } from '../utils/typography'
+require('prismjs/themes/prism-okaidia.css')
 
 class Template extends React.Component {
   render() {
