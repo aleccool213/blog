@@ -7,14 +7,14 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
-    "gatsby": "^1.9.73",
-    "gatsby-link": "^1.6.22",
-    "gatsby-plugin-google-analytics": "^1.0.10",
-    "gatsby-plugin-manifest": "^1.0.8",
-    "gatsby-plugin-offline": "^1.0.10",
-    "gatsby-plugin-preact": "^1.0.12",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sharp": "^1.6.9",
+    "gatsby": "^1.9.139",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-google-analytics": "^1.0.14",
+    "gatsby-plugin-manifest": "^1.0.11",
+    "gatsby-plugin-offline": "^1.0.12",
+    "gatsby-plugin-preact": "^1.0.14",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-sharp": "^1.6.24",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-copy-linked-files": "^1.5.9",
     "gatsby-remark-images": "^1.5.18",
@@ -31,8 +31,8 @@
     "typography-theme-wordpress-2016": "^0.15.10"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
-    "prettier": "^1.7.4"
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.9.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
