@@ -8,7 +8,7 @@ The typical situation goes as follows:
 
 * Coworker comes to my desk to ask me a question
 * Sees something radical happening on screen
-* Asks why they haven't heard of forementioned application
+* Asks why they haven't heard of the application
 * Screams silently
 
 <table class="image">
@@ -47,22 +47,41 @@ Ever want to create custom commands in MacOS Spotlight? With Alfred you can do t
 
 ### Opinion
 
-Absolutely essential. I really don't know how I used my Mac before this. Makes something developers have been doing for years when it comes to alias/functions and makes it accessible to the masses. Saves me a ton of time each day and 
+Absolutely essential. I don't know how I used my Mac before this. Makes something developers have been doing for years when it comes to alias/functions and makes it accessible to the masses. Saves me a ton of time each day and I see myself this using everyday until kingdom-come.
 
+
+> Get it [here](https://www.alfredapp.com/)
 
 ## ‎Spectacle
 
-Open source implementation of a window manager. Great keyboard shortcuts and everything you would need from a window manager. Double-click like shortcuts which let you manage proportions easily.
+![spectacle](./spectacle-icon.png)
 
-## Hyper
+### Overview
 
+Open source implementation of a MacOS window manager. Great default keyboard shortcuts which are all customizable. Double-click like shortcuts which let you manage proportions more easily than how other apps perform.
 
-## ‎Visual Studio Code
+<table class="image">
+    <caption align="bottom">Double-clicking command-option-arrow</caption>
+    <tr><td><img src="./spectacle-eg.gif" alt="spectacle-eg-usage"/></td></tr>
+</table>
 
+### Opinion
 
-## ‎Fish w/ bass
+Everyone needs a window manager and I love this one because it doesn't try to do too much. It has one job and does that one well. Very small and performant which makes this app easy to recommend to anyone.
 
+<table class="image">
+    <caption align="bottom">Spectacle eg. footprint</caption>
+    <tr><td><img src="./spectacle-footprint.png" alt="spectacle-footprint"/></td></tr>
+</table>
+
+> Get it [here](https://www.spectacleapp.com/)
 
 ## ‎Setapp
 
 
+
+
+
+### Part 2
+
+I will be making a part 2 to this series which focuses more on developer-centric apps.
