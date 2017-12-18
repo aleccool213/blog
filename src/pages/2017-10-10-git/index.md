@@ -1,5 +1,5 @@
 ---
-title: My Git Tricks (now w/ more cowbell)
+title: My Git Tricks 📚
 date: "2017-10-01T22:12:03.284Z"
 path: "/git-tricks/"
 ---
