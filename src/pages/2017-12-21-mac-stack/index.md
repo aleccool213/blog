@@ -20,7 +20,7 @@ The typical situation goes as follows:
     </tr>
 </table>
 
-In lue of this, many people are unaware of some nifty Mac applications which will make your productively skyrocket. I thought to put a collection of my top-rated apps which follow a loose criteria:
+In lieu of this, many people are unaware of some nifty Mac applications which will make your productively skyrocket. I thought to put a collection of my top-rated apps which follow a loose criteria:
 
 * must look amazing
 * ‎must have great keyboard shortcuts
@@ -36,7 +36,7 @@ Here we go:
 
 ### Overview
 
-Ever want to create custom commands in MacOS Spotlight? With Alfred you can do that and more. Create highly customizable commands easily and also being able to get them from the community. Spotify, Todoist, and GitHub are just some of the example integrations which make performing actions always a single key stroke compared to a few key strokes.
+Ever want to create custom commands in MacOS Spotlight? You can easily create highly customizable commands yourself or access commands built by the community. For example, the Spotify, Todosit, and GitHub integrations can all cut down performing actions from several key strokes to just one.
 
 <table class="image">
     <caption align="bottom">Downloading Postgres</caption>
@@ -48,9 +48,8 @@ Ever want to create custom commands in MacOS Spotlight? With Alfred you can do t
     <tr><td><img src="./alfred-workflows.png" alt="alfred-workflows-eg"/></td></tr>
 </table>
 
-### Opinion
 
-Absolutely essential. I don't know how I used my Mac before this. Makes something developers have been doing for years when it comes to alias/functions and makes it accessible to the masses. Saves me a ton of time each day and I see myself this using everyday until kingdom-come.
+In my opinion Alfred is absolutely essential. I don't know how I used my Mac before this. Makes something developers have been doing for years when it comes to alias/functions and makes it accessible to the masses. Saves me a ton of time each day and I see myself this using everyday until hell freezes over.
 
 > Get it [here](https://www.alfredapp.com/)
 
@@ -67,9 +66,7 @@ Open source implementation of a MacOS window manager. Great default keyboard sho
     <tr><td><img src="./spectacle-eg.gif" alt="spectacle-eg-usage"/></td></tr>
 </table>
 
-### Opinion
-
-Everyone needs a window manager and I love this one because it doesn't try to do too much. It has one job and does that one well. Very small and performant which makes this app easy to recommend to anyone.
+Everyone needs a window manager and I love this one because it doesn't try to do too much. It has one job and does that one well. It also has a very small memory footprint which makes this app easy to recommend to anyone.
 
 <table class="image">
     <caption align="bottom">Spectacle eg. footprint</caption>
@@ -84,19 +81,19 @@ Everyone needs a window manager and I love this one because it doesn't try to do
 
 ### Overview
 
-My last app is sort of a catch-all. One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free. As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee ($10) each month.
+Apple has been doing a shit job when it comes to facilitating a good ecosystem within their own Mac App Store. A worth competitor has risen in Setapp.
+
+One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free.  As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee ($10) each month.
 
 <table class="image">
     <caption align="bottom">Setapp photo apps</caption>
     <tr><td><img src="./setapp-eg.gif" alt="setapp-eg"/></td></tr>
 </table>
 
-### Opinion
-
-I've using Setapp consistently for the past 6 months and many updates have come in terms of quantity and quality. Most of the time when I want to perform a utility, they have an app here already for you to use. Never had a single problem with it and recommended for lazy people like me which don't want to go searching for apps on the web to do simple things. Fun fact, I recorded the .gifs found in this post using Gifox which came bundled in Setapp.
+I've using Setapp consistently for the past 6 months and many updates have improved both the quality and the selection of apps provided by the service. Most of the time when I want to perform a utility, they have an app here already for you to use. Never had a single problem with it and recommended for lazy people like me which don't want to go searching for apps on the web to do simple things. Fun fact, I recorded the .gifs found in this post using Gifox which came bundled in Setapp.
 
 > Get it [here](https://setapp.com/)
 
 ### Part 2
 
-I will be making a part 2 to this series which focuses more on developer-centric apps.
+Keep an eye out for my next article which will focus more on developer-centric apps
