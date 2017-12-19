@@ -4,7 +4,7 @@ date: "2017-12-17T22:12:03.284Z"
 path: "/mac-stack/"
 ---
 
-The typical situation goes as follows: 
+The typical situation goes as follows:
 
 * Coworker comes to my desk to ask me a question
 * Sees something radical happening on screen
@@ -13,7 +13,11 @@ The typical situation goes as follows:
 
 <table class="image">
     <caption align="bottom"><strong>A porg screaming silently</strong></caption>
-    <tr><td><img src="./screams3.gif" alt="porg-screaming"/></td></tr>
+    <tr>
+        <td style="text-align: center;">
+            <img src="./screams4.gif" alt="porg-screaming"/>
+        </td>
+    </tr>
 </table>
 
 In lue of this, many people are unaware of some nifty Mac applications which will make your productively skyrocket. I thought to put a collection of my top-rated apps which follow a loose criteria:
@@ -44,11 +48,9 @@ Ever want to create custom commands in MacOS Spotlight? With Alfred you can do t
     <tr><td><img src="./alfred-workflows.png" alt="alfred-workflows-eg"/></td></tr>
 </table>
 
-
 ### Opinion
 
 Absolutely essential. I don't know how I used my Mac before this. Makes something developers have been doing for years when it comes to alias/functions and makes it accessible to the masses. Saves me a ton of time each day and I see myself this using everyday until kingdom-come.
-
 
 > Get it [here](https://www.alfredapp.com/)
 
@@ -78,9 +80,22 @@ Everyone needs a window manager and I love this one because it doesn't try to do
 
 ## ‎Setapp
 
+![setapp-logo](./setapp-logo.jpg)
 
+### Overview
 
+My last app is sort of a catch-all. One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free. As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee ($10) each month.
 
+<table class="image">
+    <caption align="bottom">Setapp photo apps</caption>
+    <tr><td><img src="./setapp-eg.gif" alt="setapp-eg"/></td></tr>
+</table>
+
+### Opinion
+
+I've using Setapp consistently for the past 6 months and many updates have come in terms of quantity and quality. Most of the time when I want to perform a utility, they have an app here already for you to use. Never had a single problem with it and recommended for lazy people like me which don't want to go searching for apps on the web to do simple things. Fun fact, I recorded the .gifs found in this post using Gifox which came bundled in Setapp.
+
+> Get it [here](https://setapp.com/)
 
 ### Part 2
 
