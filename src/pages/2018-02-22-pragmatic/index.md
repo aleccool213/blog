@@ -13,9 +13,9 @@ path: "/pragmatic-programmer-book-highlights/"
     </tr>
 </table>
 
-What a joy programming is, isn't it? Problem solving concepts are widely accepted, learnings are shared among the industry, and things hardly change over the years. After reading this book, you might believe this is how software development actually is, all of the questions have already been answered. That's the fanscinating thing about this book, it stands the test of time unlike any other software book I have read. In reality, there are usually no hard-set answers to much things, tradeoffs are always made and the technology developers are using changes rapidly.
+What a joy programming is, isn't it? Problem solving concepts are widely accepted, learnings are shared among the industry, and things hardly change over the years. After reading this book, you might believe this is how software development actually is, all of the questions have already been answered. That's the fanscinating thing about this book, it stands the test of time unlike any other software book I have read (this book came out in 1999!!!!!!). In reality, there are usually no hard-set answers to much things, tradeoffs are always made and the technology developers are using changes rapidly.
 
-I was recommended this book from several senior developers who mentored me in early in my career as a developer, and I can't thank them enough for doing so. I would say when I was sort of just getting out of the junior developer phase, I felt extremely overwhelmed with how much was out there when it came to the "right answer" when solving problems. This book just has so much good advice, from unconventional soft skills to classical hard skills. This book has a ton of advice in it which I would deem as fundemental to any developer who is serious about their career.
+I was recommended this book from several senior developers who mentored me in early in my career as a developer, and I can't thank them enough for doing so. I would say when I was sort of just getting out of the junior developer phase, I felt overwhelmed with how much was out there when it came to the "right answer" when solving problems. This book just has so much good advice, from unconventional soft skills to classical hard skills. This book has a ton of advice in it which I would deem as fundemental to any developer who is serious about their career.
 
 So without further adue, here are some highlights I made as I read this book on my Kindle.
 
@@ -38,6 +38,28 @@ Seems basic right? I would say refactoring without unit-tests is like driving at
 > At its heart, refactoring is redesign. Anything that you or others on your team designed can be redesigned in light of new facts, deeper understandings, changing requirements, and so on. But if you proceed to rip up vast quantities of code with wild abandon, you may find yourself in a worse position than when you started.
 
 Unit testing is not easy, especially if you want to get as close to the "metal" of the modules within a code base.
+
+> By making the test code readily accessible, you are providing developers who may use your code with two invaluable resources:
+> Examples of how to use all the functionality
+> functionality of your module A means to build regression tests to validate any future changes to the code
+
+> But if you do use a wizard, and you don't understand all the code that it produces, you won't be in control of your own application. You won't be able to maintain it, and you'll be struggling when it comes time to debug.
+
+* frameworks
+* debugging code inside modules
+* look into module code often , understand how the author does things
+
+> No matter how well thought out it is, and regardless of which "best practices" it includes, no method can replace thinking.
+
+> If it's on the Web, the programmers may even read it.
+
+> Don't get us wrong. We like (some) formal techniques and methods. But we believe that blindly adopting any technique without putting it into the context of your development practices and capabilities is a recipe for disappointment.
+
+> There is also a tendency to fall back into the us versus them mentality of designers against coders. We prefer to understand the whole of the system we're working on.
+
+> At Group L, Stoffel oversees six first-rate programmers, a managerial challenge roughly comparable to herding cats.
+
+> Many teams develop elaborate test plans for their projects. Sometimes they will even use them.
 
 ### References
 
