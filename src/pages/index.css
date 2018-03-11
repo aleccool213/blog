@@ -1,3 +1,7 @@
 a {
-  color: #BB9966;
+  color: #bb9966;
+}
+
+a:hover {
+  color: #404646;
 }
