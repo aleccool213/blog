@@ -1,5 +1,5 @@
 ---
-title: My Git Tricks 📚
+title: My Git Tricks 🔑
 date: "2017-10-01T22:12:03.284Z"
 path: "/git-tricks/"
 ---
@@ -26,7 +26,7 @@ Often you will find yourself in this situation:
     <tr><td><img src="./2.gif" alt="confused"/></td></tr>
 </table>
 
-You just started working on a new branch, refactored a piece of code, installed a package, and wrote half of the necessary code for the feature. 
+You just started working on a new branch, refactored a piece of code, installed a package, and wrote half of the necessary code for the feature.
 
 6PM rolls around and you commit everything to save your progress.
 
@@ -34,7 +34,6 @@ You just started working on a new branch, refactored a piece of code, installed 
     <caption align="bottom">📝</caption>
     <tr><td><img src="./3.gif" alt="confused"/></td></tr>
 </table>
-
 
 When you come back to the project, you realize, “Oh no! Putting this into separate commit will take so much time!”. Okay, so you might not be thinking that, but eh, you might be lazy like me.
 
@@ -60,7 +59,6 @@ Awesome! Now we can start committing things which make sense.
 
 Our commits are making more sense! Lets throw a 🔧 into things.
 
-
 ## Git Rebase
 
 > [Lots of great reading](https://www.atlassian.com/git/tutorials/rewriting-history) on different Git Rebase techniques.
@@ -75,7 +73,6 @@ You made a small error in your file and need to make a quick change.
 This change is so small we don’t feel like it deserves its own commit. So how do we get this change into an existing local commit?
 
 <pre class="language-bash"> git stash; git rebase -i HEAD~<commit_history_depth> </pre>
-
 
 This stashes our one-line change and brings us to the rebase edit screen. Lets go ahead and edit that commit we want to bring our change into.
 
@@ -95,4 +92,4 @@ S/O to two Git tools which recently made the cut into my workflow for being so f
 * Gitup is a nice and minimal tool which doesn’t try and do too many things. Its branch view, stash viewer and integrations are fantastic. Great open-source companion to a die-hard Git CLI user.
 * gitmoji-cli makes it very easy to organize your commits visually. Not only does it make your commits organized by forcing you to categorize them, but EMOJI! 💸
 
-> This piece originally was posted on my dead and lonely [medium blog](https://medium.com/@yourboybigal/acquiring-git-superpowers-f48bf7e504c7) 
+> This piece originally was posted on my dead and lonely [medium blog](https://medium.com/@yourboybigal/acquiring-git-superpowers-f48bf7e504c7)

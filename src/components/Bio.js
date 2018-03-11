@@ -24,17 +24,12 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
-            borderRadius: '50%'
+            borderRadius: '50%',
           }}
         />
-        Written by <strong>Alec Brunelle</strong> who lives and works in Toronto building useful things.{' '}
-        <a href="http://eepurl.com/dfs9Db">
-          Subscribe to the email list!
-        </a>
-        &nbsp;and&nbsp;
-        <a href="http://eepurl.com/dfs9Db">
-          Subscribe to email updates
-        </a>
+        Written by <strong>Alec Brunelle</strong> who lives and works in Toronto
+        building useful things.{' '}
+        <a href="http://eepurl.com/dfs9Db">Subscribe to the email list!</a>
       </p>
     )
   }

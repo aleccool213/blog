@@ -48,7 +48,6 @@ Ever want to create custom commands in MacOS Spotlight? You can easily create hi
     <tr><td><img src="./alfred-workflows.png" alt="alfred-workflows-eg"/></td></tr>
 </table>
 
-
 Alfred is absolutely essential. I don't know how I used my Mac before this. It makes workflows which developers have been doing for years when it comes to alias/functions and makes it accessible to the masses. Saves me a ton of time each day and I see myself this using everyday until hell freezes over.
 
 > Get it [here](https://www.alfredapp.com/)
@@ -83,7 +82,7 @@ Everyone needs a window manager and I love this one because it doesn't try to do
 
 Apple has been doing a shit job when it comes to facilitating a good ecosystem within their own Mac App Store. A worthy competitor has risen in Setapp.
 
-One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free.  As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee ($10) each month.
+One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free. As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee ($10) each month.
 
 <table class="image">
     <caption align="bottom">Setapp photo apps</caption>
