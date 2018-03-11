@@ -28,8 +28,8 @@ class Bio extends React.Component {
           }}
         />
         Written by <strong>Alec Brunelle</strong> who lives and works in Toronto building useful things.{' '}
-        <a href="https://twitter.com/yourboybigal">
-          Follow me on Twitter
+        <a href="http://eepurl.com/dfs9Db">
+          Subscribe to the email list!
         </a>
         &nbsp;and&nbsp;
         <a href="http://eepurl.com/dfs9Db">

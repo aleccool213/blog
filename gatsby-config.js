@@ -69,7 +69,7 @@ module.exports = {
         short_name: "CDD",
         start_url: "/",
         background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        theme_color: "#996633",
         display: "minimal-ui",
         icons: [
           {
