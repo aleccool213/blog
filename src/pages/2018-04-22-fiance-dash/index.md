@@ -1,0 +1,7 @@
+---
+title: ?
+date: "2018-04-22T22:12:03.284Z"
+path: "/exploration-through-finance/"
+---
+
+Often you will hear that in make in the software world, you need to "keep up" with the latest to stay relevant. To achieve this to its full effect would be an exhausting experience, every week you would be throwing a wrench at something which isn't broken. Examples of this could be re-writing an entire Node app in Typescript because someone on Hackernews said types are the new hotness. Like fine, that's great but better investments could be made (such as improving your testing coverage). On the other hand, exploring new technologies in a non-stressful environment (non-professionally) while building something practical is an enlightening experience. Burnout is dangerous thing and just churning through side-projects with no real end-game is silly. Two podcast episodes of Syntax.fm I recommend anyone listen to on this topic are [here](https://syntax.fm/show/041/preventing-and-dealing-with-burnout-in-web-development) and [here](https://syntax.fm/show/035/keeping-up-with-the-codeashians-dealing-with-our-fast-paced-industry). Building something actually relevant to your life (not a todo-list) enables you to have motivation to actually finish whatever you start. With this in mind, draw a line in the sand and continue to set mini goals for yourself so that when you are in the mood to work on stuff, you feel accomplaished.
