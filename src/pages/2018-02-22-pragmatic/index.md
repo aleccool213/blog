@@ -83,8 +83,8 @@ Having an open line of communication with designers (either style or architectur
 ### :D
 
 > Many teams develop elaborate test plans for their projects. Sometimes they will even use them.
->
-> (+\_+)
+
+(+\_+)
 
 ### References
 
