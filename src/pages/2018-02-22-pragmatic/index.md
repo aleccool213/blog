@@ -1,14 +1,14 @@
 ---
 title: The Best Parts of The Pragmatic Programmer 📚
-date: "2018-03-11T22:12:03.284Z"
-path: "/pragmatic-programmer-book-highlights/"
+date: '2018-03-11T22:12:03.284Z'
+path: '/pragmatic-programmer-book-highlights/'
 ---
 
 <table class="image">
-    <caption align="bottom"><strong>Book cover</strong></caption>
+    <caption align="bottom"><strong>In all it's glory!</strong></caption>
     <tr>
         <td style="text-align: center;">
-            <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg" alt="book-cover"/>
+            <a target="_blank" href="https://www.amazon.ca/gp/product/B003GCTQAE/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B003GCTQAE&linkCode=as2&tag=coffeedrive09-20&linkId=887a742cfb112cc3e759eb966efb1824"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg" alt="book-cover"/></a><img src="//ir-ca.amazon-adsystem.com/e/ir?t=coffeedrive09-20&l=am2&o=15&a=B003GCTQAE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
         </td>
     </tr>
 </table>
@@ -88,7 +88,7 @@ Having an open line of communication with designers (either style or architectur
 
 ### References
 
-Hunt, Andrew. The Pragmatic Programmer: From Journeyman to Master (Kindle Locations 1909-1910). Pearson Education. Kindle Edition.
+<a target="_blank" href="https://www.amazon.ca/gp/product/B003GCTQAE/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B003GCTQAE&linkCode=as2&tag=coffeedrive09-20&linkId=887a742cfb112cc3e759eb966efb1824">The Pragmatic Programmer: From Journeyman to Master (Amazon)</a><img src="//ir-ca.amazon-adsystem.com/e/ir?t=coffeedrive09-20&l=am2&o=15&a=B003GCTQAE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2MzM2MDMxODYsLTE0MDA3NzY1NTldfQ
