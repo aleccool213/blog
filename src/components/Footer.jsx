@@ -8,7 +8,6 @@ export const Footer = ({ url, identifier, title }) => {
     identifier: identifier,
     title: title,
   }
-  console.log('disqusConfig:' + JSON.stringify(disqusConfig))
   return (
     <span>
       <Disqus.DiscussionEmbed

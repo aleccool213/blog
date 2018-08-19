@@ -78,10 +78,8 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             path
-            date(formatString: "DD MMMM, YYYY")
-          }
-          frontmatter {
             title
+            date(formatString: "DD MMMM, YYYY")
           }
         }
       }
