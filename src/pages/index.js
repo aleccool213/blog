@@ -18,12 +18,13 @@ class BlogIndex extends React.Component {
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
         <Bio />
         {posts.map(post => {
+          const disqusConfig = {
+            url: post.node.frontmatter.path,
+            identifier: post.node.frontmatter.path,
+            title: post.node.frontmatter.title,
+          }
+          console.log(disqusConfig)
           if (post.node.path !== '/404/') {
-            const disqusConfig = {
-              path: post.node.frontmatter.path,
-              identifier: '1',
-              title: post.node.frontmatter.title,
-            }
             return (
               <div key={post.node.frontmatter.path}>
                 <h3

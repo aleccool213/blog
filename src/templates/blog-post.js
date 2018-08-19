@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
@@ -32,7 +31,11 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Footer url={post.frontmatter.path} title={post.frontmatter.title} />
+        <Footer
+          url={post.frontmatter.path}
+          identifier={post.frontmatter.path}
+          title={post.frontmatter.title}
+        />
         <Bio />
       </div>
     )

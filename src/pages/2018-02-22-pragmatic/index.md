@@ -5,10 +5,10 @@ path: '/pragmatic-programmer-book-highlights/'
 ---
 
 <table class="image">
-    <caption align="bottom"><strong>In all it's glory!</strong></caption>
+    <caption align="bottom"><strong>In all it's glory! (Amazon Affiliate Link)</strong></caption>
     <tr>
         <td style="text-align: center;">
-            <a target="_blank" href="https://www.amazon.ca/gp/product/B003GCTQAE/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B003GCTQAE&linkCode=as2&tag=coffeedrive09-20&linkId=887a742cfb112cc3e759eb966efb1824"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg" alt="book-cover"/></a><img src="//ir-ca.amazon-adsystem.com/e/ir?t=coffeedrive09-20&l=am2&o=15&a=B003GCTQAE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+            <a target="_blank" href="https://www.amazon.ca/gp/product/020161622X/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=020161622X&linkCode=as2&tag=coffeedrive09-20&linkId=7d93b4fe087d6b41ddae8e27d323abea"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg" alt="book-cover"/></a><img src="//ir-ca.amazon-adsystem.com/e/ir?t=coffeedrive09-20&l=am2&o=15&a=B003GCTQAE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
         </td>
     </tr>
 </table>
@@ -88,7 +88,7 @@ Having an open line of communication with designers (either style or architectur
 
 ### References
 
-<a target="_blank" href="https://www.amazon.ca/gp/product/B003GCTQAE/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B003GCTQAE&linkCode=as2&tag=coffeedrive09-20&linkId=887a742cfb112cc3e759eb966efb1824">The Pragmatic Programmer: From Journeyman to Master (Amazon)</a><img src="//ir-ca.amazon-adsystem.com/e/ir?t=coffeedrive09-20&l=am2&o=15&a=B003GCTQAE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a target="_blank" href="https://www.amazon.ca/gp/product/020161622X/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=020161622X&linkCode=as2&tag=coffeedrive09-20&linkId=7d93b4fe087d6b41ddae8e27d323abea">The Pragmatic Programmer: From Journeyman to Master (Amazon Affiliate Link)</a><img src="//ir-ca.amazon-adsystem.com/e/ir?t=coffeedrive09-20&l=am2&o=15&a=B003GCTQAE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2MzM2MDMxODYsLTE0MDA3NzY1NTldfQ

@@ -1,14 +1,14 @@
 import React from 'react'
 import Disqus from 'disqus-react'
 
-export const Footer = (url, title) => {
+export const Footer = ({ url, identifier, title }) => {
   const disqusShortname = 'coffee-driven-development'
   const disqusConfig = {
-    url,
-    identifier: '121',
-    title,
+    url: url,
+    identifier: identifier,
+    title: title,
   }
-
+  console.log('disqusConfig:' + JSON.stringify(disqusConfig))
   return (
     <span>
       <Disqus.DiscussionEmbed
