@@ -4,7 +4,6 @@
   "version": "2.0.0",
   "author": "Alec Brunelle",
   "dependencies": {
-    "disqus-react": "^1.0.5",
     "gatsby": "^1.9.277",
     "gatsby-cli": "^1.1.58",
     "gatsby-link": "^1.6.46",

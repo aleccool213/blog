@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Disqus from 'disqus-react'
 
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
@@ -18,12 +17,6 @@ class BlogIndex extends React.Component {
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
         <Bio />
         {posts.map(post => {
-          const disqusConfig = {
-            url: post.node.frontmatter.path,
-            identifier: post.node.frontmatter.path,
-            title: post.node.frontmatter.title,
-          }
-          console.log(disqusConfig)
           if (post.node.path !== '/404/') {
             return (
               <div key={post.node.frontmatter.path}>
@@ -39,16 +32,7 @@ class BlogIndex extends React.Component {
                     {post.node.frontmatter.title}
                   </Link>
                 </h3>
-                <small>
-                  {post.node.frontmatter.date} (
-                  <Disqus.CommentCount
-                    shortname={'coffee-driven-development'}
-                    config={disqusConfig}
-                  >
-                    Comments
-                  </Disqus.CommentCount>
-                  )
-                </small>
+                <small>{post.node.frontmatter.date}</small>
                 <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
               </div>
             )

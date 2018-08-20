@@ -1,19 +1,10 @@
 import React from 'react'
-import Disqus from 'disqus-react'
+import DisqusThread from './DisqusThread'
 
 export const Footer = ({ url, identifier, title }) => {
-  const disqusShortname = 'coffee-driven-development'
-  const disqusConfig = {
-    url: url,
-    identifier: identifier,
-    title: title,
-  }
   return (
     <span>
-      <Disqus.DiscussionEmbed
-        shortname={disqusShortname}
-        config={disqusConfig}
-      />
+      <DisqusThread id={identifier} title={title} path={url} />
     </span>
   )
 }
