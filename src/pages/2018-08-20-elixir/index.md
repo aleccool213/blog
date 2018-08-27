@@ -18,6 +18,14 @@ After getting comfortable with a couple programming technologies, developers usu
     <tr><td><img src="./pattern.png" alt="pattern-matching-example"/></td></tr>
 </table>
 
+### Quick Facts for the T.L.D.R. in you
+
+- Elixir is simply syntax on top of the battle-tested VM and language, Erlang.
+
+- The syntax is similar to Ruby so learning the syntax should be fairly easy.
+
+- Did I mention it's FUNCTIONAL???????????????? (Pure, functional programming i.m.o. is worth the investment cognitively, [hit this link](https://medium.com/making-internets/functional-programming-elixir-pt-1-the-basics-bd3ce8d68f1b) for how Elixir utilizes it)
+
 One of the benefits of learning a recently-created programming language is that it's built on top of existing best practices. This can happen by the creators spending time thinking about what problems other developers face regularly. "State management is hard", "It's hard to have zero time deployments of new code", "It's hard to maintain my systems", something every developer hears. Elixir wants to make these problems less hairy and does so using functional methodologies wrapped around a VM which puts distributed/concurrent programming as a first-class citizen. It does this through implementing the [OTP](https://en.wikipedia.org/wiki/Open_Telecom_Platform) protocol. Elixir for example was built by developers who saw the productivity of the Ruby syntax, the maintainability of functional programming and the scalability of Erlang. These features of the language make it very expressive, as you saw in the pattern matching example above.
 
 <table class="image">
@@ -34,63 +42,37 @@ The critic inside you will say the potential downfalls of using such a new langu
     <tr><td><img src="./bill_reading.jpg" alt="pattern-matching-example"/></td></tr>
 </table>
 
-Last year, a coworker invited me to a bookclub he was starting, "lets learn this new language". I had heard it was the new hotness so I said, "Sure thing!". we would take a couple of hours every month to go over a chapter in the book, <a href="https://www.amazon.ca/gp/product/161729201X/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=161729201X&linkCode=as2&tag=coffeedrive09-20&linkId=97d40dff77b7869475d6ee283c6501d2" style="font-style:italic;">Elixir in Action</a>. It was intimidating to say yes as everyone in the group was more senior that me but I was confident I could keep up. Out of each week came lots of great discussions and insight into topics I wasn't exposed to much before. I am appreciating my former self for saying yes as it brought concepts to my thinking I haven't thought about before. It helped me through Flipp's adoption of Event Driven Systems (Kafka) by introducing me to good practices when managing state between processes. Keeping processes small, pure and functional is just good-sound engineering practice and Elixir is built with that standard by default. I didn't need anything to build immediately or an assignment to finish, I learned for the joy of learning and got a lot out of it.
+Last year, a coworker invited me to a bookclub he was starting, "lets learn this new language". I had heard it was the new hotness so I said, "Sure thing!". we would take a couple of hours every month to go over a chapter in the book, <a href="https://www.amazon.ca/gp/product/161729201X/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=161729201X&linkCode=as2&tag=coffeedrive09-20&linkId=97d40dff77b7869475d6ee283c6501d2" style="font-style:italic;">Elixir in Action</a>. It was intimidating to say yes as everyone in the group was more senior that me but I was confident I could keep up. Out of each week came lots of great discussions and insight into topics I wasn't exposed to much before. I am appreciating my former self for saying yes as it brought concepts to my thinking I haven't gave thought to before. It helped me through Flipp's adoption of Event Driven Systems (Kafka) by exposing me to good practices when managing state between processes. Keeping processes small, pure and functional is just good-sound engineering practice and Elixir is built with that standard by default. I didn't need anything to build immediately or an assignment to finish, I learned for the joy of learning and got a lot out of it.
 
-> "But it hasn't been true and tested"
+### Common questions
 
-Its built on an existing VM which has been around for more that twenty years, invented and uses heavily by telecoms when it was invented until even today. Elixir is simply syntax on top to be able to use this beautiful VM.
+<table class="image">
+    <caption align="bottom">❓</caption>
+    <tr><td><img src="./fork_road.jpg" alt="pattern-matching-example"/></td></tr>
+</table>
 
-> "But the syntax is cryptic and hard to learn"
+> We are heading towards the micro-services mindset at my company, I heard Elixir is better utilized as a monolith
 
-Nope, a lot of it is similar to Ruby so learning syntax is easy.
+This is where I don't have an answer yet and through my learnings and eventual development of the language I hope to have more insight on this later in a post. Elixir (and the BEAM) is meant to be a large monotholic system which is totally against the micro-service architecture of recent years. Erlang scales horizontally extremely well so it may be a case of code bloat or organization-information-sharing that kills you in super-duper large projects.
 
-> "But I don't like functional programming, it's hard to read and parse"
+> My team is not going to be happy that after learning 3 Javascript frameworks in the past week, they have to learn this
 
-Ever heard of a class inheriting from a class which inherits from a class which inherits from a class which inherits from a class.
-You must also enjoy your unit test suite which takes 3 seconds per test to just set up objects into a correct state for assertion.
+Once you start building things that have to scale or need to handle millions of requests, your on-call tickets increase. The reason for this is usually you can't predict traffic at that scale, push notifications go out for a new feature and everyone starts hitting your API. How do you handle this currently, with something like Node or Ruby? You just increase your box numbers and then decrease them after the load is done. This gets expensive and developers should not just be throwing money at something to solve a problem. Erlang VM processes (different than traditional processes) are a fixed size, this is **mega**. This essentially solves this problem to a degree. Knowing how much memory processes are gives you god-like abilities, the VM can tell the server it's running on how much potential memory it will use. Instead of falling over and the box restarting, you can respond to client with HTTP Status Code 429. No unexpected memory loads at 1AM waking up developers.
 
-Pure, functional programming imo (important to see, only my opinion) is worth the investment cognitively. Elixir is built to be used functionally and from this code snippet you can see the power.
+> Okay, this is dope, how are errors handled?
 
-"We are microservices oriented at my company, Elixir seems heavy"
+Errors are a first class citizen in Elixir. Processes are isolated so when an error is thrown, the entire app process doesn't have to dump it's stack, just the isolated process. When errors do happen, they are easier to debug as the process code is small (by Elixir convention). As processes are so small, every process gets a monitor (another OTP blessing), which can run some code when a process dies, restart the process for example.
 
-This is where I don't have an answer yet and through my learnings and eventual development of the language I hope to have more insight on this later in a post. Elixir (and the BEAM) is meant to be a large monotholic system which is totally against the micro architecture of recent years. Erlang scales horizontally extremely well so it may be a case of code bloat or organization that kills you in super-duper large projects in Elixir.
+Also it's very neat that there is a proposal for pattern matching in Javascipt. Obvious proof that everyone is drinking the ... wait for it ... Elixir.
 
-"I don't want to learn this and my team is gonna have a hard time learning this"
+<table class="image">
+    <caption align="bottom">🚒</caption>
+    <tr><td><img src="./javascript_pattern_matching.png" alt="pattern-matching-example"/></td></tr>
+</table>
 
-Once you start building things that have to scale or need to handle millions of requests, your out-of-office tickets increase. The reason for this is usually you can't predict traffic at that scale, push notifications go out for a new feature and everyone starts hitting your API. How do you handle this currently, with something like node or ruby? You just increase your box numbers and then decrease them after the load is done. This gets expensive and developers should not just be throwing money at something to solve a problem. This is sort of backwards in a lot of ways, comp sci is not a practice which puts money into its variable sheet. The solution? Erlang VM processes are a fixed size, this is mega. This essentially solves this problem to a degree. Knowing how much memory processes are gives you god-like abilities, the VM can tell the box how much potential memory it has, which results in a graph like this:
+#### The road forward
 
-Compared to something you may have in node like this:
-
-You will never reach more than the allotted amount of memory on a box. No unexpected memory loads at 1AM waking up developers.
-
-"Okay, this is dope, how are errors handled?"
-
-Errors are a first class citizen in Elixir. Processes are isolated so when an error is thrown, the entire app process doesn't have to restart, just the isolated process. When errors do happen, they are easier to debug as the process state should be easily traceable and the backtrace looks like this:
-
-Compared to this:
-
-You can see the patterns propagating to other languages such as JS as well:
-
-## Pattern Matching in Elixir
-
-```elixir
-
-```
-
-## Proposal for Pattern Matching in Javascript
-
-```javascript
-```
-
-- how does this article solve a problem?
-
-- how does this article solve actionable?
-
-- how does this article sharable?
-
-- where will this article be shared after its finished?
-
-- reddit, medum, what publications or publishers can I submit this to?
+My plans forward is just to write more and more Elixir code to get more comfortable with it. HackerRank has Elixir as an environment so that has been a great resource for me to just practice the syntax. One of the next things I want to do is start creating something in [Phoenix](https://github.com/phoenixframework/phoenix).
 
 ## Reading resources
 
@@ -109,5 +91,3 @@ The book we read during the bookclub was Elixir In Action. A very good book whic
       <tr><td><img src="./opt_guidebook.jpg" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></td></tr>
   </table>
 </a>
-
-### Online resources
