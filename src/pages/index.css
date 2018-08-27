@@ -5,3 +5,7 @@ a {
 a:hover {
   color: #404646;
 }
+
+caption {
+  font-size: 12px;
+}
