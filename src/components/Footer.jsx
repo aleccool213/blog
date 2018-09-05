@@ -1,16 +1,15 @@
 import React from 'react'
-import DisqusThread from './DisqusThread'
 
-export const Footer = ({ url, identifier, title }) => {
+export const Footer = () => {
   return (
     <span>
       <h2>
         ❤️ If you found this article useful, consider <a>subbing</a> for more in
         the future and <a>tweeting</a> it out. ❤️
       </h2>
-      <span>
-        <DisqusThread id={identifier} title={title} path={url} />
-      </span>
+      <blockquote>
+        Want to comment? Head over to the Medium version of this post to do so.
+      </blockquote>
     </span>
   )
 }
