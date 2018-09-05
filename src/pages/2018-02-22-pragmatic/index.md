@@ -2,6 +2,7 @@
 title: The Best Parts of The Pragmatic Programmer 📚
 date: '2018-03-11T22:12:03.284Z'
 path: '/pragmatic-programmer-book-highlights/'
+id: 1
 ---
 
 <table class="image">

@@ -31,11 +31,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Footer
-          url={post.frontmatter.path}
-          identifier={post.frontmatter.path}
-          title={post.frontmatter.title}
-        />
+        <Footer />
         <Bio />
       </div>
     )

@@ -1,15 +1,15 @@
 ---
 title: My Mac Stack 🖥️
-date: "2017-12-17T22:12:03.284Z"
-path: "/mac-stack/"
+date: '2017-12-17T22:12:03.284Z'
+path: '/mac-stack/'
 ---
 
 The average workday goes as follows:
 
-* Coworker comes to my desk to ask me a question
-* Sees something radical happening on screen
-* Asks why they haven't heard of the application
-* Screams silently
+- Coworker comes to my desk to ask me a question
+- Sees something radical happening on screen
+- Asks why they haven't heard of the application
+- Screams silently
 
 <table class="image">
     <caption align="bottom"><strong>A porg screaming silently</strong></caption>
@@ -22,9 +22,9 @@ The average workday goes as follows:
 
 In light of this, many people are unaware of some nifty Mac applications which will make your productively skyrocket. I thought to put together a collection of my top-rated apps which follow a loose criteria:
 
-* must look amazing
-* ‎must have great keyboard shortcuts
-* must be hipster AF
+- must look amazing
+- ‎must have great keyboard shortcuts
+- must be hipster AF
 
 People will complain that most of these apps function as terminal command wrappers but my brain works better with visual representations of things. Most are developer-centric but could be used by anyone.
 
@@ -91,7 +91,7 @@ One of the problems which come up when looking for quality MacOS apps is that th
 
 I've using Setapp consistently for the past 6 months and many updates have improved both the quality and the selection of apps provided by the service. Most of the time when I want to perform a utility, they have an app here already for you to use. Never had a single problem with it and recommended for lazy people like me which don't want to go searching for apps on the web to do simple things. Fun fact, I recorded the .gifs found in this post using Gifox which came bundled in Setapp.
 
-> Get it [here](https://setapp.com/)
+> Get it [here](https://go.setapp.com/invite/1835374b-d4c6-4140-958c-38a143a4ab2a) (referral link)
 
 ### Part 2
 

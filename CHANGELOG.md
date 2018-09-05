@@ -1,3 +1,8 @@
+### 2.1
+
+- removed disqus
+- added elixir post
+
 ### 2.0.0
 
 - Added disqus comment section
