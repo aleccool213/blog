@@ -29,7 +29,6 @@ class Bio extends React.Component {
         />
         Written by <strong>Alec Brunelle</strong> who lives and works in
         Toronto, building useful things.{' '}
-        <a href="http://eepurl.com/dfs9Db">Sign up for programming insights</a>
       </p>
     )
   }
