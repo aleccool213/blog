@@ -29,6 +29,7 @@ class Bio extends React.Component {
         />
         Written by <strong>Alec Brunelle</strong> who lives and works in
         Toronto, building useful things.{' '}
+        <a href="mailto:alec@alec.coffee">Email Me</a>
       </p>
     )
   }
