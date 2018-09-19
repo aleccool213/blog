@@ -34,7 +34,7 @@ One of the benefits of learning a recently-created programming language is that 
    <tr><td><img src="./telephone_pole.jpg" alt="pattern-matching-example"/></td></tr>
 </table>
 
-The critic inside you will say the potential downfalls of using such a new language is that it isn't battle-tested. Usually this is a valid criticism, such is not the case for Elixir. The VM Elixir it's built on top of is hella old. The initial open-source release of Erlang was in 1998, and Ericsson was using it in-house for a long time before that. Used by telecom networks, these were critical services which could not afford to have downtime. For example, that's how the very cool <a href="https://en.wikipedia.org/wiki/Open_Telecom_Platform" target="_blank" >hot-code-release</a> feature came to be which enabled developers to release new Erlang/Elixir code without taking down servers.
+The critic inside you will say the potential downfalls of using such a new language is that it isn't battle-tested. Usually this is a valid criticism, such is not the case for Elixir. The VM Elixir it's built on top of is hella old. The initial open-source release of Erlang was in 1998, and Ericsson was using it in-house for a long time before that. Used by telecom networks, these were critical services which could not afford to have downtime. For example, that's how the very cool <a href="https://github.com/edeliver/edeliver" target="_blank" >hot-code-release</a> feature came to be which enabled developers to release new Erlang/Elixir code without taking down servers.
 
 ### My Experience
 
@@ -50,8 +50,6 @@ Last year, a coworker invited me to join his book club. "Lets learn this new lan
 <table class="image">
    <tr><td><img src="./fork_road.jpg" alt="pattern-matching-example"/></td></tr>
 </table>
-
-This was a great learning experience but most people are skeptical of such a time investment.
 
 > We are heading towards the micro-services mindset at my company, does Elixir fit into this?
 
@@ -86,11 +84,11 @@ I hope this introduction to some of the powers of Elixir encourages you to learn
    <tr><td><img src="./trends.png" alt="pattern-matching-example"/></td></tr>
 </table>
 
-It still has a long way to go.
+The trend is upwards but it still has a long way to go for becoming somewhat mainstream.
 
 Moving forward, I plan is just to write more and more Elixir code and get more comfortable with it. HackerRank has Elixir as an environment so it has been a great resource to practice the syntax. One of the next things I want to do is start creating something in [Phoenix](https://github.com/phoenixframework/phoenix).
 
-Elixir Toronto Meetup Group on Meetup
+Another resource I used in my learning journey was the <a href="https://www.meetup.com/TorontoElixir/" target="_blank">Elixir Toronto Meetup Group on Meetup</a>.
 
 ## Reading resources
 
