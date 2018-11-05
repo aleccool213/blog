@@ -12,8 +12,6 @@ logoUrl: 'hi'
 
 After getting comfortable with a couple programming technologies, developers usually stop there; your job and the systems you maintain may all be in one or two languages. You start using similar patterns again and again to solve the same problems. Elixir, a relatively new programming language, opened my eyes to new techniques which broke this stagnant thinking. Learning a new programming language can introduce you to techniques you never would've come across using your existing technologies. It expands your toolbox when it comes to designing new systems. Imagine a carpenter being stuck to a certain set of tools for years, they would be limited in what they could build. After learning programming languages for years (school, contract-work, co-ops, etc), it was refreshing to step away from a mindset focused on getting it done as fast as I could. No timelines telling you what velocity to learn at and no peers depending on you to finish what you were working on. I find that in this relaxed setting, it's easier to digest larger cognitive loads.
 
-### Beautiful Design
-
 <table class="image">
    <caption align="bottom">E.g. of pattern matching. This and many other features of the language make it expressive and easy to read.</caption>
    <tr><td><img src="./pattern.png" alt="pattern-matching-example"/></td></tr>
@@ -27,12 +25,19 @@ After getting comfortable with a couple programming technologies, developers usu
 
 - Did I mention it's FUNCTIONAL! (Pure, functional programming IMO is worth the investment cognitively, <a href="https://medium.com/making-internets/functional-programming-elixir-pt-1-the-basics-bd3ce8d68f1b" target="_blank" >hit this link</a> for how Elixir utilizes it)
 
-One of the benefits of learning a recently-created programming language is that it's built on top of existing best practices. This happens when the creators spend time thinking about what problems other developers face regularly. "State management is hard", "it's hard to have zero time deployments of new code", "it's hard to maintain my systems", something every developer thinks. Elixir wants to make these problems less hairy and does so using functional methodologies wrapped around a VM which puts distributed/concurrent programming as a first-class citizen. It does this through implementing the <a href="https://en.wikipedia.org/wiki/Open_Telecom_Platform" target="_blank" >OTP</a> protocol. Elixir for example was built by developers who saw the productivity of the Ruby syntax, the maintainability of functional programming and the scalability of Erlang. These features of the language make it a compelling showcase of what a language recently built can be, as showcased in the pattern matching example above.
+One of the benefits of learning a recently-created programming language is that it's built on top of existing best practices. This happens when the creators spend time thinking about what problems other developers face regularly. "State management is hard", "it's hard to have zero time deployments of new code", "it's hard to maintain my systems", something every developer thinks. Elixir wants to make these problems less hairy and does so using functional methodologies wrapped around a VM which puts distributed/concurrent programming as a first-class citizen.
+Elixir for example was built by developers who saw the productivity of the Ruby syntax, the maintainability of functional programming and the scalability of Erlang. These features of the language make it a compelling showcase of what a language recently built can be, as showcased in the pattern matching example above.
+
+> Elixir for example was built by developers who saw the productivity of the Ruby syntax, the maintainability of functional programming and the scalability of Erlang.
+
+### Wires connecting to wires
 
 <table class="image">
    <caption align="bottom">OTP in the anime-flesh</caption>
    <tr><td><img src="./telephone_pole.jpg" alt="pattern-matching-example"/></td></tr>
 </table>
+
+The rock solid foundation of Elixir is built on top of a protocol named <a href="https://en.wikipedia.org/wiki/Open_Telecom_Platform" target="_blank" >OTP</a>. OTP is an elegant way to handle all of the problems that arise in distributed programming, think work across nodes, handling async messages, etc. It not only is a library of functions but also a paradigm to work within. This keeps things consistent across systems and large teams. Instead of a single process handling your entire app (think Node.js), many isolated processes make up an Elixir app. These processes communicate to each other using messages. This unlocks a lot of cool features, processes can now live across machines as messages can only be immutable, no pointers allowed.
 
 The critic inside you will say the potential downfalls of using such a new language is that it isn't battle-tested. Usually this is a valid criticism, such is not the case for Elixir. The VM Elixir it's built on top of is hella old. The initial open-source release of Erlang was in 1998, and Ericsson was using it in-house for a long time before that. Used by telecom networks, these were critical services which could not afford to have downtime. For example, that's how the very cool <a href="https://github.com/edeliver/edeliver" target="_blank" >hot-code-release</a> feature came to be which enabled developers to release new Erlang/Elixir code without taking down servers.
 
@@ -50,10 +55,6 @@ Last year, a coworker invited me to join his book club. "Lets learn this new lan
 <table class="image">
    <tr><td><img src="./fork_road.jpg" alt="pattern-matching-example"/></td></tr>
 </table>
-
-> We are heading towards the micro-services mindset at my company, does Elixir fit into this?
-
-This is where I don't have an answer yet and through my learnings and eventual development of the language I hope to have gain more insight into this. Some of the features in Elixir are best used when in a large system. Splitting processes across different nodes, which can be spread among different machines, is one way Erlang scales horizontally extremely well. This doesn't necessarily go against the micro-service paradigm but at that point, you are doing different things on different machines from the same codebase.
 
 > My team is not going to be happy that after learning 3 Javascript frameworks in the past week, they have to learn this.
 
@@ -104,6 +105,6 @@ The book we read during the book club was called Elixir In Action. A very good b
 <a target="_blank" href="https://amzn.to/2BWNsWC">
  <table class="image">
      <caption align="bottom" style="text-decoration:underline;">The Little Elixir & OTP Guidebook (Amazon Affiliate Link)</caption>
-     <tr><td><img src="./opt_guidebook.jpg" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></td></tr>
+     <tr><td><img src="./opt_guidebook.jpg" border="0" alt="" style="border:none !important; margin:0px !important;" /></td></tr>
  </table>
 </a>
