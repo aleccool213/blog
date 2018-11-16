@@ -1,14 +1,8 @@
-# gatsby-starter-blog
-
-Copied from gatsby-starter-blog
+# My Personal Blog
 
 ## Running in development
 `gatsby develop`
 
-
 ## Deploying
 
-* `gatsby build`
-* `cd public`
-* `now`
-* `now alias <paste url from clipboard> blog.alec.coffee`
+* Push to master :)
