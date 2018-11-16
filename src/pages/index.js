@@ -13,7 +13,13 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+        <Helmet>
+          <title>{get(this, 'props.data.site.siteMetadata.title')}</title>
+          <meta
+            name="Description"
+            content="Index of Alec Brunelle's personal blog. Written by Alec Brunelle who lives and works in Toronto, building useful things."
+          />
+        </Helmet>
         <Bio />
         {posts.map(post => {
           if (post.node.path !== '/404/') {
