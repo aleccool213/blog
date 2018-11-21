@@ -21,6 +21,7 @@ class BlogIndex extends React.Component {
             content="A blog written by Alec Brunelle who lives and works in Toronto, building useful things."
           />
           <meta property="og:image" content={profilePic} />
+          <html lang="en" />
         </Helmet>
         <Bio />
         {posts.map(post => {
