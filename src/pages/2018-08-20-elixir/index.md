@@ -69,7 +69,7 @@ Errors are a first class citizen in Elixir. Processes are small and isolated so 
    <tr><td style="text-align:center;"><img style="margin-bottom:0px;" src="./everyone_gets.gif" alt="pattern-matching-example"/></td></tr>
 </table>
 
-Also, it's very neat that there is a proposal for pattern matching in Javascipt. Obvious proof that everyone is drinking the ... wait for it ... Elixir.
+Also, it's very neat that there is a proposal for pattern matching in Javascipt. Obvious proof that everyone is drinking the ... wait for it ... _Elixir_.
 
 <table class="image">
    <caption align="bottom">🚒</caption>
@@ -101,6 +101,8 @@ The book we read during the book club was called Elixir In Action. A very good b
      <tr><td><img src="./elixir_in_action.jpg" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></td></tr>
  </table>
 </a>
+
+This is another book I started which is much more approachable. It's a fun book which goes over the main features of why Elixir is a compelling language. This is a heart-pumper as it really just skims the surface.
 
 <a target="_blank" href="https://amzn.to/2BWNsWC">
  <table class="image">
