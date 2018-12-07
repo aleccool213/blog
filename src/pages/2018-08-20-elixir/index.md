@@ -2,7 +2,7 @@
 title: How Learning Elixir Made Me a Better Programmer 🥃
 date: '2018-08-20T22:12:03.284Z'
 path: '/elixir-better-programmer/'
-logoUrl: 'hi'
+logoUrl: '2018-08-20-elixir/cover_2.jpeg'
 ---
 
 <table class="image">

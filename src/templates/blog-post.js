@@ -13,13 +13,18 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
-    // TODO: figure out how to send more data per post on the query
-    console.log(post.frontmatter.excerpt)
     return (
       <div>
         <Helmet>
           <title>{`${post.frontmatter.title} | ${siteTitle}`}</title>
-          <meta property="og:image" content={profilePic} />
+          <meta
+            property="og:image"
+            content={
+              post.frontmatter.logoUrl
+                ? require(`../pages/${post.frontmatter.logoUrl}`)
+                : profilePic
+            }
+          />
         </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -63,7 +68,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         path
-        # logoUrl
+        logoUrl
       }
     }
   }

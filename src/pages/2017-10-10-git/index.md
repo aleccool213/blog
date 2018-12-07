@@ -1,7 +1,8 @@
 ---
 title: My Git Tricks 🔑
-date: "2017-10-01T22:12:03.284Z"
-path: "/git-tricks/"
+date: '2017-10-01T22:12:03.284Z'
+path: '/git-tricks/'
+logoUrl: '2017-10-10-git/1.png'
 ---
 
 > Disclaimer: This is meant for people who are experienced in Git and know their way around the basics and want to bring their understanding to the next level.
@@ -89,7 +90,7 @@ This will bring our change into the git index while we are editing and then add 
 
 S/O to two Git tools which recently made the cut into my workflow for being so functional and beautiful:
 
-* Gitup is a nice and minimal tool which doesn’t try and do too many things. Its branch view, stash viewer and integrations are fantastic. Great open-source companion to a die-hard Git CLI user.
-* gitmoji-cli makes it very easy to organize your commits visually. Not only does it make your commits organized by forcing you to categorize them, but EMOJI! 💸
+- Gitup is a nice and minimal tool which doesn’t try and do too many things. Its branch view, stash viewer and integrations are fantastic. Great open-source companion to a die-hard Git CLI user.
+- gitmoji-cli makes it very easy to organize your commits visually. Not only does it make your commits organized by forcing you to categorize them, but EMOJI! 💸
 
 > This piece originally was posted on my dead and lonely [medium blog](https://medium.com/@yourboybigal/acquiring-git-superpowers-f48bf7e504c7)
