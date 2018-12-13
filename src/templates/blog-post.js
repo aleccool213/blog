@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Footer />
+        <Footer devLink={post.frontmatter.devLink} />
         <Bio />
       </div>
     )
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         logoUrl
+        devLink
       }
     }
   }

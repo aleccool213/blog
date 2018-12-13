@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const Footer = () => {
+export const Footer = ({ devLink }) => {
+  console.log(devLink)
   return (
     <span>
       <h2>
@@ -14,9 +15,17 @@ export const Footer = () => {
         </a>{' '}
         it out. ❤️
       </h2>
-      <blockquote>
-        Want to comment? Head over to the Medium version of this post to do so.
-      </blockquote>
+      {devLink ? (
+        <blockquote>
+          Want to comment? Head over to the{' '}
+          <a target="_blank" href={devLink}>
+            Dev.to
+          </a>{' '}
+          version of this post to do so.
+        </blockquote>
+      ) : (
+        ''
+      )}
     </span>
   )
 }

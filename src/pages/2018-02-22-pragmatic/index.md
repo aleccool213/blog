@@ -3,6 +3,8 @@ title: The Best Parts of The Pragmatic Programmer 📚
 date: '2018-03-11T22:12:03.284Z'
 path: '/pragmatic-programmer-book-highlights/'
 logoUrl: '2018-02-22-pragmatic/cover.jpg'
+devLink:
+  'https://dev.to/aleccool213/the-best-parts-of-the-pragmatic-programmer---1om5'
 ---
 
 <table class="image">
