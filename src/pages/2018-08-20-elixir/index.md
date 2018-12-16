@@ -21,9 +21,9 @@ After getting comfortable with a couple programming technologies, developers usu
 
 ### Quick Facts for the T.L.D.R. in you
 
-- Elixir is simply syntax on top of the battle-tested VM and language, Erlang
+- Elixir is simply syntax on top of Erlang, the battle-tested language built on top of the BEAM VM
 
-- The syntax is similar to Ruby so learning the syntax is easy and quick
+- The syntax is similar to Ruby so learning the syntax is easy and quick, especially for developers familiar with it
 
 - Did I mention it's FUNCTIONAL! (Pure, functional programming IMO is worth the investment cognitively, <a href="https://medium.com/making-internets/functional-programming-elixir-pt-1-the-basics-bd3ce8d68f1b" target="_blank" >hit this link</a> for how Elixir utilizes it)
 
