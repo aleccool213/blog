@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
+import profilePic from '../components/profile-pic.jpg'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 import './index.css'
@@ -17,8 +18,9 @@ class BlogIndex extends React.Component {
           <title>{get(this, 'props.data.site.siteMetadata.title')}</title>
           <meta
             name="Description"
-            content="Index of Alec Brunelle's personal blog. Written by Alec Brunelle who lives and works in Toronto, building useful things."
+            content="A blog written by Alec Brunelle who lives and works in Toronto, building useful things."
           />
+          <meta property="og:image" content={profilePic} />
         </Helmet>
         <Bio />
         {posts.map(post => {
