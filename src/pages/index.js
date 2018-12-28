@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import profilePic from '../components/profile-pic.jpg'
+import profilePic from '../components/profile-pic.jpeg'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 import './index.css'
