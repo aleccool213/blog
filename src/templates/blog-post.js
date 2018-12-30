@@ -9,6 +9,17 @@ import { rhythm, scale } from '../utils/typography'
 import profilePic from '../components/profile-pic.jpg'
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    window.dojoRequire(['mojo/signup-forms/Loader'], L => {
+      L.start({
+        baseUrl: 'mc.us15.list-manage.com',
+        uuid: 'a3148896870d61ede572df801',
+        lid: 'c1e98351d4',
+        uniqueMethods: true,
+      })
+    })
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
