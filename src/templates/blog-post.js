@@ -6,7 +6,7 @@ import Bio from '../components/Bio'
 import { Footer } from '../components/Footer'
 import { rhythm, scale } from '../utils/typography'
 
-import profilePic from '../components/profile-pic.jpg'
+import profilePic from '../components/profile-pic.jpeg'
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
