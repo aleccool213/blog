@@ -1,8 +1,8 @@
 ---
 title: A cross-service job processor for the rest of us 🐃
 date: '2019-01-01T22:12:03.284Z'
-path: '/open-source-company/'
-logoUrl: '2018-08-20-elixir/cover_2.jpeg'
+path: '/cross-service-job-processor-for-the-rest-of-us/'
+logoUrl: '2019-01-01-bull/github-1.png'
 devLink: 'https://dev.to/aleccool213/'
 ---
 
