@@ -7,7 +7,7 @@ export const Footer = ({ devLink }) => {
       <h2>
         ❤️ If you found this article useful, consider{' '}
         <a target="_blank" href="http://eepurl.com/dfs9Db">
-          subbing
+          subscribing to my email newsletter
         </a>{' '}
         for more in the future and{' '}
         <a target="_blank" href="https://twitter.com">

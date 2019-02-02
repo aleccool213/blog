@@ -1,7 +1,7 @@
 {
   "name": "coffee-driven-development",
   "description": "Starter Gatsby Blog",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "author": "Alec Brunelle",
   "dependencies": {
     "gatsby": "^1.9.277",

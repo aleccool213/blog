@@ -1,3 +1,11 @@
+### 2.3
+
+- edit bull post
+
+### 2.2
+
+- Add bull post
+
 ### 2.1
 
 - removed disqus
