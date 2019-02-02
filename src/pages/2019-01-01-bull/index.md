@@ -1,14 +1,20 @@
 ---
-title: A cross-service job processor for the rest of us 🐃
-date: '2019-01-01T22:12:03.284Z'
+title: A job queue for a micro-service world 🌎
+date: '2019-01-29T22:12:03.284Z'
 path: '/cross-service-job-processor-for-the-rest-of-us/'
-logoUrl: '2019-01-01-bull/github-1.png'
-devLink: 'https://dev.to/aleccool213/'
+logoUrl: '2019-01-01-bull/ski-mountain.jpeg'
+devLink:
+  'https://dev.to/aleccool213/a-job-queue-for-a-micro-service-world--4b26'
 ---
 
-> An in-depth explanation into why we invested in the open source package, <a href="https://github.com/OptimalBits/bull" target="_blank">Bull</a>, even though it didn't quite fit our needs.
+<img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/ski-mountain.jpg" alt="header-image"/>
+</br>
+
+> An explanation into how we built a job queuing system for use in a micro-service context and how we contributed back our work along the way.
 
 When switching to a micro-service oriented stack versus the ol' single monolith, new problems arise. The simple job processor of the past doesn't fit in this new architecture. We found Bull, a Node.js package, to cover our needs, but needed tweaks to work in this new world. Due to this module being open-source, I knew the improvements we made to it could be easily integrated into the main remote repo.
+
+## Goals
 
 Let's say we want do some specialized work, scanning an image to extract text for instance. This is a situation where a job queue could come in handy, this work is being done in the background, away from a user facing interface.
 
@@ -31,16 +37,18 @@ versus
   <tr><td><img src="./bull-post2.png" alt="multiple-services-job-queue"/></td></tr>
 </table>
 
-Me and my coworkers found ourselves in this situation and when searching for answers, we found Bull. Keeping it 2018, this Node.js package is lightning fast, built to work with Redis and has an active community. It didn't quite fit our needs at first as it processed jobs in the same app as the queue-mechanism, see diagram 1. This is fine for traditional apps, but for our setup we needed to manage jobs across systems (see diagram 2). We needed to make this work in an async fashion where the worker may not be in the same repo or service as the service running Bull itself.
+## A Solution
 
-We need to think about how we want to manage a jobs life-cycle. Good thing someone contributed a diagram quite recently to the project.
+Me and my coworkers found ourselves in this situation and when searching for answers, we found Bull might suffice. Keeping it 2018, this Node.js package is lightning fast, built to work with Redis and has an active community. It didn't quite fit our needs at first as it processed jobs in the same app as the queue-mechanism, see diagram 1. This is fine for traditional apps, but for our setup we needed to manage jobs across systems (see diagram 2). We needed to make this work in an async fashion where the worker may not be in the same repo or service as the service running Bull itself.
+
+We need to think about how we want to manage a jobs life-cycle. Good thing someone contributed a diagram quite recently to the projects Github.
 
 <table class="image">
-  <caption align="bottom">Bull's Job Lifecycle Diagram</caption>
+  <caption align="bottom">Bull's Job Lifecycle <a href="https://github.com/OptimalBits/bull/blob/develop/docs/job-lifecycle.png" target="_blank">Diagram</a></caption>
   <tr><td><img src="https://raw.githubusercontent.com/OptimalBits/bull/develop/docs/job-lifecycle.png" alt="bull-lifecycle-diagram"/></td></tr>
 </table>
 
-Bull had a simple way to define the processing logic, what a job does when in the `active` queue:
+Bull had a simple way to define the processing logic (refer to diagram 1), what a job does when in the `active` queue:
 
 ```javascript
 queue.process(async () => {
@@ -54,7 +62,7 @@ This way, whenever a job came into a `waiting` queue, Bull knew how to process i
 
 After digging into the code more, Bull defines state transition methods on two simple objects, `Job` and `Queue`.
 
-Some methods are private though! This means that the authors didn't indeed for these methods to be used publicly. What do we need to do to make these public? After some more digging, we found someone else trying to do the same thing as us.
+After researching, the methods to do manual state transitions were private. It means that the authors didn't write these methods to be used publicly. This makes sense as Bull was never designed to do what we want to do with it. What do we need to do to make these public? After some more digging, we found someone else trying to do the same thing as us.
 
 <table class="image">
   <caption align="bottom">The issue can be found <a href="https://github.com/OptimalBits/bull/issues/790" target="_blank">here.</a></caption>
@@ -63,12 +71,14 @@ Some methods are private though! This means that the authors didn't indeed for t
   </td></tr>
 </table>
 
-Just using the library as is would have been fine but we are **professional developers.**
+Just using the private functions as is would have been fine but we are <a href="https://media.giphy.com/media/HoffxyN8ghVuw/giphy.gif" target="_blank">**professional developers.**</a>
 
 > I would recommend that you write a few unit tests specifically for testing the code using the private functions... - @manast
 
 The maintainer had a great suggestion, write unit tests for the private functions. The next best thing for this would be to at least write documentation for the functions so that they are understood by the community and strengthened their viability to be used publicly. And <a href="https://github.com/OptimalBits/bull/pull/1017/files#diff-d823dceb04482ab55e5004eebb53fc1cR182" target="_blank">that's what we did</a>.
 
-For the actual pattern we described at the beginning, an addition to the reference docs <a href="https://github.com/OptimalBits/bull/pull/1017/files#diff-375fc823554b090375d9c47199cb5ee2R201" target="_blank">were added</a> to make this a viable pattern. Making this a known pattern encourages usage of the feature and possibly leads to other users finding issues when using in production. Typescript types were also available so we updated <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/27816" target="_blank">those</a> as well. After using it for some time (processing approx. 500k jobs), we found a bug and <a href="https://github.com/OptimalBits/bull/pull/1096" target="_blank">were able to easily fix it</a> using our extended knowledge of the package. Talk about bringing a third class feature to first class!
+## Open Source Bonus
+
+For the actual pattern we described at the beginning (diagram 2), an addition to the reference docs <a href="https://github.com/OptimalBits/bull/pull/1017/files#diff-375fc823554b090375d9c47199cb5ee2R201" target="_blank">were added</a> to make this a viable pattern. Making this a known pattern encourages usage of the feature and possibly leads to other users finding issues when using in production. Typescript types were also available so we updated <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/27816" target="_blank">those</a> as well. After using it for some time (processing approx. 500k jobs), we found a bug and <a href="https://github.com/OptimalBits/bull/pull/1096" target="_blank">were able to easily fix it</a> using our extended knowledge of the package. Talk about bringing a third class feature to first class!
 
 I am very happy with the outcome of the project as not only did we satisfy our requirements but also made open source contributions. This led to us understanding the packages internals and also led to us being able to easily add features for our use case. Having an active maintainer on the project who knew the ins and outside also made the entire process run smoothly.
