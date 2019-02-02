@@ -3,10 +3,11 @@ title: A job queue for a micro-service world 🌎
 date: '2019-01-29T22:12:03.284Z'
 path: '/cross-service-job-processor-for-the-rest-of-us/'
 logoUrl: '2019-01-01-bull/ski-mountain.jpeg'
-devLink: 'https://dev.to/aleccool213/'
+devLink:
+  'https://dev.to/aleccool213/a-job-queue-for-a-micro-service-world--4b26'
 ---
 
-<img src="./ski-mountain.jpeg" alt="header-image"/>
+<img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/ski-mountain.jpg" alt="header-image"/>
 </br>
 
 > An explanation into how we built a job queuing system for use in a micro-service context and how we contributed back our work along the way.
@@ -80,4 +81,4 @@ The maintainer had a great suggestion, write unit tests for the private function
 
 For the actual pattern we described at the beginning (diagram 2), an addition to the reference docs <a href="https://github.com/OptimalBits/bull/pull/1017/files#diff-375fc823554b090375d9c47199cb5ee2R201" target="_blank">were added</a> to make this a viable pattern. Making this a known pattern encourages usage of the feature and possibly leads to other users finding issues when using in production. Typescript types were also available so we updated <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/27816" target="_blank">those</a> as well. After using it for some time (processing approx. 500k jobs), we found a bug and <a href="https://github.com/OptimalBits/bull/pull/1096" target="_blank">were able to easily fix it</a> using our extended knowledge of the package. Talk about bringing a third class feature to first class!
 
-I won't bore yuI am very happy with the outcome of the project as not only did we satisfy our requirements but also made open source contributions. This led to us understanding the packages internals and also led to us being able to easily add features for our use case. Having an active maintainer on the project who knew the ins and outside also made the entire process run smoothly.
+I am very happy with the outcome of the project as not only did we satisfy our requirements but also made open source contributions. This led to us understanding the packages internals and also led to us being able to easily add features for our use case. Having an active maintainer on the project who knew the ins and outside also made the entire process run smoothly.
