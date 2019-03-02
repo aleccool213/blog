@@ -1,6 +1,4 @@
 {
-  "editor.formatOnSave": true,
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "cSpell.enabled": true
+    "workbench.colorTheme": "Cobalt2",
+    "editor.formatOnSave": true
 }

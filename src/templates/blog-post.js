@@ -1,20 +1,22 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-import Bio from '../components/Bio'
-import { Footer } from '../components/Footer'
-import { rhythm, scale } from '../utils/typography'
-
-import profilePic from '../components/profile-pic.jpeg'
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm, scale } from "../utils/typography"
+import { Footer } from "../components/footer"
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
-    window.dojoRequire(['mojo/signup-forms/Loader'], L => {
+    if (!window.dojoRequire) {
+      return
+    }
+    window.dojoRequire(["mojo/signup-forms/Loader"], L => {
       L.start({
-        baseUrl: 'mc.us15.list-manage.com',
-        uuid: 'a3148896870d61ede572df801',
-        lid: 'c1e98351d4',
+        baseUrl: "mc.us15.list-manage.com",
+        uuid: "a3148896870d61ede572df801",
+        lid: "c1e98351d4",
         uniqueMethods: true,
       })
     })
@@ -22,26 +24,17 @@ class BlogPostTemplate extends React.Component {
 
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteTitle = this.props.data.site.siteMetadata.title
+    const { previous, next } = this.props.pageContext
 
     return (
-      <div>
-        <Helmet>
-          <title>{`${post.frontmatter.title} | ${siteTitle}`}</title>
-          <meta
-            property="og:image"
-            content={
-              post.frontmatter.logoUrl
-                ? require(`../pages/${post.frontmatter.logoUrl}`)
-                : profilePic
-            }
-          />
-        </Helmet>
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
-            display: 'block',
+            display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
           }}
@@ -54,9 +47,34 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Footer devLink={post.frontmatter.devLink} />
         <Bio />
-      </div>
+
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+        <Footer />
+      </Layout>
     )
   }
 }
@@ -64,23 +82,20 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt(pruneLength: 160)
       html
-      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        path
-        logoUrl
-        devLink
       }
     }
   }
