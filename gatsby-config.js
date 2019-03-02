@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Coffee Driven Development`,
+    author: `Alec Brunelle`,
+    description: `No description.`,
+    siteUrl: `blog.alec.coffee`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `yourboybigal`,
     },
   },
   plugins: [
@@ -31,6 +31,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              linkImagesToOriginal: false,
             },
           },
           {
@@ -50,20 +51,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-108436339-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Coffee Driven Development`,
+        short_name: `AB Blog`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#f7f0eb`,
+        theme_color: `#996633`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

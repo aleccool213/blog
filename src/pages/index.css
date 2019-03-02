@@ -1,0 +1,11 @@
+a {
+  color: #bb9966;
+}
+
+a:hover {
+  color: #404646;
+}
+
+caption {
+  font-size: 12px;
+}

@@ -5,8 +5,23 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import { Footer } from "../components/footer"
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    if (!window.dojoRequire) {
+      return
+    }
+    window.dojoRequire(["mojo/signup-forms/Loader"], L => {
+      L.start({
+        baseUrl: "mc.us15.list-manage.com",
+        uuid: "a3148896870d61ede572df801",
+        lid: "c1e98351d4",
+        uniqueMethods: true,
+      })
+    })
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -14,10 +29,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -61,6 +73,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <Footer />
       </Layout>
     )
   }
@@ -83,7 +96,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
       }
     }
   }

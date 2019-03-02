@@ -16,7 +16,7 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author } = data.site.siteMetadata
         return (
           <div
             style={{
@@ -38,12 +38,9 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              Written by <strong>Alec Brunelle</strong> who lives and works in
+              Toronto, building useful things.{" "}
+              <a href="mailto:alec@alec.coffee">Email Me</a>
             </p>
           </div>
         )
