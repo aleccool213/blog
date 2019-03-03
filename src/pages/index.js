@@ -1,65 +1,56 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-import profilePic from '../components/profile-pic.jpeg'
-import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
-import './index.css'
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
+import "./index.css"
 
 class BlogIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
 
     return (
-      <div>
-        <Helmet>
-          <title>{get(this, 'props.data.site.siteMetadata.title')}</title>
-          <meta
-            name="Description"
-            content="A blog written by Alec Brunelle who lives and works in Toronto, building useful things."
-          />
-          <meta property="og:image" content={profilePic} />
-          <meta name="author" content="Alec Brunelle" />
-          <html lang="en" />
-        </Helmet>
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO
+          title="All posts"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        />
         <Bio />
-        {posts.map(post => {
-          if (post.node.path !== '/404/') {
-            return (
-              <div key={post.node.frontmatter.path}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: 'none' }}
-                    to={post.node.frontmatter.path}
-                  >
-                    {post.node.frontmatter.title}
-                  </Link>
-                </h3>
-                <small>{post.node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-              </div>
-            )
-          }
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+          )
         })}
-      </div>
+      </Layout>
     )
   }
-}
-
-BlogIndex.propTypes = {
-  route: React.PropTypes.object,
 }
 
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query {
     site {
       siteMetadata {
         title
@@ -69,10 +60,12 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          fields {
+            slug
+          }
           frontmatter {
-            path
+            date(formatString: "MMMM DD, YYYY")
             title
-            date(formatString: "DD MMMM, YYYY")
           }
         }
       }
