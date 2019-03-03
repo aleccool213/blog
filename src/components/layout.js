@@ -1,4 +1,5 @@
 import React from "react"
+import "../styles/global.css"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"

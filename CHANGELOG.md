@@ -1,3 +1,7 @@
+### 2.4
+
+- Upgrade to gatsby v2
+
 ### 2.3
 
 - edit bull post

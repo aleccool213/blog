@@ -1,7 +1,25 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+let stylesStr
+if (process.env.NODE_ENV === `production`) {
+  try {
+    stylesStr = require(`!raw-loader!./styles/global.css`)
+  } catch (e) {
+    console.log(e)
+  }
+}
+
 export default function HTML(props) {
+  let css
+  if (process.env.NODE_ENV === `production`) {
+    css = (
+      <style
+        id="gatsby-inlined-css"
+        dangerouslySetInnerHTML={{ __html: stylesStr }}
+      />
+    )
+  }
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -12,6 +30,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        {css}
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
