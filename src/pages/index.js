@@ -20,9 +20,9 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
+          const title = node.frontmatter.title || node.frontmatter.path;
           return (
-            <div key={node.fields.slug}>
+            <div key={node.frontmatter.path}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4)
@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
               >
                 <Link
                   style={{ boxShadow: `none` }}
-                  to={node.fields.slug}
+                  to={node.frontmatter.path}
                   id="post-page-link"
                 >
                   {title}
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            path
           }
         }
       }
