@@ -47,7 +47,7 @@ export default function HTML(props) {
           type="text/javascript"
           src="https://downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
           data-dojo-config="usePlainJson: true, isDebug: false"
-          defer="true"
+          defer={true}
         />
       </body>
     </html>
