@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Coffee Driven Development`,
     author: `Alec Brunelle`,
-    description: `A blog written by Alec Brunelle who lives and works in Toronto, building useful things.`,
-    siteUrl: `blog.alec.coffee`,
+    description: `A blog written by Alec Brunelle who lives and works in Toronto, building useful things. Software Development, Javascript, Elixir and not much else.`,
+    siteUrl: `https://blog.alec.coffee`,
     social: {
       twitter: `yourboybigal`
     }
