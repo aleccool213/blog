@@ -5,14 +5,11 @@ path: '/git-tricks-reset-rebase/'
 logoUrl: '2017-10-10-git/1.png'
 ---
 
-> This is meant for people who are experienced in Git and know their way around the basics and want to bring their understanding to the next level.
+![header-image](./header.jpg)
 
-Ever seen a Git history as clean as this?
+You should care about how clean your Git history is. It provides a way to communicate changes to a codebase with other developers who you are working with, but doing so requires some thought and intention. Ever seen one as clean as this?
 
-<table class="image">
-    <caption align="bottom">A clean Git history</caption>
-    <tr><td><img alt="commit-log" src="./1.png" alt="A clean Git history"/></td></tr>
-</table>
+![A clean Git history](./1.png)
 
 Probably not. Why? Developers are often too lazy (for good reason) and throw Git organization alongside `nice-to-haves` and `TODO` in terms of priorities. With the power of `git reset` and `git rebase`, I’m going to show you that having a clean and easy-to-read history is fast and easy!
 
