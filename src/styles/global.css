@@ -9,3 +9,7 @@ a:hover {
 caption {
   font-size: 12px;
 }
+
+img {
+  margin-bottom: 0;
+}
