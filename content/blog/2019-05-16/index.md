@@ -6,6 +6,8 @@ logoUrl: ""
 devLink: ""
 ---
 
+> This post originally posted on Yolk AI's blog. As I am the author, I am publishing it here as well.
+
 <table class="image">
   <caption align="bottom">Photo by Samuel Castro on <a href="https://unsplash.com/photos/cwScwJy5HQE">Unsplash</a></caption>
   <tr><td><img src="./photo1.jpg" alt="local-village"/></td></tr>
