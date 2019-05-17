@@ -53,6 +53,7 @@ module.exports = {
               }
             }
           },
+          `gatsby-remark-embed-gist`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-smartypants`
         ]
