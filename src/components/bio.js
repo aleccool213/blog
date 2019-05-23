@@ -5,23 +5,23 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author } = data.site.siteMetadata
+        const { author } = data.site.siteMetadata;
         return (
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(2.5)
             }}
           >
             <Image
@@ -31,22 +31,31 @@ function Bio() {
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
+                borderRadius: `100%`
               }}
               imgStyle={{
-                borderRadius: `50%`,
+                borderRadius: `50%`
               }}
             />
             <p>
               Written by <strong>Alec Brunelle</strong> who lives and works in
               Toronto, building useful things.{" "}
-              <a href="mailto:alec@alec.coffee">Email Me</a>
+              <a href="mailto:alec@alec.coffee">Email Me</a>, follow me on{" "}
+              <a href="https://dev.to/aleccool213">
+                <img
+                  src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+                  alt="Alec Brunelle's DEV Profile"
+                  height="30"
+                  width="30"
+                />
+              </a>
+              , or tip me using <a href="https://brave.com/ale477">Brave</a>
             </p>
           </div>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 const bioQuery = graphql`
@@ -67,6 +76,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Bio
+export default Bio;
