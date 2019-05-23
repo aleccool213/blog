@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Coffee Driven Development`,
+    title: `Alec Brunelle's Blog`,
     author: `Alec Brunelle`,
     description: `A blog written by Alec Brunelle who lives and works in Toronto, building useful things. Software Development, Javascript, Elixir and not much else.`,
     siteUrl: `https://blog.alec.coffee`,
@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Coffee Driven Development`,
+        name: `Alec Brunelle's Blog`,
         short_name: `AB Blog`,
         start_url: `/`,
         background_color: `#f7f0eb`,

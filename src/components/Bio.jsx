@@ -1,38 +1,72 @@
-import React from 'react'
+/**
+ * Bio component that queries for data
+ * with Gatsby's StaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/static-query/
+ */
 
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 
-import profilePic from './profile-pic.jpeg'
-import { rhythm } from '../utils/typography'
+import { rhythm } from "../utils/typography"
 
-class Bio extends React.Component {
-  render() {
-    return (
-      <p
-        style={{
-          marginBottom: rhythm(2.5),
-        }}
-      >
-        <img
-          src={profilePic}
-          alt={`Alec Brunelle`}
-          style={{
-            float: 'left',
-            marginRight: rhythm(1 / 4),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-            borderRadius: '50%',
-          }}
-        />
-        Written by <strong>Alec Brunelle</strong> who lives and works in
-        Toronto, building useful things.{' '}
-        <a href="mailto:alec@alec.coffee">Email Me</a>
-      </p>
-    )
-  }
+function Bio() {
+  return (
+    <StaticQuery
+      query={bioQuery}
+      render={data => {
+        const { author } = data.site.siteMetadata
+        return (
+          <div
+            style={{
+              display: `flex`,
+              marginBottom: rhythm(2.5),
+            }}
+          >
+            <Image
+              fixed={data.avatar.childImageSharp.fixed}
+              alt={author}
+              style={{
+                marginRight: rhythm(1 / 2),
+                marginBottom: 0,
+                minWidth: 50,
+                borderRadius: `100%`,
+              }}
+              imgStyle={{
+                borderRadius: `50%`,
+              }}
+            />
+            <p>
+              Written by <strong>Alec Brunelle</strong> who lives and works in
+              Toronto, building useful things.{" "}
+              <a href="mailto:alec@alec.coffee">Email Me</a>
+            </p>
+          </div>
+        )
+      }}
+    />
+  )
 }
+
+const bioQuery = graphql`
+  query BioQuery {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        author
+        social {
+          twitter
+        }
+      }
+    }
+  }
+`
 
 export default Bio
