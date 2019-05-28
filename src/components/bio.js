@@ -41,15 +41,9 @@ function Bio() {
               Written by <strong>Alec Brunelle</strong> who lives and works in
               Toronto, building useful things.{" "}
               <a href="mailto:alec@alec.coffee">Email Me</a>, follow me on{" "}
-              <a href="https://dev.to/aleccool213">
-                <img
-                  src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-                  alt="Alec Brunelle's DEV Profile"
-                  height="30"
-                  width="30"
-                />
-              </a>
-              , or tip me using <a href="https://brave.com/ale477">Brave</a>
+              <a href="https://dev.to/aleccool213">Dev.to</a>, tip me using{" "}
+              <a href="https://brave.com/ale477">Brave</a>, or support me on{" "}
+              <a href="https://ko-fi.com/Y8Y7W4H8">Ko-fi</a>
             </p>
           </div>
         );
@@ -60,7 +54,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/avatar.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
