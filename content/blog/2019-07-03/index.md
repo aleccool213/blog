@@ -6,6 +6,11 @@ logoUrl: ""
 devLink: ""
 ---
 
+<table class="image">
+  <caption align="bottom">Photo by <a href="https://unsplash.com/@antonchernyavskiy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anton Chernyavskiy</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></caption>
+  <tr><td><img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1562561257/fish-post/anton-chernyavskiy-8AiNrx44cEQ-unsplash.jpg" alt="local-village"/></td></tr>
+</table>
+
 > This is part one of my [Beautiful Developer Tools series](http://blog.alec.coffee/beautiful-dev-tools/) where I focus on apps that I heavily use. They all help me remain calm 🧘‍♂️, collected 📚, and productive 🛠️ when writing code.
 
 One of the most underrated features of any tool, in my opinion, is being fully-featured out of the box. No wasted time scouring the web for configurations other users have shared, the best plugins to use, or how to get that one integration working. This is one of the main reasons why I love the [Fish shell](https://fishshell.com) so much. Right from the start, you have a shell where you can become super productive and not do too much to get your favourite tools working. I've been using it every day for three years now so I thought I would share all of the best things about it.
