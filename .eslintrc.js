@@ -1,11 +1,12 @@
 module.exports = {
   env: {
+    node: true,
     browser: true,
     es6: true,
     jasmine: true,
     "cypress/globals": true
   },
-  extends: "eslint:recommended",
+  extends: ["eslint:recommended", "plugin:react/recommended"],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -18,5 +19,10 @@ module.exports = {
     sourceType: "module"
   },
   plugins: ["react", "cypress"],
-  rules: {}
+  rules: {},
+  settings: {
+    react: {
+      version: "detect"
+    }
+  }
 };

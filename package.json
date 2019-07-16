@@ -31,6 +31,7 @@
     "gatsby-transformer-sharp": "^2.1.17",
     "graphql": "^14.1.1",
     "prismjs": "^1.16.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
@@ -42,10 +43,10 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "cypress": "^3.3.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-cypress": "^2.2.1",
-    "eslint-plugin-react": "^7.13.0",
+    "cypress": "^3.4.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-cypress": "^2.6.0",
+    "eslint-plugin-react": "^7.14.2",
     "prettier": "^1.17.1",
     "start-server-and-test": "^1.9.1"
   },
@@ -66,6 +67,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "start-test develop 8000 cy:run",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "lint": "eslint ./src --ext .js,.jsx"
   }
 }
