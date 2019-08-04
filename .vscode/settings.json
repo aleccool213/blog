@@ -1,4 +1,6 @@
 {
-    "workbench.colorTheme": "Monokai Pro",
-    "editor.formatOnSave": true
+  "workbench.colorTheme": "Night Owl Light",
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "workbench.colorCustomizations": {}
 }
