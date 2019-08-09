@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import { Container } from "react-responsive-grid";
 
@@ -74,9 +75,9 @@ class Template extends React.Component {
 }
 
 Template.propTypes = {
-  children: React.PropTypes.func,
-  location: React.PropTypes.object,
-  route: React.PropTypes.object
+  children: PropTypes.func,
+  location: PropTypes.object,
+  route: PropTypes.object
 };
 
 export default Template;
