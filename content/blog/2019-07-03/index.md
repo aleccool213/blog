@@ -83,7 +83,7 @@ ls *.jpg
 <table class="image">
   <caption align="bottom">How I feel while using Fish
 </caption>
-  <tr><td style="text-align: center;"><img src="https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif" alt=""/></td></tr>
+  <tr><td style="text-align: center;"><img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1565392191/fish-post/giphy_1.gif" alt=""/></td></tr>
 </table>
 
 #### Web based configuration
