@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import Darkmode from "darkmode-js";
+import Darkmode from "@alec.brunelle/darkmode-js";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
