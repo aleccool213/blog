@@ -4,6 +4,7 @@ date: "2019-07-03T22:12:03.284Z"
 path: "/beautiful-dev-tools-fish-shell/"
 logoUrl: ""
 devLink: ""
+canonicalUrl: 'https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839'
 ---
 
 <table class="image">

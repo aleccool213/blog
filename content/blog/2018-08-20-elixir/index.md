@@ -5,6 +5,7 @@ path: '/elixir-better-programmer/'
 logoUrl: '2018-08-20-elixir/cover_2.jpeg'
 devLink:
   'https://dev.to/aleccool213/how-learning-elixir-made-me-a-better-programmer--57jg'
+canonicalUrl: 'https://medium.com/swlh/how-learning-elixir-made-me-a-better-programmer-4e2a73639aec'
 ---
 
 <table class="image">
