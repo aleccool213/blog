@@ -4,6 +4,7 @@ date: "2019-05-01T22:12:03.284Z"
 path: "/hacking-my-honeymoon-with-javascript/"
 logoUrl: ""
 devLink: ""
+canonicalUrl: 'https://medium.com/@yourboybigal/hacking-my-honeymoon-with-javascript-c4c476f7584b'
 ---
 
 > How I used a little javascript to book The Giraffe Manor in Kenya
