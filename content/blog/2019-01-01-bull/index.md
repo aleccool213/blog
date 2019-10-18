@@ -1,10 +1,9 @@
 ---
 title: A job queue for a micro-service world 🌎
-date: '2019-01-29T22:12:03.284Z'
-path: '/cross-service-job-processor-for-the-rest-of-us/'
-logoUrl: '2019-01-01-bull/ski-mountain.jpeg'
-devLink:
-  'https://dev.to/aleccool213/a-job-queue-for-a-micro-service-world--4b26'
+date: "2019-01-29T22:12:03.284Z"
+path: "/cross-service-job-processor-for-the-rest-of-us/"
+logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/ski-mountain.jpg"
+devLink: "https://dev.to/aleccool213/a-job-queue-for-a-micro-service-world--4b26"
 ---
 
 <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/ski-mountain.jpg" alt="header-image"/>
@@ -52,8 +51,8 @@ Bull had a simple way to define the processing logic (refer to diagram 1), what 
 
 ```javascript
 queue.process(async () => {
-  doWork()
-})
+  doWork();
+});
 ```
 
 This way, whenever a job came into a `waiting` queue, Bull knew how to process it and throw it to the `completed` queue. Right now, Bull managed all the state transitions on it's own, we need to switch to manual. You may be thinking, "to work in this new fashion, how about we just don't define this `process` method?", we tried this, and it _worked!_. Forward into the weeds we go.

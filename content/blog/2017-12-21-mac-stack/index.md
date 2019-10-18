@@ -1,7 +1,8 @@
 ---
 title: My Mac Stack 🖥️
-date: '2017-12-17T22:12:03.284Z'
-path: '/mac-stack/'
+date: "2017-12-17T22:12:03.284Z"
+path: "/mac-stack/"
+logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571437353/mac-stack-post/alfred-icon.jpg"
 ---
 
 The average workday goes as follows:
@@ -82,7 +83,7 @@ Everyone needs a window manager and I love this one because it doesn't try to do
 
 Apple has been doing a shit job when it comes to facilitating a good ecosystem within their own Mac App Store. A worthy competitor has risen in Setapp.
 
-One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free. As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee ($10) each month.
+One of the problems which come up when looking for quality MacOS apps is that they're hard to find and when you find them, they aren't free. As much as I support users paying for apps, making a choice over which ones are worth your money is difficult. That's where Setapp comes in, a curated list of apps which you have access to for a small sub fee (\$10) each month.
 
 <table class="image">
     <caption align="bottom">Setapp photo apps</caption>
