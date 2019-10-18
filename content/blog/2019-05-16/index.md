@@ -2,7 +2,7 @@
 title: Wrestling with Apollo Local State and winning 🤼‍♂️
 date: "2019-05-16T22:12:03.284Z"
 path: "/apollo-local-state-pains/"
-logoUrl: ""
+logoUrl: "./photo1.jpg"
 devLink: ""
 ---
 

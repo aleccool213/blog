@@ -2,9 +2,9 @@
 title: "Why I use Fish Shell over Bash and Zsh 🐟"
 date: "2019-07-03T22:12:03.284Z"
 path: "/beautiful-dev-tools-fish-shell/"
-logoUrl: ""
+logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1565389007/fish-post/eric-saunders-crUGdn1j-RE-unsplash.jpg"
 devLink: ""
-canonicalUrl: 'https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839'
+canonicalUrl: "https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839"
 ---
 
 <table class="image">

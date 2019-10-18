@@ -32,6 +32,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.excerpt}
           canonicalUrl={post.frontmatter.canonicalUrl}
+          logoUrl={post.frontmatter.logoUrl}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -100,6 +101,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         canonicalUrl
+        logoUrl
       }
     }
   }
