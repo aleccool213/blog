@@ -2,7 +2,7 @@
 title: "How To Make Money From Your Software Blog Without Hosting Ads💸"
 date: "2019-10-18T22:12:03.284Z"
 path: "/how-to-make-money-from-your-software-blog-without-hosting-ads/"
-logoUrl: ""
+logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571403602/ads-post/artem-beliaikin-e--geRd5eCQ-unsplash.jpg"
 devLink: ""
 canonicalUrl: ""
 ---
