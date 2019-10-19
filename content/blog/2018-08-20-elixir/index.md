@@ -1,11 +1,10 @@
 ---
 title: How Learning Elixir Made Me a Better Programmer 🥃
-date: '2018-08-20T22:12:03.284Z'
-path: '/elixir-better-programmer/'
-logoUrl: '2018-08-20-elixir/cover_2.jpeg'
-devLink:
-  'https://dev.to/aleccool213/how-learning-elixir-made-me-a-better-programmer--57jg'
-canonicalUrl: 'https://medium.com/swlh/how-learning-elixir-made-me-a-better-programmer-4e2a73639aec'
+date: "2018-08-20T22:12:03.284Z"
+path: "/elixir-better-programmer/"
+logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1561116644/elixir-post/markus-spiske-763806-unsplash.jpg"
+devLink: "https://dev.to/aleccool213/how-learning-elixir-made-me-a-better-programmer--57jg"
+canonicalUrl: "https://medium.com/swlh/how-learning-elixir-made-me-a-better-programmer-4e2a73639aec"
 ---
 
 <table class="image">
@@ -19,7 +18,7 @@ Learning a new programming language can introduce you to techniques you never wo
 
 These are some of the largest takeaways I had when learning the language:
 
-- Elixir is syntax on top of Erlang, the battle-tested language built on top of the [BEAM VM](https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine))
+- Elixir is syntax on top of Erlang, the battle-tested language built on top of the [BEAM VM](<https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)>)
 
 - The syntax is similar to Ruby so learning the syntax is easy and quick, especially for developers familiar with it
 

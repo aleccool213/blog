@@ -1,11 +1,10 @@
 ---
 title: The Best Parts of The Pragmatic Programmer 📚
-date: '2018-03-11T22:12:03.284Z'
-path: '/pragmatic-programmer-book-highlights/'
-logoUrl: '2018-02-22-pragmatic/cover.jpg'
-devLink:
-  'https://dev.to/aleccool213/the-best-parts-of-the-pragmatic-programmer---1om5'
-canonicalUrl: 'https://medium.com/swlh/the-best-parts-of-the-pragmatic-programmer-86588f9e0573'
+date: "2018-03-11T22:12:03.284Z"
+path: "/pragmatic-programmer-book-highlights/"
+logoUrl: "https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg"
+devLink: "https://dev.to/aleccool213/the-best-parts-of-the-pragmatic-programmer---1om5"
+canonicalUrl: "https://medium.com/swlh/the-best-parts-of-the-pragmatic-programmer-86588f9e0573"
 ---
 
 <table class="image">
