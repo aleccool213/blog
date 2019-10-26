@@ -4,7 +4,7 @@ date: "2019-10-18T22:12:03.284Z"
 path: "/how-to-make-money-from-your-software-blog-without-hosting-ads/"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571403602/ads-post/artem-beliaikin-e--geRd5eCQ-unsplash.jpg"
 devLink: ""
-canonicalUrl: ""
+canonicalUrl: "https://medium.com/@yourboybigal/how-to-make-money-from-your-software-blog-without-hosting-ads-3f4f46d5cdc2"
 ---
 
 <table class="image">
