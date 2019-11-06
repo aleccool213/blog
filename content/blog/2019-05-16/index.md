@@ -6,11 +6,9 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571432438/apollo-p
 devLink: ""
 ---
 
-> This post originally posted on Yolk AI's blog. As I am the author, I am publishing it here as well.
-
 <table class="image">
   <caption align="bottom">Photo by Samuel Castro on <a href="https://unsplash.com/photos/cwScwJy5HQE">Unsplash</a></caption>
-  <tr><td><img src="./photo1.jpg" alt="local-village"/></td></tr>
+  <tr><td><img src="./photo1.jpg"/></td></tr>
 </table>
 
 Recently we bought into [GraphQL](https://graphql.org/) and use it in every one of our web apps, both on the client and server level. It’s been helpful reducing unnecessary communication needed between our different teams when it comes to knowing what our many, many different API’s do. This contributes to our async work strategy and keeps developers moving and focusing on difficult problems versus organizational bloat.
