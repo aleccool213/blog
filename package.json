@@ -66,7 +66,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run dev",
     "serve": "gatsby serve",
-    "test": "start-test develop 8000 cy:run",
+    "test": "start-test dev 8000 cy:run",
     "cy:run": "cypress run",
     "lint": "eslint ./src --ext .js,.jsx"
   }
