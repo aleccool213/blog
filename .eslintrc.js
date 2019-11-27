@@ -19,7 +19,9 @@ module.exports = {
     sourceType: "module"
   },
   plugins: ["react", "cypress"],
-  rules: {},
+  rules: {
+    "react/props-types": "off"
+  },
   settings: {
     react: {
       version: "detect"
