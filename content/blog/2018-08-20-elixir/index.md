@@ -24,7 +24,7 @@ These are some of the largest takeaways I had when learning the language:
 
 <table class="image">
    <caption align="bottom">E.g. of pattern matching. This and many other features of the language make it expressive and easy to read.</caption>
-   <tr><td><img src="./pattern.png" alt="pattern-matching-example"/></td></tr>
+   <tr><td><img src="./pattern.png"/></td></tr>
 </table>
 
 - Did I mention it's FUNCTIONAL! Pure, functional programming IMO is worth the investment cognitively. <a href="https://medium.com/making-internets/functional-programming-elixir-pt-1-the-basics-bd3ce8d68f1b" target="_blank" >Here are some examples</a> of how Elixir utilizes it.
@@ -38,7 +38,7 @@ Elixir, for example, was built by developers who saw the productivity of the Rub
 
 <table class="image">
    <caption align="bottom">OTP in the anime-flesh</caption>
-   <tr><td><img src="./telephone_pole.jpg" alt="pattern-matching-example"/></td></tr>
+   <tr><td><img src="./telephone_pole.jpg"/></td></tr>
 </table>
 
 The rock solid foundation of Elixir is built on top of a library named <a href="https://en.wikipedia.org/wiki/Open_Telecom_Platform" target="_blank" >OTP</a>. OTP is an elegant way to handle all of the problems that arise in distributed programming, work across nodes, handling async messages, etc. It not only is a library of functions but also a paradigm to work within. This keeps things consistent across systems and large teams. Instead of a single process handling your entire app (e.g. Node.JS), many isolated processes make up an Elixir app. These processes communicate with each other using messages. This unlocks a lot of cool features, processes can now live across machines as messages can only be immutable, no pointers allowed.
@@ -49,7 +49,7 @@ The critic inside you will say the potential downfalls of using such a new langu
 
 <table class="image">
    <caption align="bottom" style="font-style:italic;">A candid photo of me reading Elixir in Action</caption>
-   <tr><td><img src="./bill_reading.jpg" alt="pattern-matching-example"/></td></tr>
+   <tr><td><img src="./bill_reading.jpg"></td></tr>
 </table>
 
 Last year, a coworker invited me to join his book club. "Let's learn this new language." I had heard that it was interesting so I said, "sure!". We would take a couple of hours every month to go over a chapter in the book, <a href="https://www.amazon.ca/gp/product/161729201X/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=161729201X&linkCode=as2&tag=coffeedrive09-20&linkId=97d40dff77b7869475d6ee283c6501d2" target="_blank" style="font-style:italic;">Elixir in Action</a>. Initially, it was intimidating to join as I was vastly junior compared to the other members of the group but I gave it a shot. What followed was lots of great discussions and insight into topics I haven't dived into before. I am appreciating my former self for agreeing to join as not only did I learn a lot, I connected with coworkers in the company I would have never connected with otherwise. It helped me through our companie's adoption of Event Driven Systems (think Kafka) by exposing me to good practices when managing state between processes. Keeping processes small, pure and functional are sound engineering practices and are the pillars of how Elixir works. I didn't need anything to build immediately or an assignment to finish, I learned for the joy of learning and got a lot out of it.
@@ -66,14 +66,14 @@ Errors are a first class citizen in Elixir. Processes are small and isolated so 
 
 <table class="image" >
    <caption align="bottom">Everyone gets a monitor</caption>
-   <tr><td style="text-align:center;"><img style="margin-bottom:0px;" src="./everyone_gets.gif" alt="pattern-matching-example"/></td></tr>
+   <tr><td style="text-align:center;"><img style="margin-bottom:0px;" src="./everyone_gets.gif"/></td></tr>
 </table>
 
 Also, it's very neat that there is a [proposal](https://github.com/tc39/proposal-pattern-matching) for pattern matching in Javascript. Obvious proof that everyone is drinking the ... wait for it ... _Elixir_.
 
 <table class="image">
    <caption align="bottom">🚒</caption>
-   <tr><td><img src="./javascript_pattern_matching.png" alt="pattern-matching-example"/></td></tr>
+   <tr><td><img src="./javascript_pattern_matching.png" ></td></tr>
 </table>
 
 #### The road forward
@@ -81,7 +81,7 @@ Also, it's very neat that there is a [proposal](https://github.com/tc39/proposal
 I hope this introduction to some of the powers of Elixir encourages you to learn more. I just scratched the service of what is possible with the BEAM VM. I leave you with this graph showing Elixir's popularity on Stackoverflow compared to other popular languages:
 
 <table class="image">
-   <tr><td><img src="./trends.png" alt="pattern-matching-example"/></td></tr>
+   <tr><td><img src="./trends.png"/></td></tr>
 </table>
 
 The trend is upwards but it still has a long way to go for becoming somewhat mainstream.
@@ -97,7 +97,7 @@ The book we read during the book club was called Elixir In Action. A very good b
 <a target="_blank" href="https://amzn.to/2Lt7BCP">
  <table class="image">
      <caption align="bottom" style="text-decoration:underline;">Elixir In Action (Amazon Affiliate Link)</caption>
-     <tr><td><img src="./elixir_in_action.jpg" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></td></tr>
+     <tr><td><img src="./elixir_in_action.jpg" width="1" height="1" border="0" style="border:none !important; margin:0px !important;" /></td></tr>
  </table>
 </a>
 
@@ -106,6 +106,6 @@ This is another book I started which is much more approachable. It's a fun book 
 <a target="_blank" href="https://amzn.to/2BWNsWC">
  <table class="image">
      <caption align="bottom" style="text-decoration:underline;">The Little Elixir & OTP Guidebook (Amazon Affiliate Link)</caption>
-     <tr><td><img src="./opt_guidebook.jpg" border="0" alt="" style="border:none !important; margin:0px !important;" /></td></tr>
+     <tr><td><img src="./opt_guidebook.jpg" border="0"style="border:none !important; margin:0px !important;" /></td></tr>
  </table>
 </a>
