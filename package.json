@@ -7,9 +7,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@raae/gatsby-remark-oembed": "0.1.1",
     "@alec.brunelle/darkmode-js": "1.5.0",
-    "gatsby": "2.18.6",
+    "@raae/gatsby-remark-oembed": "0.1.1",
+    "gatsby": "^2.18.11",
     "gatsby-image": "2.2.34",
     "gatsby-plugin-favicon": "3.1.6",
     "gatsby-plugin-feed": "2.3.22",
