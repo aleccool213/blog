@@ -49,7 +49,7 @@ module.exports = {
             resolve: `@raae/gatsby-remark-oembed`,
             options: {
               providers: {
-                include: ["Instagram", "Flickr"]
+                include: ["Instagram"]
               }
             }
           },
