@@ -33,10 +33,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-              linkImagesToOriginal: false,
               showCaptions: true,
-              withWebp: true
+              withWebp: true,
+              quality: 100
+            }
+          },
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
             }
           },
           {
