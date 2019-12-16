@@ -13,3 +13,7 @@ caption {
 img {
   margin-bottom: 0;
 }
+
+figcaption {
+  font-size: 12px;
+}
