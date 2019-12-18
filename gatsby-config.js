@@ -89,7 +89,7 @@ module.exports = {
         // Domatin ID found when adding a domain in the admin panel.
         domainId: "348d7407-1f83-41dc-a620-f1b8de3acb15",
         // URL to Server eg: "https://analytics.test.com".
-        server: "https://ackee-instance.herokuapp.com/",
+        server: "https://ackee-instance.herokuapp.com",
         // Disabled analytic tracking when running localy
         ignoreLocalhost: false,
         // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
