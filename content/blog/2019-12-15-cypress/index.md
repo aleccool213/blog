@@ -1,5 +1,5 @@
 ---
-title: "The Hitchhikers Guide to Cypress End-To-End Testing"
+title: "The Hitchhikers Guide to Cypress End-To-End Testing 🚀"
 date: "2019-12-15T22:12:03.284Z"
 path: "/the-hitchhikers-guide-to-cypress-end-to-end-testing/"
 logoUrl: ""
@@ -44,13 +44,13 @@ The browser-based products we have at [Yolk](https://www.yolk.ai/) are completel
 
 We decided on deploying live instances of the backends related to the app we were testing. This decision was easy for us to make due to already having a CLI tool to do much of the hard work. This tool (aptly named yolk-cli) downloads the latest docker images for apps and knows how to spin up products with minimal configuration. This made getting the real APIs working on CI not too huge of a task.
 
-Turns out, running two or three large python apps and a few [Next.js](https://nextjs.org/) servers on CircleCI does crap out the memory limit pretty fast. We reached out to CircleCI and they gave us access to their large resource classes (up to 16gb of RAM), score!
+> Turns out, running two or three large python apps and a few [Next.js](https://nextjs.org/) servers on CircleCI does crap out the memory limit pretty fast. We reached out to CircleCI and they gave us access to their large resource classes (up to 16gb of RAM), score!
 
 ## Seeding Data
 
 ![](./undraw_seeding_data.png)
 
-The next challenge we faced was seeding data. Your test scenarios must share as little state as possible with each other. This is testing fundamental and [Cypress even addresses it](https://docs.cypress.io/guides/references/best-practices.html#Having-tests-rely-on-the-state-of-previous-tests) in their guides. Having test scenarios data-independent goes a long way when debugging why things are going wrong. On the flip side, having all of your data be created through the UI will make for slow tests, there is a balance. This will be highly customized to how your app works but I will go into what worked for us.
+The next challenge we faced was seeding data. Your test scenarios must share as little state as possible with each other. This is a testing fundamental and [Cypress addresses it](https://docs.cypress.io/guides/references/best-practices.html#Having-tests-rely-on-the-state-of-previous-tests) in their guides. Having test scenarios data-independent goes a long way when debugging why things are going wrong. On the flip side, having all of your data be created through the UI will make for slow tests, there is a balance. This will be highly customized to how your app works but I will go into what worked for us.
 
 Going back to our cli tool once again, it had a few commands which seeded some basic data. The commands looked like this:
 
@@ -70,7 +70,7 @@ Writing custom commands for actions which your tests will be performing over and
 
 ![](./undraw_google_doc.png)
 
-If you have written end-to-end tests before, you may be familiar with Gherkin syntax, used by Cucumber. This is an expressive, English-like way to write test scenario. It can help with documenting your features and can non-developers can contribute to writing test cases. We found [a way to integrate this file syntax into Cypress using a plugin](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor).
+If you have written end-to-end tests before, you may be familiar with Gherkin syntax, used by Cucumber. This is an expressive, English-like way to write test scenarios. It can help with documenting your features and non-developers can contribute to writing test cases. We found [a way to integrate this file syntax into Cypress using a plugin](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor).
 
 `gist:aleccool213/2747de9793028d16c8cad3e3f6fb3b85#searching_duck_duck_go.feature`
 
@@ -116,7 +116,7 @@ Let's say I can afford to have three CircleCI containers to run my Cypress tests
 
 `gist:aleccool213/6e7ba6f9f3d975509a207e3c6c95923f#circleci_cypress_parallel_builds_example.yml`
 
-The super neat thing about this is that Cypress Dashboard knows your past test history and their speeds. It will use this knowledge to optimize your parallel builds by making sure the containers get a balanced load of tests to run!
+> The super neat thing about this is that Cypress Dashboard knows your past test history and their speeds. It will use this knowledge to optimize your parallel builds by making sure the containers get a balanced load of tests to run!
 
 Don't worry if this doesn't make much sense to you, [Cypress has answered how to do this](https://docs.cypress.io/faq/questions/dashboard-faq.html#My-CI-setup-is-based-on-Docker-but-is-very-custom-How-can-I-load-balance-my-test-runs).
 
@@ -124,13 +124,13 @@ Don't worry if this doesn't make much sense to you, [Cypress has answered how to
 
 ![](./undraw_browser_support.png)
 
-Unfortunately, if your organization needs to have support for IE11, you are out of luck. [The Cypress team as explicitly said they won't be supporting it](https://github.com/cypress-io/cypress/issues/310#issuecomment-337349727). [There is an incredible thread on Github](https://github.com/cypress-io/cypress/issues/310) that I really hope you read through. It goes into why they are rolling this out slowly and didn't choose WebDriver from the beginning and wrote their own custom driver.
+Unfortunately, if your organization needs to have support for IE11, you are out of luck. [The Cypress team has explicitly said they won't be supporting it](https://github.com/cypress-io/cypress/issues/310#issuecomment-337349727). [There is an incredible thread on Github](https://github.com/cypress-io/cypress/issues/310) that I really hope you read through. It goes into why they are rolling this out slowly and didn't choose WebDriver from the beginning and wrote their own custom driver.
 
 For us at Yolk, we needed IE11 support for a couple of our applications. We kept getting regressions within IE11 and needed more comprehensive test coverage. We decided to use [Browserstack Automate](https://www.browserstack.com/automate) and Selenium to cover these apps. For CI, we already had the app built and running in Cypress, we just needed to add a new build step that ran these tests using the [Browserstack Local Proxy](https://github.com/browserstack/browserstack-local-nodejs).
 
 For the tests themselves, we decided to integrate Selenium with [Cucumber](https://github.com/cucumber/cucumber-js), a common pairing. To make this process easier, we copied our Gherkin `.feature` files over to a new folder and wrote specific Selenium-based step implementations.
 
-A cool concept I had an idea for was to re-use the same `.feature` files across both Cypress and Selenium. If anyone has ideas on this, please comment below with your suggestion 😃
+> A cool concept I had an idea for was to re-use the same `.feature` files across both Cypress and Selenium. If anyone has ideas on this, please comment below with your suggestion 😃
 
 It depends on how far you take this strategy and to decide if having duplicate test coverage is worth it to you. For us, having at least happy-path end-to-end test coverage in I.E.11 gave us a huge amount of confidence when deploying so the cost was worth it. In my opinion, it isn't as bad as it seems, our Cypress tests cover Chromium-based browsers (with Firefox support coming soon) and our Selenium tests cover I.E.11. With I.E.11 being phased out more and more, even in the enterprise, the need for Selenium will go away and the need for Cypress will get even larger.
 
