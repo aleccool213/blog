@@ -23,6 +23,7 @@
     "gatsby-plugin-typography": "2.3.20",
     "gatsby-remark-copy-linked-files": "2.1.33",
     "gatsby-remark-embed-gist": "1.1.9",
+    "gatsby-remark-embed-video": "^2.0.1",
     "gatsby-remark-images": "3.1.38",
     "gatsby-remark-prismjs": "3.3.27",
     "gatsby-remark-responsive-iframe": "2.2.30",
