@@ -82,6 +82,21 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-favicon`
+    `gatsby-plugin-favicon`,
+    {
+      resolve: "gatsby-plugin-ackee-tracker",
+      options: {
+        // Domatin ID found when adding a domain in the admin panel.
+        domainId: "348d7407-1f83-41dc-a620-f1b8de3acb15",
+        // URL to Server eg: "https://analytics.test.com".
+        server: "https://ackee-instance.herokuapp.com",
+        // Disabled analytic tracking when running localy
+        ignoreLocalhost: false,
+        // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
+        // False due to detailed information being personalized:
+        // https://github.com/electerious/Ackee/blob/master/docs/Anonymization.md#personal-data
+        detailed: false
+      }
+    }
   ]
 };
