@@ -2,7 +2,7 @@
 title: "The Hitchhikers Guide to Cypress End-To-End Testing 🚀"
 date: "2019-12-15T22:12:03.284Z"
 path: "/the-hitchhikers-guide-to-cypress-end-to-end-testing/"
-logoUrl: ""
+logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1576683240/cypress-post/undraw_cover.png"
 devLink: ""
 canonicalUrl: ""
 ---
