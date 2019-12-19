@@ -12,7 +12,7 @@ import { GITHUB_REPO_NAME, GITHUB_USERNAME } from "../utils/constants";
  * @param {String} blogContentFolderName The folder where the blog piece is located in, inside the content folder.
  */
 const buildGithubEditUrl = blogContentFolderName => {
-  return `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/blog/${blogContentFolderName}/index.md`;
+  return `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/blog${blogContentFolderName}index.md`;
 };
 
 /**
