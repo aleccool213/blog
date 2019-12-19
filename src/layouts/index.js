@@ -13,9 +13,6 @@ class Template extends React.Component {
     const title = "Alec Brunelle's Blog";
 
     let rootPath = `/`;
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`;
-    }
 
     if (location.pathname === rootPath) {
       header = (

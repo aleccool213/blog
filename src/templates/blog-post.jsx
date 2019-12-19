@@ -5,7 +5,29 @@ import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
+import { GITHUB_REPO_NAME, GITHUB_USERNAME } from "../utils/constants";
 
+/**
+ * Builds a url where users can fork the blog post.
+ * @param {String} blogContentFolderName The folder where the blog piece is located in, inside the content folder.
+ */
+const buildGithubEditUrl = blogContentFolderName => {
+  return `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/blog${blogContentFolderName}index.md`;
+};
+
+/**
+ * Builds a url where users can go search twitter posts with this blog piece inside of the tweet.
+ * @param {String} blogContentFolderName The folder where the blog piece is located in, inside the content folder.
+ */
+const buildTwitterDiscussUrl = blogContentFolderName => {
+  return `https://mobile.twitter.com/search?q=${encodeURIComponent(
+    `https://blog.alec.coffee${blogContentFolderName}`
+  )}`;
+};
+
+/**
+ * The component which renders the content of a single blog post.
+ */
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
     if (!window.dojoRequire) {
@@ -46,6 +68,25 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <footer>
+          <p>
+            <a
+              href={buildTwitterDiscussUrl(this.props.location.pathname)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discuss on Twitter
+            </a>
+            {` • `}
+            <a
+              href={buildGithubEditUrl(this.props.location.pathname)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Edit on GitHub
+            </a>
+          </p>
+        </footer>
         <hr
           style={{
             marginBottom: rhythm(1)
