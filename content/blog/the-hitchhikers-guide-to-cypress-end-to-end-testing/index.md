@@ -4,7 +4,7 @@ date: "2019-12-15T22:12:03.284Z"
 path: "/the-hitchhikers-guide-to-cypress-end-to-end-testing/"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1576683240/cypress-post/undraw_cover.png"
 devLink: ""
-canonicalUrl: ""
+canonicalUrl: "https://medium.com/@yourboybigal/the-hitchhikers-guide-to-cypress-end-to-end-testing-bb4a460d8f61"
 ---
 
 ![](./undraw_cover.png)
@@ -82,7 +82,7 @@ After writing these commands, the plugin will then go to Cypress to actually run
 
 ![](./undraw_asserting_elements.png)
 
-When it comes down to it, end-to-end testing is just making sure elements on the page have the correct content. When writing Cypress tests, 90% of the time you will need to be selecting elements and peering inside them. Cypress has a standard [get()](https://docs.cypress.io/api/commands/get.html#Syntax) command which exposes a JQuery-like selector to you, this should be familiar to those who have worked with Selenium. The problem with this selector is that it can be used incorrectly and you can't enforce (with code) it's usage. Welcome [cypress-testing-library](https://docs.cypress.io/api/commands/get.html#Syntax), a wonderful tool maintained by a great testing advocate in the community, [Kent C. Dodds](https://kentcdodds.com/).
+When it comes down to it, end-to-end testing is just making sure elements on the page have the correct content. When writing Cypress tests, 90% of the time you will need to be selecting elements and peering inside them. Cypress has a standard [get()](https://docs.cypress.io/api/commands/get.html#Syntax) command which exposes a JQuery-like selector to you, this should be familiar to those who have worked with Selenium. The problem with this selector is that it can be used incorrectly and you can't enforce (with code) it's usage. Welcome [cypress-testing-library](https://github.com/testing-library/cypress-testing-library), a wonderful tool maintained by a great testing advocate in the community, [Kent C. Dodds](https://kentcdodds.com/).
 
 This plugin exposes a myriad of commands prefixed with `find` which work similarly to how `get()` does in native Cypress. All of these commands make for selectors [that are resilient to change](https://kentcdodds.com/blog/making-your-ui-tests-resilient-to-change). This can have a dramatic effect on how your tests stay consistent as your application progresses.
 
