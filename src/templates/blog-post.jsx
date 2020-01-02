@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
 import { GITHUB_REPO_NAME, GITHUB_USERNAME } from "../utils/constants";
+import EmailSignup from "../components/emailSignup";
 
 /**
  * Builds a url where users can fork the blog post.
@@ -86,6 +87,7 @@ class BlogPostTemplate extends React.Component {
               Edit on GitHub
             </a>
           </p>
+          <EmailSignup />
         </footer>
         <hr
           style={{
