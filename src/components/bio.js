@@ -42,8 +42,8 @@ function Bio() {
               Toronto, building useful things.{" "}
               <a href="mailto:alec@alec.coffee">Email Me</a>, follow me on{" "}
               <a href="https://dev.to/aleccool213">Dev.to</a>, tip me using{" "}
-              <a href="https://brave.com/ale477">Brave</a>, or support me on{" "}
-              <a href="https://ko-fi.com/Y8Y7W4H8">Ko-fi</a>
+              <a href="https://brave.com/ale477">Brave</a>, or{" "}
+              <a href="https://ko-fi.com/Y8Y7W4H8">Buy Me A Coffee</a>
             </p>
           </div>
         );
