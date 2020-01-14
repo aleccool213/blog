@@ -1,43 +1,57 @@
 module.exports = {
   siteMetadata: {
     title: `Alec Brunelle's Blog`,
-    author: `Alec Brunelle`,
-    description: `A blog written by Alec Brunelle who lives and works in Toronto, building useful things. Software Development, Javascript, Elixir and not much else.`,
+    name: "Alec Brunelle",
     siteUrl: `https://blog.alec.coffee`,
-    social: {
-      twitter: `yourboybigal`
+    description: `Written by Alec Brunelle who lives and works in Toronto building useful things using Javascript.`,
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/yourboybigal`
+      },
+      {
+        name: `github`,
+        url: `https://github.com/aleccool213`
+      },
+      {
+        name: `linkedin`,
+        url: `https://www.linkedin.com/in/alecbrunelle/`
+      },
+      {
+        name: `unsplash`,
+        url: `https://unsplash.com/@aleccool21`
+      },
+      {
+        name: `medium`,
+        url: `https://medium.com/@yourboybigal`
+      },
+      {
+        name: `devto`,
+        url: `https://dev.to/aleccool213`
+      },
+      {
+        name: `stackoverflow`,
+        url: `https://stackoverflow.com/users/3287767/aleccool21`
+      }
+    ],
+    hero: {
+      heading: `Perspectives on technology, design and business from the team at Narative.`,
+      maxWidth: 652
     }
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "@narative/gatsby-theme-novela",
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`
+        contentPosts: "content/posts",
+        contentAuthors: "content/authors",
+        basePath: "/"
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`
-      }
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-copy-linked-files`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              showCaptions: true,
-              withWebp: true,
-              quality: 100
-            }
-          },
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -80,12 +94,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`
-      }
-    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-favicon`,
@@ -102,6 +110,13 @@ module.exports = {
         // False due to detailed information being personalized:
         // https://github.com/electerious/Ackee/blob/master/docs/Anonymization.md#personal-data
         detailed: false
+      }
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://coffee.us15.list-manage.com/subscribe/post?u=a3148896870d61ede572df801&amp;id=c1e98351d4"
       }
     }
   ]

@@ -8,19 +8,20 @@
   },
   "dependencies": {
     "@alec.brunelle/darkmode-js": "1.5.0",
+    "@narative/gatsby-theme-novela": "^0.11.3",
     "@raae/gatsby-remark-oembed": "0.1.1",
     "gatsby": "2.18.17",
     "gatsby-image": "2.2.37",
     "gatsby-plugin-ackee-tracker": "1.1.1",
     "gatsby-plugin-favicon": "3.1.6",
     "gatsby-plugin-feed": "2.3.25",
+    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "2.2.34",
     "gatsby-plugin-netlify": "2.1.30",
     "gatsby-plugin-offline": "3.0.30",
     "gatsby-plugin-react-helmet": "3.1.18",
     "gatsby-plugin-sharp": "2.3.10",
     "gatsby-plugin-sitemap": "2.2.24",
-    "gatsby-plugin-typography": "2.3.20",
     "gatsby-remark-copy-linked-files": "2.1.33",
     "gatsby-remark-embed-gist": "1.1.9",
     "gatsby-remark-embed-video": "2.0.1",
@@ -40,7 +41,6 @@
     "react-typography": "0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
-    "typescript": "3.7.4",
     "typography": "0.16.19",
     "typography-theme-wordpress-2016": "0.16.19"
   },
@@ -49,7 +49,6 @@
     "eslint": "6.8.0",
     "eslint-plugin-cypress": "2.8.1",
     "eslint-plugin-react": "7.17.0",
-    "husky": "3.1.0",
     "prettier": "1.19.1",
     "start-server-and-test": "1.10.6"
   },
@@ -70,12 +69,6 @@
     "start": "npm run dev",
     "serve": "gatsby serve",
     "test": "start-test dev 8000 cy:run",
-    "cy:run": "cypress run",
-    "lint": "eslint ./src --ext .js,.jsx"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
+    "cy:run": "cypress run"
   }
 }
