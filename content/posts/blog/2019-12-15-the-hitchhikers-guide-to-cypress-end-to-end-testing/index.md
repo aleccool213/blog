@@ -7,7 +7,7 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1576683240/cypress-
 devLink: ""
 canonicalUrl: "https://medium.com/@yourboybigal/the-hitchhikers-guide-to-cypress-end-to-end-testing-bb4a460d8f61"
 excerpt: In software development, the faster you move, the more things break.
-path: "/the-hitchhikers-guide-to-cypress-end-to-end-testing/"
+slug: "/the-hitchhikers-guide-to-cypress-end-to-end-testing/"
 ---
 
 In software development, the faster you move, the more things break. As a codebase grows larger and larger, its pieces become more and more complex, every line adding a potential bug. The best organizations keep a handle on this through rigorous amounts of testing. Manual testing requires a lot of effort, that's where automated testing comes in. One of the hot frameworks on the scene is [Cypress](https://www.cypress.io/), a complete end-to-end testing solution.

@@ -7,7 +7,7 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1561116644/elixir-p
 devLink: ""
 canonicalUrl: "https://medium.com/swlh/how-learning-elixir-made-me-a-better-programmer-4e2a73639aec"
 excerpt: After getting comfortable with a couple programming technologies, developers usually stop there.
-path: "/elixir-better-programmer/"
+slug: "/elixir-better-programmer/"
 ---
 
 After getting comfortable with a couple programming technologies, developers usually stop there; your job and the systems you maintain may all be in one or two languages. You start using similar patterns again and again to solve the same problems. [Elixir](https://elixir-lang.org/), a relatively new programming language, opened my eyes to new techniques which broke this stagnant thinking.

@@ -7,7 +7,7 @@ logoUrl: "https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programme
 devLink: "https://dev.to/aleccool213/the-best-parts-of-the-pragmatic-programmer---1om5"
 canonicalUrl: "https://medium.com/swlh/the-best-parts-of-the-pragmatic-programmer-86588f9e0573"
 excerpt: he Pragmatic Programmer remains relevant since its 1999 release.
-path: "/pragmatic-programmer-book-highlights/"
+slug: "/pragmatic-programmer-book-highlights/"
 ---
 
 [The Pragmatic Programmer](https://www.amazon.ca/gp/product/020161622X/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=020161622X&linkCode=as2&tag=coffeedrive09-20&linkId=7d93b4fe087d6b41ddae8e27d323abea) remains relevant since its 1999 release, even though the software space is evolving at a Nascar-like pace. Standing as a definitive guide for software developers for many years, I am excited and glad I get to share this with you.

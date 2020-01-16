@@ -7,7 +7,7 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571403602/ads-post
 devLink: ""
 canonicalUrl: "https://medium.com/@yourboybigal/how-to-make-money-from-your-software-blog-without-hosting-ads-3f4f46d5cdc2"
 excerpt: We all know advertising sucks.
-path: "/how-to-make-money-from-your-software-blog-without-hosting-ads/"
+slug: "/how-to-make-money-from-your-software-blog-without-hosting-ads/"
 ---
 
 We all know advertising sucks, but when it comes to writing blog articles and getting paid for it, a necessary evil. If you are a conscious online user, you care about leaving a minimal online footprint. You also know that advertising companies track every move a user makes online so that their banners are clicked through. You shouldn't have to subject your blog readers to ads so that you can make money. Leaving you with two options, either succumb to the ad overlords and add them to your blog or gate your content behind a paywall where little people get to read what you write. If you are starting, good luck making any return on blog ads as your views need to be in the thousands to return any profit. Hosting ads on your blog is also tough because most people block them, especially software developers, making them worthless. The good news is that there are great alternatives for people who want to get paid to write words, just like how people are paid to generate other sorts of online content, like videos on Youtube and stock photography.
