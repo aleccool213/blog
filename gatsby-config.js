@@ -41,7 +41,8 @@ module.exports = {
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
-        basePath: "/"
+        basePath: "/",
+        mailchimp: true
       }
     },
     {
