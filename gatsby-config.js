@@ -3,7 +3,7 @@ module.exports = {
     title: `Alec Brunelle's Blog`,
     name: "Alec Brunelle",
     siteUrl: `https://blog.alec.coffee`,
-    description: `Written by Alec Brunelle who lives and works in Toronto building useful things using Javascript.`,
+    description: `Written by Alec Brunelle who lives and works in Toronto building useful things.`,
     social: [
       {
         name: `twitter`,
@@ -31,7 +31,7 @@ module.exports = {
       }
     ],
     hero: {
-      heading: `Perspectives on technology, design and business from the team at Narative.`,
+      heading: `Alec Brunelle's Blog`,
       maxWidth: 652
     }
   },
@@ -75,8 +75,6 @@ module.exports = {
         ]
       }
     },
-
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
