@@ -1,7 +1,6 @@
 - name: Alec Brunelle
   bio: |
     Written by Alec Brunelle who lives and works in Toronto building useful things using Javascript.
-    You should follow him on Twitter.
   avatar: ./avatars/alec-brunelle.png
   featured: true
   social:

@@ -26,10 +26,6 @@ module.exports = {
         url: `https://medium.com/@yourboybigal`
       },
       {
-        name: `devto`,
-        url: `https://dev.to/aleccool213`
-      },
-      {
         name: `stackoverflow`,
         url: `https://stackoverflow.com/users/3287767/aleccool21`
       }
