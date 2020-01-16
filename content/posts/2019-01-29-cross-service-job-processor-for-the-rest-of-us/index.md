@@ -7,7 +7,7 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-pos
 devLink: "https://dev.to/aleccool213/a-job-queue-for-a-micro-service-world--4b26"
 canonicalUrl: ""
 excerpt: An explanation into how we built a job queuing system for use in a micro-service context and how we contributed back our work along the way.
-path: "/cross-service-job-processor-for-the-rest-of-us/"
+slug: "/cross-service-job-processor-for-the-rest-of-us/"
 ---
 
 When switching to a micro-service oriented stack versus the ol' single monolith, new problems arise. The simple job processor of the past doesn't fit in this new architecture. We found Bull, a Node.js package, to cover our needs, but needed tweaks to work in this new world. Due to this module being open-source, I knew the improvements we made to it could be easily integrated into the main remote repo.

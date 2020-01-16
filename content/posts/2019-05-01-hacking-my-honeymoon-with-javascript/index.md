@@ -7,7 +7,7 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1558620045/giraffe-
 devLink: ""
 canonicalUrl: "https://medium.com/@yourboybigal/hacking-my-honeymoon-with-javascript-c4c476f7584b"
 excerpt: How I used a little javascript to book The Giraffe Manor in Kenya
-path: "/hacking-my-honeymoon-with-javascript/"
+slug: "/hacking-my-honeymoon-with-javascript/"
 ---
 
 When my wife saw this post on Instagram, she was immediately hooked:

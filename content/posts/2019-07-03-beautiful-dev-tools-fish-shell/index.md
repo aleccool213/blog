@@ -7,7 +7,7 @@ logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1565389007/fish-pos
 devLink: ""
 canonicalUrl: "https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839"
 excerpt: The things that make Fish great, the caveats and which (few) plugins you need to complete the experience.
-path: "/beautiful-dev-tools-fish-shell/"
+slug: "/beautiful-dev-tools-fish-shell/"
 ---
 
 One of the main allurements of Apple is that things "just work". Most of the people who use their products are covered with the features they release and Apple spends little time on anything else. The features they do ship, are **polished**, have **sensible defaults**, and are **intentional**. This is what I believe the [Fish shell](https://fishshell.com) has become. No wasted time scouring the web for config files others have shared, the best plugins to use, or how to get integrations working with your particular setup.

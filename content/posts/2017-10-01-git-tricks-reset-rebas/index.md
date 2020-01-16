@@ -6,7 +6,7 @@ date: "2017-10-01T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1557357253/git-post/rafif-prawira-1331958-unsplash.jpg"
 canonicalUrl: "https://medium.com/@yourboybigal/resolving-tricky-situations-with-git-reset-and-rebase-b424915d7735"
 excerpt: You should care about how clean your Git history is.
-path: "/git-tricks-reset-rebase/"
+slug: "/git-tricks-reset-rebase/"
 ---
 
 You should care about how clean your Git history is. It provides a way to communicate changes to a codebase with other developers who you are working with, but doing so requires some thought and intention. Ever seen one as clean as this?

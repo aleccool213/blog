@@ -6,7 +6,7 @@ date: "2019-05-16T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571432438/apollo-post/photo1.jpg"
 devLink: ""
 excerpt: Recently we bought into GraphQL and use it in every one of our web apps, both on the client and server level.
-path: "/apollo-local-state-pains/"
+slug: "/apollo-local-state-pains/"
 ---
 
 Recently we bought into [GraphQL](https://graphql.org/) and use it in every one of our web apps, both on the client and server level. It’s been helpful reducing unnecessary communication needed between our different teams when it comes to knowing what our many, many different API’s do. This contributes to our async work strategy and keeps developers moving and focusing on difficult problems versus organizational bloat.

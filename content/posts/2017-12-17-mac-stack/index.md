@@ -6,7 +6,7 @@ date: "2017-12-17T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571437353/mac-stack-post/alfred-icon.jpg"
 canonicalUrl: ""
 excerpt: My go-to apps.
-path: "/mac-stack/"
+slug: "/mac-stack/"
 ---
 
 <!-- unsplash image link: Photo by Norbert Levajsics (https://unsplash.com/@levajsics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash (https://unsplash.com/s/photos/imac?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) -->
