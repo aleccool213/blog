@@ -69,10 +69,7 @@ module.exports = {
                 include: ["Instagram"]
               }
             }
-          },
-          `gatsby-remark-embed-gist`,
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-smartypants`
+          }
         ]
       }
     },
