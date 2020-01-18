@@ -22,7 +22,7 @@ End-to-end testing has always been a fragmented experience. You need to bring a 
 
 ## Prototyping
 
-`vimeo: 379033499`
+<iframe src="https://player.vimeo.com/video/379033499" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 If you have the chance, before adopting anything of this scale, I always think it's a good idea to test it on a small project first, just to get a feel. Before advocating for it, I added it to my personal blog, just to see how the experience was.
 

@@ -12,7 +12,7 @@ slug: "/hacking-my-honeymoon-with-javascript/"
 
 When my wife saw this post on Instagram, she was immediately hooked:
 
-https://www.instagram.com/p/BvmFY7DgPyg
+`oembed: https://www.instagram.com/p/BvmFY7DgPyg`
 
 With our honeymoon in Kenya on the horizon, we set out to book a room. Consulting my aunt who had been to Kenya years ago, she stayed here and had no difficulties booking. It came to our surprise when we heard that this place was fully booked a **year or two in advance**.
 
