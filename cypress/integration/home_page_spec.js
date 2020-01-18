@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 describe("The Home Page", () => {
-  it("successfully loads", () => {
+  it("successfully loads the root", () => {
     cy.visit("/");
   });
 
