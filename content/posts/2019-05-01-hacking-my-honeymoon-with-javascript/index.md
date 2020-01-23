@@ -12,13 +12,19 @@ slug: "/hacking-my-honeymoon-with-javascript/"
 
 When my wife saw this post on Instagram, she was immediately hooked:
 
-`oembed: https://www.instagram.com/p/BvmFY7DgPyg`
+<div class="Image__Small">
+  <img src="./images/picture_5.png" alt="lady eating breakfast with giraffes"/>
+  <figcaption><a href="https://www.instagram.com/p/BvmFY7DgPyg">Instagram Link</a></figcaption>
+</div>
 
 With our honeymoon in Kenya on the horizon, we set out to book a room. Consulting my aunt who had been to Kenya years ago, she stayed here and had no difficulties booking. It came to our surprise when we heard that this place was fully booked a **year or two in advance**.
 
 The sudden popularity had to stem from something. A little researched showed this place being recently _Ellen’ed_.
 
-https://www.instagram.com/p/BjQFBIDhsH_
+<div class="Image__Small">
+  <img src="./images/picture_6.png" alt="lady eating breakfast with giraffes"/>
+  <figcaption><a href="https://www.instagram.com/p/BjQFBIDhsH_">Instagram Link</a></figcaption>
+</div>
 
 Damn it, Ellen.
 
