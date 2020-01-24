@@ -1,0 +1,9 @@
+- name: Alec Brunelle
+  bio: |
+    Alec Brunelle lives and works in Toronto building useful things using Javascript.
+  avatar: ./avatars/alec-brunelle.png
+  featured: true
+  social:
+    - url: https://unsplash.com/@aleccool21
+    - url: https://stackoverflow.com/users/3287767/aleccool21
+    - url: https://github.com/aleccool213

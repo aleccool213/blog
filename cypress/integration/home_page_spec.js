@@ -8,7 +8,9 @@ describe("The Home Page", () => {
   it("can visit a blog post link from the home page", () => {
     cy.visit("/");
 
-    cy.get("#post-page-link").click();
+    cy.get(
+      '[href="/the-hitchhikers-guide-to-cypress-end-to-end-testing"]'
+    ).click();
 
     // header appears
     cy.get("h1");
