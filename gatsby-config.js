@@ -43,7 +43,7 @@ module.exports = {
         contentAuthors: "content/authors",
         rootPath: "/",
         basePath: "/",
-        mailchimp: false,
+        mailchimp: true,
         sources: {
           local: true,
           contentful: false
@@ -103,7 +103,7 @@ module.exports = {
         // URL to Server eg: "https://analytics.test.com".
         server: "https://ackee-instance.herokuapp.com",
         // Disabled analytic tracking when running localy
-        ignoreLocalhost: false,
+        ignoreLocalhost: true,
         // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
         // False due to detailed information being personalized:
         // https://github.com/electerious/Ackee/blob/master/docs/Anonymization.md#personal-data
