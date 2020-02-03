@@ -5,7 +5,7 @@ hero: ./images/photo1.png
 date: "2019-12-15T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1576683240/cypress-post/undraw_cover.png"
 devLink: ""
-canonicalUrl: "https://medium.com/@yourboybigal/the-hitchhikers-guide-to-cypress-end-to-end-testing-bb4a460d8f61"
+canonical_url: "https://medium.com/@yourboybigal/the-hitchhikers-guide-to-cypress-end-to-end-testing-bb4a460d8f61"
 excerpt: In software development, the faster you move, the more things break.
 slug: "/the-hitchhikers-guide-to-cypress-end-to-end-testing/"
 ---

@@ -5,7 +5,7 @@ hero: ./images/photo1.jpg
 date: "2018-08-20T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1561116644/elixir-post/markus-spiske-763806-unsplash.jpg"
 devLink: ""
-canonicalUrl: "https://medium.com/swlh/how-learning-elixir-made-me-a-better-programmer-4e2a73639aec"
+canonical_url: "https://medium.com/swlh/how-learning-elixir-made-me-a-better-programmer-4e2a73639aec"
 excerpt: After getting comfortable with a couple programming technologies, developers usually stop there.
 slug: "/elixir-better-programmer/"
 ---
