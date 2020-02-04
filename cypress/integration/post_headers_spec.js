@@ -24,8 +24,8 @@ describe("Post Headers", () => {
           // canonical / og:url
           cy.get('meta[property="og:url"]').should("exist");
 
-          // author
-          // cy.get('meta[property="author"]').should("exist");
+          // canonical
+          cy.get('link[rel="canonical"]').should("exist");
 
           // twitter:card
           cy.get('meta[name="twitter:card"]').should("exist");
