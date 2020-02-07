@@ -40,11 +40,11 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
-    "@testing-library/cypress": "5.2.1",
-    "cypress": "3.8.3",
+    "@testing-library/cypress": "5.3.0",
+    "cypress": "4.0.0",
     "eslint": "6.8.0",
-    "eslint-plugin-cypress": "2.8.1",
-    "eslint-plugin-react": "7.18.2",
+    "eslint-plugin-cypress": "2.9.0",
+    "eslint-plugin-react": "7.18.3",
     "prettier": "1.19.1",
     "start-server-and-test": "1.10.8"
   },
@@ -65,6 +65,8 @@
     "start": "npm run dev",
     "serve": "gatsby serve",
     "test": "start-test dev 8000 cy:run",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
   }
 }
