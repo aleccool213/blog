@@ -15,7 +15,8 @@ const postSlugs = [
   "the-hitchhikers-guide-to-cypress-end-to-end-testing",
   "how-to-make-money-from-your-software-blog-without-hosting-ads",
   "mac-stack",
-  "apollo-local-state-pains"
+  "apollo-local-state-pains",
+  "quit-google-analytics-self-hosted-gatsby-statistics-with-ackee"
 ];
 
 module.exports = postSlugs;
