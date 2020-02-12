@@ -24,7 +24,7 @@ I set out to search for a new tracking tool for my blog. My criteria for choosin
 ## Meet Ackee
 
 <div class="Image__Medium">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581282052/ackee-post/Screenshot_at_Feb_09_16-00-43.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581282052/ackee-post/Screenshot_at_Feb_09_16-00-43.png" alt="ackee website homepage"/>
   <figcaption>Beautiful, isn't it</figcaption>
 </div>
 
@@ -68,7 +68,7 @@ First thing is to start running the server which is going to receive the trackin
 And voila! You are finished, that was easy, wasn't it? Open the webpage Heroku automatically configures for you, it should be [`https://ackee-server.herokuapp.com/`](https://ackee-instance.herokuapp.com/), you should see this:
 
 <div class="Image__Small">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581283089/ackee-post/Screenshot_at_Feb_09_16-18-00.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581283089/ackee-post/Screenshot_at_Feb_09_16-18-00.png" alt="ackee login page"/>
     <figcaption>The log in page!</figcaption>
 </div>
 
@@ -113,7 +113,7 @@ Open up your site at `http://localhost:8000` and go to a new url.
 Observe the network requests your site is sending. You will notice it now sends requests to your Heroku instance.
 
 <div class="Image__Small">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581283787/ackee-post/Screenshot_at_Feb_09_16-29-09.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581283787/ackee-post/Screenshot_at_Feb_09_16-29-09.png" alt="using the brave browser dev tools"/>
     <figcaption>Using the dev tools</figcaption>
 </div>
 
@@ -124,17 +124,17 @@ And with that, we now have the server running Ackee and our Gatsby sending analy
 Let’s explore Ackee, shall we.
 
 <div class="Image__Small">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581518650/ackee-post/Screenshot_at_Feb_12_09-32-59.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581518650/ackee-post/Screenshot_at_Feb_12_09-32-59.png" alt="ackee home page screenshot"/>
     <figcaption>Home page with total site views</figcaption>
 </div>
 
 <div class="Image__Small">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581518650/ackee-post/Screenshot_at_Feb_12_09-33-47.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581518650/ackee-post/Screenshot_at_Feb_12_09-33-47.png" alt="ackee list of referrers screenshot"/>
     <figcaption>List of referrers</figcaption>
 </div>
 
 <div class="Image__Small">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581518650/ackee-post/Screenshot_at_Feb_12_09-31-43.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1581518650/ackee-post/Screenshot_at_Feb_12_09-31-43.png" alt="ackee per page view count screenshot"/>
     <figcaption>Per page view count</figcaption>
 </div>
 
