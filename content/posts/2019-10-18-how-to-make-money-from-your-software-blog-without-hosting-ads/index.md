@@ -5,7 +5,7 @@ hero: ./images/photo1.jpg
 date: "2019-10-18T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571403602/ads-post/artem-beliaikin-e--geRd5eCQ-unsplash.jpg"
 devLink: ""
-canonicalUrl: "https://medium.com/@yourboybigal/how-to-make-money-from-your-software-blog-without-hosting-ads-3f4f46d5cdc2"
+canonical_url: "https://medium.com/@yourboybigal/how-to-make-money-from-your-software-blog-without-hosting-ads-3f4f46d5cdc2"
 excerpt: We all know advertising sucks.
 slug: "/how-to-make-money-from-your-software-blog-without-hosting-ads/"
 ---

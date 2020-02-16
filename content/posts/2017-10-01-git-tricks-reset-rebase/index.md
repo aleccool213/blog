@@ -4,7 +4,7 @@ author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2017-10-01T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1557357253/git-post/rafif-prawira-1331958-unsplash.jpg"
-canonicalUrl: "https://medium.com/@yourboybigal/resolving-tricky-situations-with-git-reset-and-rebase-b424915d7735"
+canonical_url: "https://medium.com/@yourboybigal/resolving-tricky-situations-with-git-reset-and-rebase-b424915d7735"
 excerpt: You should care about how clean your Git history is.
 slug: "/git-tricks-reset-rebase/"
 ---

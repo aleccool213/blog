@@ -5,7 +5,7 @@ hero: ./images/photo1.jpg
 date: "2019-05-01T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1558620045/giraffe-post/taylor-lee-1162276-unsplash.jpg"
 devLink: ""
-canonicalUrl: "https://medium.com/@yourboybigal/hacking-my-honeymoon-with-javascript-c4c476f7584b"
+canonical_url: "https://medium.com/@yourboybigal/hacking-my-honeymoon-with-javascript-c4c476f7584b"
 excerpt: How I used a little javascript to book The Giraffe Manor in Kenya
 slug: "/hacking-my-honeymoon-with-javascript/"
 ---

@@ -4,7 +4,7 @@ author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2017-12-17T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1571437353/mac-stack-post/alfred-icon.jpg"
-canonicalUrl: ""
+canonical_url: ""
 excerpt: My go-to apps.
 slug: "/mac-stack/"
 ---

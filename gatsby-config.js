@@ -37,7 +37,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "@narative/gatsby-theme-novela",
+      resolve: "@alec.brunelle/gatsby-theme-novela",
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
@@ -65,15 +65,6 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`
-            }
-          },
-          {
-            resolve: `@raae/gatsby-remark-oembed`,
-            options: {
-              usePrefix: true,
-              providers: {
-                include: ["Instagram"]
-              }
             }
           }
         ]

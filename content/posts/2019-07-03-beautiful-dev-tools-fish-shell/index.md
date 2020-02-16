@@ -5,7 +5,7 @@ hero: ./images/photo1.jpg
 date: "2019-07-03T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1565389007/fish-post/eric-saunders-crUGdn1j-RE-unsplash.jpg"
 devLink: ""
-canonicalUrl: "https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839"
+canonical_url: "https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839"
 excerpt: The things that make Fish great, the caveats and which (few) plugins you need to complete the experience.
 slug: "/beautiful-dev-tools-fish-shell/"
 ---
