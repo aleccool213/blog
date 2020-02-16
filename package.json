@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@alec.brunelle/darkmode-js": "1.5.0",
-    "@alec.brunelle/gatsby-theme-novela": "0.13.4",
+    "@alec.brunelle/gatsby-theme-novela": "0.13.5",
     "@raae/gatsby-remark-oembed": "0.1.1",
     "gatsby": "2.19.12",
     "gatsby-image": "2.2.40",
