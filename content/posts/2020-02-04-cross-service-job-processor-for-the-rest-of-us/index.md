@@ -5,7 +5,7 @@ hero: ./images/photo1.jpg
 date: "2020-02-04T22:12:03.284Z"
 logoUrl: "https://res.cloudinary.com/dscgr6mcw/image/upload/v1580821835/bull-post/melanie-pongratz-SsBI9pweAeA-unsplash.jpg"
 devLink: "https://dev.to/aleccool213/a-job-queue-for-a-micro-service-world--4b26"
-canonicalUrl: ""
+canonical_url: "https://medium.com/better-programming/using-bull-to-manage-job-queues-in-a-node-js-micro-service-stack-7a6257e64509"
 excerpt: When switching to a micro-service oriented stack versus the ol' single monolith, new problems arise.
 slug: "/cross-service-job-processor-for-the-rest-of-us/"
 ---

@@ -4,7 +4,7 @@ author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-02-12T22:12:03.284Z"
 logoUrl: ""
-canonicalUrl: ""
+canonical_url: "https://medium.com/@yourboybigal/quit-google-analytics-self-hosted-gatsby-statistics-with-ackee-846a2b4be634"
 excerpt: There are many different goals one can have when it comes to hosting your own website or blog.
 slug: "/quit-google-analytics-self-hosted-gatsby-statistics-with-ackee/"
 ---
