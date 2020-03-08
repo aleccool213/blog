@@ -7,9 +7,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@alec.brunelle/darkmode-js": "1.5.0",
     "@alec.brunelle/gatsby-theme-novela": "0.13.6",
     "@raae/gatsby-remark-oembed": "0.1.1",
+    "@sentry/browser": "^5.13.2",
     "gatsby": "2.19.25",
     "gatsby-image": "2.2.42",
     "gatsby-plugin-ackee-tracker": "1.2.0",
