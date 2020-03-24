@@ -16,7 +16,8 @@ const postSlugs = [
   "how-to-make-money-from-your-software-blog-without-hosting-ads",
   "mac-stack",
   "apollo-local-state-pains",
-  "quit-google-analytics-self-hosted-gatsby-statistics-with-ackee"
+  "quit-google-analytics-self-hosted-gatsby-statistics-with-ackee",
+  "publishing-javascript-package-automatically-with-github-actions"
 ];
 
 module.exports = postSlugs;
