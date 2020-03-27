@@ -4,12 +4,12 @@ author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-03-24T22:12:03.284Z"
 logoUrl: ""
-canonical_url: ""
+canonical_url: "https://medium.com/better-programming/how-to-publish-a-javascript-package-to-npm-automatically-with-github-actions-1acde7b908d6"
 excerpt: Maintaining an open-source package can be a time-consuming task.
 slug: "/publishing-javascript-package-automatically-with-github-actions/"
 ---
 
-Maintaining an open-source package can be a time-consuming task. Issues to be triaged, pull requests to be reviewed and changelogs to write. Publishing new versions of the code is usually done manually and making it automated is often on the backburner of the maintainers' to-do list. There are a couple of key features of a rock-solid release process, the [changelog](https://www.techopedia.com/definition/13934/changelog), [Git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging), [NPM versions](https://stackoverflow.com/questions/10972176/find-the-version-of-an-installed-npm-package), and enforcing [Semantic Versioning](https://semver.org/). Keeping all these in sync makes it so users understand changes in a release and understand how to keep up-to-date. Maintainers who fail to perform all of these steps will have a hard time triaging issues, which leads to more time debugging and less time spent coding. I recently came across a combo of tools, [semantic-release](https://github.com/semantic-release/semantic-release) and [Github Actions](https://github.com/features/actions), which made the entire release process automated, transparent, and simple to understand.
+Maintaining an open-source package can be a time-consuming task. Issues to be triaged, pull requests to be reviewed and changelogs to write. Publishing new versions of the code is usually done manually and making it automated is often on the back-burner of the maintainers' to-do list. There are a couple of key features of a rock-solid release process, the [changelog](https://www.techopedia.com/definition/13934/changelog), [Git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging), [NPM versions](https://stackoverflow.com/questions/10972176/find-the-version-of-an-installed-npm-package), and enforcing [Semantic Versioning](https://semver.org/). Keeping all these in sync makes it so users understand changes in a release and understand how to keep up-to-date. Maintainers who fail to perform all of these steps will have a hard time triaging issues, which leads to more time debugging and less time spent coding. I recently came across a combo of tools, [semantic-release](https://github.com/semantic-release/semantic-release) and [Github Actions](https://github.com/features/actions), which made the entire release process automated, transparent, and simple to understand.
 
 ## How It Works
 
