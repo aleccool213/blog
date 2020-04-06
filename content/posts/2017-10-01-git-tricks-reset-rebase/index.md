@@ -22,7 +22,7 @@ Let's start by introducing you to some Git tricks which you can easily integrate
 Often you will find yourself in this situation:
 
 <div class="Image__Small">
-  <img src="./images/2.gif" alt="confused"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/2.gif" alt="confused"/>
   <figcaption>😕</figcaption>
 </div>
 
@@ -31,7 +31,7 @@ You just started working on a new branch, refactored a piece of code, installed 
 6PM rolls around and you commit everything to save your progress.
 
 <div class="Image__Small">
-  <img src="./images/3.gif" alt="creating a work-in-progress commit"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/3.gif" alt="creating a work-in-progress commit"/>
   <figcaption>📝</figcaption>
 </div>
 
@@ -44,7 +44,7 @@ git reset HEAD~1
 `git reset` is your friend here. This will reset your current HEAD to the commit before your `wip` commit, but your working tree (all of your file changes) will be preserved to continue editing.
 
 <div class="Image__Small">
-  <img src="./images/4.gif" alt="using git reset"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/4.gif" alt="using git reset"/>
   <figcaption>⏲️</figcaption>
 </div>
 
@@ -53,7 +53,7 @@ git reset HEAD~1
 Awesome! Now we can start committing things individually to make some nice commits!
 
 <div class="Image__Small">
-  <img src="./images/5.gif" alt="creating a work-in-progress commit"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/5.gif" alt="creating a work-in-progress commit"/>
   <figcaption>Did you know there are <a href="https://namingconvention.org/git/commit-message-naming.html" target="_blank">conventions</a> to commit messages?✍️</figcaption>
 </div>
 
@@ -67,7 +67,7 @@ You've worked on a branch for a while, all of your commits are nice and organize
 
 You made a small error in your file and need to make a quick change.
 
-![opening-a-file-for-a-change](./images/6.gif)
+![opening-a-file-for-a-change](https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/6.gif)
 
 This change is technically related to an old commit, so how do we go back in time and insert it there?
 
@@ -78,7 +78,7 @@ git stash; git rebase -i HEAD~insert_commit_history_depth
 This stashes our one-line change for use later and brings us to the interactive rebase screen. Let's go ahead and edit that commit we want to bring the change into.
 
 <div class="Image__Small">
-  <img src="./images/7.gif" alt="example of going back in time with git rebase"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/7.gif" alt="example of going back in time with git rebase"/>
   <figcaption>Just write `edit` on the commit you want to change 🕓</figcaption>
 </div>
 
