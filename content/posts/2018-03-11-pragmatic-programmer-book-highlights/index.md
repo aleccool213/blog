@@ -6,7 +6,7 @@ date: "2018-03-11T22:12:03.284Z"
 logoUrl: "https://upload.wikimedia.org/wikipedia/en/8/8f/The_pragmatic_programmer.jpg"
 devLink: "https://dev.to/aleccool213/the-best-parts-of-the-pragmatic-programmer---1om5"
 canonical_url: "https://medium.com/swlh/the-best-parts-of-the-pragmatic-programmer-86588f9e0573"
-excerpt: he Pragmatic Programmer remains relevant since its 1999 release.
+excerpt: The Pragmatic Programmer remains relevant since its 1999 release.
 slug: "/pragmatic-programmer-book-highlights/"
 ---
 
