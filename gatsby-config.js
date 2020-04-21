@@ -31,7 +31,7 @@ module.exports = {
       },
     ],
     hero: {
-      heading: `Rumblings about JavaScript, Programming and The Web`,
+      heading: `Thoughts on JavaScript, Programming and The Web`,
       maxWidth: 652,
     },
   },
@@ -43,7 +43,7 @@ module.exports = {
         contentAuthors: "content/authors",
         rootPath: "/",
         basePath: "/",
-        mailchimp: false,
+        mailchimp: true,
         sources: {
           local: true,
           contentful: false,
