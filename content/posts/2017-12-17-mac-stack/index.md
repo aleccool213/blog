@@ -79,7 +79,7 @@ Everyone needs a window manager and I love this one because it doesn't try to do
 
 ## ‎Setapp
 
-![setapp-logo](./images/setapp-logo.jpg)
+![setapp-logo](https://res.cloudinary.com/dscgr6mcw/image/upload/v1586178576/mac-stack-post/setapp-logo.jpg)
 
 ### Overview
 

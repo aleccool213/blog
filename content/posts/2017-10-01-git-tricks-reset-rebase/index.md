@@ -11,7 +11,7 @@ slug: "/git-tricks-reset-rebase/"
 
 You should care about how clean your Git history is. It provides a way to communicate changes to a codebase with other developers who you are working with, but doing so requires some thought and intention. Ever seen one as clean as this?
 
-![A clean Git history](./images/1.png)
+![A clean Git history](https://res.cloudinary.com/dscgr6mcw/image/upload/v1557317705/git-post/1.png)
 
 Probably not. Why? Developers are often too lazy (for good reason) and throw Git organization alongside `nice-to-haves` and `TODO` in terms of priorities. With the power of `git reset` and `git rebase`, I’m going to show you that having a clean and easy-to-read history is fast and easy!
 

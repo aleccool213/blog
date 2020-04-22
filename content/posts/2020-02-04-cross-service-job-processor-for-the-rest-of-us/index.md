@@ -15,7 +15,7 @@ When switching to a micro-service oriented architecture versus the ol' single mo
 ## Specialized Work
 
 <div class="Image__Small">
-  <img src="./images/photo2.png" alt="camera"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1580822906/bull-post/photo2.png" alt="camera"/>
 </div>
 
 Let's say we want to do some specialized work, scanning an image to extract text for example. This is a situation where doing this work in your main app process won't make sense to most people. The needs of image processing are different than a web server and can be optimized to use a very different set of hardware like GPUs.
@@ -32,21 +32,21 @@ When image processing needs to be done, a job queue will come in handy, we can d
 Two popular packages in the wild that could help you do the forementioned work are [DelayedJob](https://github.com/collectiveidea/delayed_job/) and [Celery](http://www.celeryproject.org/). These allow you to manage jobs using a key-value store such as [Redis](https://redis.io/). These assume **the processing of the job and the job queue live in the same service**. This is very different than a typical microservice architecture. If you have one service performing a task, e.g. the image processor, and another service which acts as a job queue, we cannot use these types of packages without some extra work.
 
 <div class="Image__Medium">
-  <img src="./images/bull-1.png" alt=""/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/bull-1.png" alt=""/>
   <figcaption>Typical setup (Diagram 1)</figcaption>
 </div>
 
 versus
 
 <div class="Image__Medium">
-  <img src="./images/bull-post2.png" alt="diagram 2"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/bull-post2.png" alt="diagram 2"/>
   <figcaption>Micro-services setup (Diagram 2)</figcaption>
 </div>
 
 ## Searching and Searching
 
 <div class="Image__Small">
-  <img src="./images/photo3.png" alt="man searching"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1587562908/bull-post/photo3.png" alt="man searching"/>
 </div>
 
 I came into this situation recently and when searching for a Node.js job queue solution, I found [Bull](https://github.com/OptimalBits/bull). This package is lightning fast, built to work with Redis and has an active community. As mentioning previously, out-of-the-box this package did not support cross-service job queueing (see diagram 2).
@@ -54,7 +54,7 @@ I came into this situation recently and when searching for a Node.js job queue s
 Let's think about how we want to manage a jobs life-cycle. The documentation for Bull is quite good and they recently drew up a life-cycle diagram which will save us some time.
 
 <div class="Image__Medium">
-  <img src="./images/job-lifecycle.png" alt="bull lifecycle diagram"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1549120910/bull-post/job-lifecycle.png" alt="bull lifecycle diagram"/>
   <figcaption>Bull's Job Lifecycle <a href="https://github.com/OptimalBits/bull/blob/develop/docs/job-lifecycle.png" target="_blank">Diagram</a></figcaption>
 </div>
 
@@ -82,7 +82,7 @@ This is exactly what I am trying to achieve, it makes me feel better someone alr
 ## Contributing Back
 
 <div class="Image__Small">
-  <img src="./images/photo5.png" alt="hand writing"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1587562909/bull-post/photo5.png" alt="hand writing"/>
 </div>
 
 To validate our new job queue service, an addition to the reference docs <a href="https://github.com/OptimalBits/bull/pull/1017/files#diff-375fc823554b090375d9c47199cb5ee2R201" target="_blank">was added</a> to make this a known pattern in the community. This encourages usage of the feature and possibly leads to other users finding issues when using in production.
