@@ -33,6 +33,11 @@ jobs:
           key: dependencies-{{ checksum "package.json" }}
 
       - run:
+          name: Build Gatsby website
+          command: |
+            npm run build
+
+      - run:
           name: Run server and E2E tests locally
           command: |
             echo Running local server and testing it

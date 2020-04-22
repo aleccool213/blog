@@ -21,7 +21,7 @@ These are some of the largest takeaways I had when learning the language:
 - The syntax is similar to Ruby so learning the syntax is easy and quick, especially for developers familiar with it
 
 <div class="Image__Small">
-  <img src="./images/pattern.png" alt="example of pattern matching in elixir"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362994/elixir-post/pattern.png" alt="example of pattern matching in elixir"/>
   <figcaption>E.g. of pattern matching. This and many other features of the language make it expressive and easy to read.</figcaption>
 </div>
 
@@ -35,7 +35,7 @@ Elixir, for example, was built by developers who saw the productivity of the Rub
 ### Wires connecting to wires
 
 <div class="Image__Medium">
-  <img src="./images/telephone_pole.jpg" alt="telephone polls"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362986/elixir-post/telephone_pole.jpg" alt="telephone polls"/>
   <figcaption>OTP in the anime-flesh</figcaption>
 </div>
 
@@ -46,7 +46,7 @@ The critic inside you will say the potential downfalls of using such a new langu
 ### My Experience
 
 <div class="Image__Medium">
-  <img src="./images/bill_reading.jpg" alt="bill gates reading a book"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362980/elixir-post/bill_reading.jpg" alt="bill gates reading a book"/>
   <figcaption>A candid photo of me reading Elixir in Action</figcaption>
 </div>
 
@@ -63,14 +63,14 @@ Once you start building things that have to scale or need to handle millions of 
 Errors are a first class citizen in Elixir. Processes are small and isolated so when an error is thrown, the entire app process doesn't have to dump its stack, just the isolated process. When errors do happen, they are easy to debug as the process code is small (by convention). Every process gets a monitor (another OTP blessing), which can run some code when a process dies. An example monitor could restart the process for example so that it could accept more messages.
 
 <div class="Image__Small">
-  <img src="./images/everyone_gets.gif" alt="Oprah Winfrey giving away cars"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362991/elixir-post/everyone_gets.gif" alt="Oprah Winfrey giving away cars"/>
   <figcaption>Everyone gets a monitor</figcaption>
 </div>
 
 Also, it's very neat that there is a [proposal](https://github.com/tc39/proposal-pattern-matching) for pattern matching in Javascript. Obvious proof that everyone is drinking the ... wait for it ... _Elixir_.
 
 <div class="Image__Small">
-  <img src="./images/javascript_pattern_matching.png" alt="diagram 1"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362983/elixir-post/javascript_pattern_matching.png" alt="diagram 1"/>
 </div>
 
 #### The road forward
@@ -78,7 +78,7 @@ Also, it's very neat that there is a [proposal](https://github.com/tc39/proposal
 I hope this introduction to some of the powers of Elixir encourages you to learn more. I just scratched the service of what is possible with the BEAM VM. I leave you with this graph showing Elixir's popularity on Stackoverflow compared to other popular languages:
 
 <div class="Image__Medium">
-  <img src="./images/trends.png" alt="diagram 1"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362996/elixir-post/trends.png" alt="diagram 1"/>
 </div>
 
 The trend is upwards but it still has a long way to go for becoming somewhat mainstream.
@@ -94,7 +94,7 @@ The book we read during the book club was called Elixir In Action. A very good b
 <a target="_blank" href="https://amzn.to/2Lt7BCP">
  <table class="image">
      <caption align="bottom" style="text-decoration:underline;">Elixir In Action (Amazon Affiliate Link)</caption>
-     <tr><td><img src="./images/elixir_in_action.jpg" width="1" height="1" border="0" style="border:none !important; margin:0px !important;" /></td></tr>
+     <tr><td><img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362993/elixir-post/elixir_in_action.jpg" width="1" height="1" border="0" style="border:none !important; margin:0px !important;" /></td></tr>
  </table>
 </a>
 
@@ -103,6 +103,6 @@ This is another book I started which is much more approachable. It's a fun book 
 <a target="_blank" href="https://amzn.to/2BWNsWC">
  <table class="image">
      <caption align="bottom" style="text-decoration:underline;">The Little Elixir & OTP Guidebook (Amazon Affiliate Link)</caption>
-     <tr><td><img src="./images/opt_guidebook.jpg" border="0"style="border:none !important; margin:0px !important;" /></td></tr>
+     <tr><td><img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1544362985/elixir-post/opt_guidebook.jpg" border="0"style="border:none !important; margin:0px !important;" /></td></tr>
  </table>
 </a>

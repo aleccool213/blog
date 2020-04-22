@@ -16,7 +16,7 @@ In the past, web-app end-to-end testing has been a tricky beast. [Selenium](http
 
 ## What's in the box
 
-![So many features packed in 😃](./images/cypress_overview.png)
+![So many features packed in 😃](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/cypress_overview.png  )
 
 End-to-end testing has always been a fragmented experience. You need to bring a lot of your own tools, for example, a test runner, an assertion library, and maybe other things like mocks. With Cypress, it packages all of those things together, this makes set up and configuration, dead simple. Not only that, the documentation is some of the best I have ever read in my career, with [guides on everything](https://docs.cypress.io/guides/guides/command-line.html#Installation) you are likely to encounter. Not only do they do a great job telling you how to use the product, but have in-depth explanations on the [architecture](https://docs.cypress.io/guides/overview/key-differences.html#Architecture), [flakey tests](https://docs.cypress.io/guides/overview/key-differences.html#Flake-resistant) and [best practices](https://docs.cypress.io/guides/references/best-practices.html).
 
@@ -39,7 +39,7 @@ This got me a huge amount of test coverage in very little time. This proof of co
 
 ## Decisions and Tradeoffs
 
-![](./images/undraw_decisions.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_decisions.png)
 
 The browser-based products we have at [Yolk](https://www.yolk.ai/) are completely separated from the server-side API's they fetch data from, they build and are served separately. This presents a few ways forward when deciding to write end-to-end tests. You can either deploy your backend with your frontend and test as if the app is in production or completely mock out API responses. Using a real backend means spinning up potentially memory-intensive processes when running on CI but you get the assurance that apps are near-production. With mocking your API responses, you test less of your stack, risk stubbing out non-realistic responses, and have to worry about the extra maintenance of keeping them up-to-date.
 
@@ -49,7 +49,7 @@ We decided on deploying live instances of the backends related to the app we wer
 
 ## Seeding Data
 
-![](./images/undraw_seeding_data.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_seeding_data.png)
 
 The next challenge we faced was seeding data. Your test scenarios must share as little state as possible with each other. This is a testing fundamental and [Cypress addresses it](https://docs.cypress.io/guides/references/best-practices.html#Having-tests-rely-on-the-state-of-previous-tests) in their guides. Having test scenarios data-independent goes a long way when debugging why things are going wrong. On the flip side, having all of your data be created through the UI will make for slow tests, there is a balance. This will be highly customized to how your app works but I will go into what worked for us.
 
@@ -98,7 +98,7 @@ Writing custom commands for actions which your tests will be performing over and
 
 ## Writing Scenarios with Gherkin
 
-![](./images/undraw_google_doc.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_google_doc.png)
 
 If you have written end-to-end tests before, you may be familiar with Gherkin syntax, used by Cucumber. This is an expressive, English-like way to write test scenarios. It can help with documenting your features and non-developers can contribute to writing test cases. We found [a way to integrate this file syntax into Cypress using a plugin](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor).
 
@@ -134,7 +134,7 @@ When('results for "panda" are shown', () => {
 
 ## Asserting Elements and Best Practices
 
-![](./images/undraw_asserting_elements.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_asserting_elements.png)
 
 When it comes down to it, end-to-end testing is just making sure elements on the page have the correct content. When writing Cypress tests, 90% of the time you will need to be selecting elements and peering inside them. Cypress has a standard [get()](https://docs.cypress.io/api/commands/get.html#Syntax) command which exposes a JQuery-like selector to you, this should be familiar to those who have worked with Selenium. The problem with this selector is that it can be used incorrectly and you can't enforce (with code) it's usage. Welcome [cypress-testing-library](https://github.com/testing-library/cypress-testing-library), a wonderful tool maintained by a great testing advocate in the community, [Kent C. Dodds](https://kentcdodds.com/).
 
@@ -142,7 +142,7 @@ This plugin exposes a myriad of commands prefixed with `find` which work similar
 
 ## Debugging
 
-![](./images/undraw_debugging.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848055/cypress-post/undraw_debugging.png)
 
 If you have ever worked with Selenium before, you know that debugging end-to-end tests can be somewhat of a nightmare. With Cypress, this pain is at an all-time low. Being a focus of the core product, being able to debug is one of the more pleasant experiences in your Cypress journey. Like for most things, [they have a great guide to get you started](https://on.cypress.io/plugins-guide).
 
@@ -150,7 +150,7 @@ Most of the things they have mentioned are great but the case which you will lik
 
 ## Visual Testing and Catching Regressions
 
-![](./images/percy_example_screenshot.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/percy_example_screenshot.png)
 
 Another critical part of end-to-end testing will be how things look. HTML and CSS play a huge part in how your application will look like in different scenarios. Cypress can give you a lot of coverage in terms of how your app works but starts to break down when you want to assert its looks. Especially when it comes to browser compatibility and the different screen sizes your application is used in, visual regressions are hard to catch without proper implementation of [Visual Snapshot Testing](https://blog.hichroma.com/visual-testing-the-pragmatic-way-to-test-uis-18c8da617ecf).
 
@@ -180,7 +180,7 @@ export const takeSnapshot = (description?: string) => {
 
 ## Parallel Builds and the Cypress Dashboard
 
-![](./images/undraw_parallel_builds.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_parallel_builds.png)
 
 Once test runs start to become long enough, you will start looking for other strategies to speed them up. Parallelization is something that can be performed due to Cypress running feature scenario files with a clean state each time they are run. You can decide on your own balance strategy, how your tests can be broken up, but the hosted version of [Cypress Dashboard](https://docs.cypress.io/faq/questions/dashboard-faq.html#What-is-the-Dashboard) provides a way to do this automatically.
 
@@ -203,7 +203,7 @@ Don't worry if this doesn't make much sense to you, [Cypress has answered how to
 
 ## Browser Support
 
-![](./images/undraw_browser_support.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_browser_support.png)
 
 Unfortunately, if your organization needs to have support for IE11, you are out of luck. [The Cypress team has explicitly said they won't be supporting it](https://github.com/cypress-io/cypress/issues/310#issuecomment-337349727). [There is an incredible thread on Github](https://github.com/cypress-io/cypress/issues/310) that I really hope you read through. It goes into why they are rolling this out slowly and didn't choose WebDriver from the beginning and wrote their own custom driver.
 
@@ -217,7 +217,7 @@ It depends on how far you take this strategy and to decide if having duplicate t
 
 ## Bonus: Typescript Support and Code Coverage
 
-![](./images/undraw_bonus.png)
+![](https://res.cloudinary.com/dscgr6mcw/image/upload/v1576848054/cypress-post/undraw_bonus.png)
 
 All of the libraries and modules I have mentioned previously come with Typescript support. Getting Typescript to work with Cypress doesn't require many configs and is totally worth it in the long run. All you will need are Webpack, TS config, plugin files which integrate with Cypress. A good guide provided by Cypress is [here](https://docs.cypress.io/guides/tooling/typescript-support.html).
 
