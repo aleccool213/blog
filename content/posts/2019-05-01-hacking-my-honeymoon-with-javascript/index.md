@@ -13,7 +13,7 @@ slug: "/hacking-my-honeymoon-with-javascript/"
 When my wife saw this post on Instagram, she was immediately hooked:
 
 <div class="Image__Small">
-  <img src="./images/picture_5.png" alt="lady eating breakfast with giraffes"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1587562043/giraffe-post/picture_5.png" alt="lady eating breakfast with giraffes"/>
   <figcaption><a href="https://www.instagram.com/p/BvmFY7DgPyg">Instagram Link</a></figcaption>
 </div>
 
@@ -22,7 +22,7 @@ With our honeymoon in Kenya on the horizon, we set out to book a room. Consultin
 The sudden popularity had to stem from something. A little researched showed this place being recently _Ellen’ed_.
 
 <div class="Image__Small">
-  <img src="./images/picture_6.png" alt="lady eating breakfast with giraffes"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1587562046/giraffe-post/picture_6.png" alt="lady eating breakfast with giraffes"/>
   <figcaption><a href="https://www.instagram.com/p/BjQFBIDhsH_">Instagram Link</a></figcaption>
 </div>
 
@@ -34,7 +34,7 @@ Initially, we checked their website to see if the dates we would be in Kenya wer
 
 The website they were using to show availability was read-only, no functionality to book rooms.
 
-![trying-my-hardest-to-click-on-readonly-elements](./images/picture_3.gif)
+![trying-my-hardest-to-click-on-readonly-elements](https://res.cloudinary.com/dscgr6mcw/image/upload/v1558620605/giraffe-post/picture_3.gif)
 
 Calling and email were the only way to reach them, a slow and arduous process. I assumed that when a date became free, their website would update _first_ and _then_ they would start contacting waitlist members. This way, they would still get bookings if people fell through.
 
@@ -173,7 +173,7 @@ A couple of weeks later, (I actually forgot it was running), my wife received th
 
 I particularly liked doing this because it's not often I code to solve a problem in my life but I thought it would be worth it for pictures like this:
 
-![me-and-zeena-giraffe-manor-pic](./images/picture_4.jpg)
+![me-and-zeena-giraffe-manor-pic](https://res.cloudinary.com/dscgr6mcw/image/upload/v1558620606/giraffe-post/picture_4.jpg)
 
 This was one example of how I used my programming skills for a "real" world problem. I would love to hear a problem you may have solved, comment here.
 
