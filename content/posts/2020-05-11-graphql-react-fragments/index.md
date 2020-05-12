@@ -1,14 +1,12 @@
 ---
-title: A Better Way to use GraphQL in React
+title: A Better Way to use GraphQL Fragments in React
 author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-05-11T22:12:03.284Z"
 canonical_url: ""
-excerpt: One of the great reasons to use a component-based framework (React, Vue) is that it allows for more isolated component design.
+excerpt: Defining fragments inside the components that render data brings many benefits.
 slug: "/better-way-to-use-graphql-in-react/"
 ---
-
-> TLDR: Defining fragments inside the components that render data brings many benefits
 
 One of the great reasons to use a component-based framework (React, Vue) is that it allows for more isolated component design, which helps with decoupling and unit-testing. Another benefit is using showcase apps such as [Storybook](https://storybook.js.org/), these continue the philosophy of isolation and allow for design and prototyping outside the main application. When component count starts to grow and we start to fetch data, we need a new pattern, [the Container Component pattern](https://learn.co/lessons/react-container-components). If using GraphQL for your data transport, we want to keep using this pattern but with a new twist. When creating isolated components, they should define the data they need to render. This can be better achieved by each component, even presentational ones, defining the data they need to render with their own GraphQL fragment.
 
@@ -18,56 +16,55 @@ Let's say we have a component which renders a list of Github issues showing thei
 
 ```typescript
 const GITHUB_ISSUES_LIST_QUERY = gql`
-    query GithubIssuesListContainerQuery {
-		organization {
-			id
-			name
-		}
-        issues {
-        totalCount
-        pageInfo {
-            endCursor
-            hasNextPage
-        }
-        edges {
-            node {
-                id
-                title
-                description
-            }
-        }
+  query GithubIssuesListContainerQuery {
+    organization {
+      id
+      name
     }
+    issues {
+    totalCount
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    edges {
+      node {
+        id
+        title
+        description
+      }
+    }
+  }
 `;
 
 const GithubIssueListContainer = () => {
   const { loading, error, data } = useQuery(GITHUB_ISSUES_LIST_QUERY);
-	...
-	return (
-		{data.issues.edges.map(
-          edge =>
-        (
-          <ListItem key={edge.node.id}>
-            <GithubIssueInfoCard issueDetails={edge.node} />
-          </ListItem>
-        ),
+  return (
+    {data.issues.edges.map(
+      edge =>
+      (
+        <span key={edge.node.id}>
+          <GithubIssueInfoCard issueDetails={edge.node} />
+        </span>
+      ),
     )}
   );
 }
 
 interface GithubIssueInfoCardProps {
-	issueDetails: {
-		id: string;
-		title: string;
-		description: string;
-    }
+  issueDetails: {
+    id: string;
+    title: string;
+    description: string;
+  }
 }
 
 const GithubIssueInfoCard = ({ issueDetails }) => {
-	return (
-		<>
-			{issueDetails.id} {issueDetails.title} {issueDetails.description}
-	  </>
-	)
+  return (
+    <>
+      {issueDetails.id} {issueDetails.title} {issueDetails.description}
+    </>
+  )
 }
 ```
 
@@ -81,38 +78,37 @@ Following along our mantra of isolation, how about if `GithubIssueInfoCard` defi
 
 ```typescript
 const GITHUB_ISSUES_LIST_QUERY = gql`
-    ${GITHUB_ISSUE_INFO_CARD_FRAGMENT}
-    query GithubIssuesListContainerQuery {
-        organization {
-            id
-            name
-        }
+  ${GITHUB_ISSUE_INFO_CARD_FRAGMENT}
+  query GithubIssuesListContainerQuery {
+    organization {
+      id
+      name
+    }
     issues {
-        totalCount
-        pageInfo {
+      totalCount
+      pageInfo {
         endCursor
         hasNextPage
+      }
+      edges {
+        node {
+          ...GithubIssueInfoCardFragment
         }
-            edges {
-            node {
-                ...GithubIssueInfoCardFragment
-            }
-        }
+      }
     }
   }
 `;
 
 const GithubIssueListContainer = () => {
   const { data } = useQuery(GITHUB_ISSUES_LIST_QUERY);
-	...
-	return (
-		{data.issues.edges.map(
-          edge =>
-        (
-          <div key={edge.node.id}>
-            <GithubIssueInfoCard issueDetails={edge.node} />
-          </div>
-        ),
+  return (
+    {data.issues.edges.map(
+      edge =>
+      (
+        <span key={edge.node.id}>
+          <GithubIssueInfoCard issueDetails={edge.node} />
+        </span>
+      ),
     )}
   );
 }
@@ -126,19 +122,19 @@ export const GITHUB_ISSUE_INFO_CARD_FRAGMENT = gql`
 `;
 
 interface GithubIssueInfoCardProps {
-	issueDetails: {
-		id: string;
-		title: string;
-		description: string;
-    }
+  issueDetails: {
+    id: string;
+    title: string;
+    description: string;
+  }
 }
 
 const GithubIssueInfoCard = ({ issueDetails }) => {
-	return (
-	  <>
-        {issueDetails.id} {issueDetails.title} {issueDetails.description}
-	  </>
-	)
+  return (
+    <>
+      {issueDetails.id} {issueDetails.title} {issueDetails.description}
+    </>
+  )
 }
 ```
 
@@ -168,7 +164,6 @@ const NOTIFICATIONS_LIST_QUERY = gql`
       edges {
         node {
           id
-          eventText
           eventText
           eventAssignee {
             id
