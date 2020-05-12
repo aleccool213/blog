@@ -3,7 +3,7 @@ title: A Better Way to use GraphQL Fragments in React
 author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-05-11T22:12:03.284Z"
-canonical_url: ""
+canonical_url: "https://medium.com/@yourboybigal/a-better-way-to-use-graphql-fragments-in-react-4f54bf862062"
 excerpt: Defining fragments inside the components that render data brings many benefits.
 slug: "/better-way-to-use-graphql-in-react/"
 ---
@@ -138,7 +138,7 @@ const GithubIssueInfoCard = ({ issueDetails }) => {
 }
 ```
 
-This might seem odd at first, but the benefits are worth it. As with anything in programming it doesn't come without tradeoffs.
+This might seem odd at first, but the benefits are worth it. As with anything in programming it doesn't come without trade-offs.
 
 ## Benefits
 
