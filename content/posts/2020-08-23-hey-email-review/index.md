@@ -1,5 +1,5 @@
 ---
-title: "HEY app review: Changing how you feel about Email"
+title: "Changing How You Feel About Email, A HEY App Review"
 author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-08-23T22:12:03.284Z"
@@ -7,8 +7,6 @@ canonical_url: "https://medium.com/@yourboybigal/a-better-way-to-use-graphql-fra
 excerpt: A new email service by the folks at Basecamp.
 slug: "/hey-app-review-changing-how-you-feel-about-email/"
 ---
-
-> Disclaimer: I tried HEY email for two weeks, I did this by just forwarding all emails I received on my old provider to my new @hey.com address. Whenever I needed to reply, I used my old provider. 
 
 You might have seen Basecamp making headlines last month when [they took on Apple to fight for fair app-store monetization policies](https://www.theverge.com/2020/6/18/21296180/apple-hey-email-app-basecamp-rejection-response-controversy-antitrust-regulation). HEY is a new email service which, you guessed it, sends and receives email. Going up against competitors with huge head starts, HEY sets out to fundamentally change the flavour of email as opposed to just adding a little spice. After trying it for two weeks, HEY made my email experience a more calm, private and healthy experience with little to complain about.
 
@@ -26,9 +24,10 @@ I consider myself a hygienic email user, using filters and labels as much as I c
 
 When all of the filters are at full steam, checking email is a calming and less stressful experience, something I never thought it would make me feel. One reason for this is that no notifications are sent to you for new emails by default, you need to choose who is able to notify you. This falls in line with how much control HEY gives you, it lets you decide what is important.
 
-![HEY email app screenshot](./images/hey-preview-imbox.jpg.jpg)
-
-The Imbox
+<div class="Image__Medium">
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1595858961/hey-email-post/preview-imbox-508814e250e89a00b534371089a2310ff7d89796fbaa17d199bf8ae1f44ab114.jpg" alt="HEY email app screenshot"/>
+  <figcaption>The Imbox</figcaption>
+</div>
 
 When all of the filters start working for you, checking email was a calm experience, something I never thought it would make me feel. Basecamp considers itself [a "calm" company](https://www.balancethegrind.com.au/work-life-balance/inside-basecamps-calm-work-life-balance-culture/), and you can see extending to the products they build. One reason for this is that there are no notifications for new emails on by default, you need to choose who is able to notify you.
 

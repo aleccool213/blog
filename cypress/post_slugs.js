@@ -17,7 +17,9 @@ const postSlugs = [
   "mac-stack",
   "apollo-local-state-pains",
   "quit-google-analytics-self-hosted-gatsby-statistics-with-ackee",
-  "publishing-javascript-package-automatically-with-github-actions"
+  "publishing-javascript-package-automatically-with-github-actions",
+  "better-way-to-use-graphql-in-react",
+  "hey-app-review-changing-how-you-feel-about-email",
 ];
 
 module.exports = postSlugs;
