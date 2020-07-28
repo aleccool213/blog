@@ -1,5 +1,5 @@
 ---
-title: "Changing How You Feel About Email, A HEY App Review"
+title: "Calm, Private and Healthy, A HEY Email Review"
 author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-08-23T22:12:03.284Z"
