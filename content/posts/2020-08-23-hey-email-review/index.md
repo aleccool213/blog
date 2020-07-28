@@ -3,7 +3,7 @@ title: "Changing How You Feel About Email, A HEY App Review"
 author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-08-23T22:12:03.284Z"
-canonical_url: "https://medium.com/@yourboybigal/a-better-way-to-use-graphql-fragments-in-react-4f54bf862062"
+canonical_url: "https://medium.com/@yourboybigal/calm-private-and-healthy-a-hey-email-review-b26d13f5a220"
 excerpt: A new email service by the folks at Basecamp.
 slug: "/hey-app-review-changing-how-you-feel-about-email/"
 ---
@@ -16,11 +16,11 @@ I switched from Gmail to [Fastmail](https://www.fastmail.com) years ago for simp
 
 ## Email Hygiene
 
-Basecamp is looking at email from the ground up. Jason Fried, founder and CEO of Basecamp, says it well [in his walkthrough of the product:](https://youtu.be/UCeYTysLyGI?t=44)
+Basecamp is looking at email from the ground up. Jason Fried, founder and CEO of Basecamp, says it well [in his walk-through of the product:](https://youtu.be/UCeYTysLyGI?t=44)
 
 > One of the problems with email is that everybody can email you, which is also one of the great things about email
 
-I see myself as a hygienic email user, using filters and labels as much as I can, and try my best to combat the fact that anyone has access to my inbox. A few custom rules to put emails to certain folders, rules to make my inbox feel a more clear and less cluttered. For example, I have a newsletter rule where emails I don't care about go (sorry to the marketers who are reading this) and a rule for receipts. This happened to map 1-1 with [HEY's "The Feed" and "The Paper Trail"](https://hey.com/how-it-works). This meant that using HEY was already familiar to me. It made my workflow for creating rules much easier with ["The Screener"](https://hey.com/how-it-works) which buckets sender's into these categories with unmatched speed. I can say that these buckets were enough. Uncategorized senders turned out to be important and kept going into my ["Imbox"](https://hey.com/features/the-imbox/). If they abused the fact they had this access, I would screen them out, banished to the shadow-realm, my spam folder.
+I see myself as a hygienic email user, using filters and labels as much as I can, and try my best to combat the fact that anyone has access to my inbox. A few custom rules to put emails to certain folders, rules to make my inbox feel a more clear and less cluttered. For example, I have a newsletter rule where emails I don't care about go (sorry to the marketers who are reading this) and a rule for receipts. This happened to map 1-1 with [HEY's "The Feed" and "The Paper Trail"](https://hey.com/how-it-works). This meant that using HEY was already familiar to me. It made my workflow for creating rules much easier with ["The Screener"](https://hey.com/how-it-works) which buckets sender's into these categories with unmatched speed. I can say that these buckets were enough. Non-categorized senders turned out to be important and kept going into my ["Imbox"](https://hey.com/features/the-imbox/). If they abused the fact they had this access, I would screen them out, banished to the shadow-realm, my spam folder.
 
 When all the filters are at full steam, checking email is a calming and less stressful experience. This is something I never thought email would make me feel. Another reason for this is that no notifications are sent to you for new emails by default, you need to choose who is able to notify you. This falls in line with how much control HEY gives you, it lets you decide what is important.
 
@@ -43,7 +43,7 @@ If you decide to switch off of HEY, exporting all your emails is possible so you
 
 ## Yet another thing to "learn"
 
-The problem with new software products is that the learning curve usually is steep. New product fatigue is hard to deal with and this is why new products that come out try to steal features from existing solutions for easy adoption. HEY suffers from this, you will need to learn how to use it or you will get lost and won't feel comfortable switching. An on-boarding experience and tutorials covering HEY's features help but I felt like these need improvement. I felt sad when the tutorials stopped coming, I wasn't comfortable to navigate my email alone yet. Nuances like moving emails around to different folders and not knowing if future emails will go there. Little things to critize but shouldn't stop anyone from enjoying what Basecamp has built.
+The problem with new software products is that the learning curve usually is steep. New product fatigue is hard to deal with and this is why new products that come out try to steal features from existing solutions for easy adoption. HEY suffers from this, you will need to learn how to use it or you will get lost and won't feel comfortable switching. An on-boarding experience and tutorials covering HEY's features help but I felt like these need improvement. I felt sad when the tutorials stopped coming, I wasn't comfortable to navigate my email alone yet. Nuances like moving emails around to different folders and not knowing if future emails will go there. Little things to criticize but shouldn't stop anyone from enjoying what Basecamp has built.
 
 ## Conclusion
 
