@@ -30,7 +30,7 @@ We are choosing to use GraphQL over the Cosmic NPM module. [GraphQL](https://www
 
 ## Tutorial
 
-For reference, I forked the example Cosmic Next.js project [here](https://github.com/vercel/next.js/tree/canary/examples/cms-cosmic).
+> For reference, I forked the example Cosmic Next.js project [here](https://github.com/vercel/next.js/tree/canary/examples/cms-cosmic).
 
 ### Creating the Cosmic Project
 
@@ -105,15 +105,80 @@ And we are up!
 
 There are two things that we need to understand when it comes to Statically-Generated Next.js apps, pages and routes. [Pages are content which depend on external data](https://nextjs.org/docs/basic-features/pages#scenario-1-your-page-content-depends-on-external-data), and [routes are URL routes which depend on external data](https://nextjs.org/docs/basic-features/pages#scenario-1-your-page-content-depends-on-external-data). Both have you defining special Next.js specific functions, `getStaticProps` and `getStaticPaths`.
 
-The file which contains the logic for generating page content based on the Cosmic GraphQL API is located at `[pages/posts/[slug].js](https://github.com/aleccool213/nextjs-cosmic-graphql-app/blob/661144a8eddebff19c709ec18ad8e1765f7600ec/pages/posts/%5Bslug%5D.js#L57)`.
+The file which contains the logic for generating page content based on the Cosmic GraphQL API is located at [pages/posts/[slug].js](https://github.com/aleccool213/nextjs-cosmic-graphql-app/blob/661144a8eddebff19c709ec18ad8e1765f7600ec/pages/posts/%5Bslug%5D.js#L57).
 
-[https://gist.github.com/aleccool213/d65a89871d61082e66b57601f85ed55f](https://gist.github.com/aleccool213/d65a89871d61082e66b57601f85ed55f)
+```javascript
+export async function getStaticProps({ params, preview = null }) {
+  // Get the data from the API
+  const data = await getPostAndMorePosts(params.slug, preview);
+  // Convert markdown content to HTML content
+  const content = await markdownToHtml(data.post?.metadata?.content || "");
+  return {
+    props: {
+      preview,
+      post: {
+        ...data.post,
+        content,
+      },
+      morePosts: data.morePosts || [],
+    },
+  };
+}
+```
+
+```javascript
+export async function getPostAndMorePosts(slug, preview) {
+  // Query for the data through the Cosmic GraphQL API using Apollo Client
+  ...
+  const moreObjectsResults = await client.query({
+    query: gql`
+      query getPostQuery(
+        $bucketSlug: String!
+        $readKey: String!
+        $status: status
+      ) {
+        getObjects(
+          bucket_slug: $bucketSlug
+          input: {
+            read_key: $readKey
+            type: "posts"
+            status: $status
+            limit: 3
+          }
+        ) {
+          objects {
+            _id
+            slug
+            title
+            metadata
+            created_at
+          }
+        }
+      }
+    `,
+    variables: {
+      bucketSlug: BUCKET_SLUG,
+      readKey: READ_KEY,
+      status,
+    },
+  });
+```
 
 This is one example of a page using `getStaticProps`. It is [also used in the Index page](https://github.com/aleccool213/nextjs-cosmic-graphql-app/blob/661144a8eddebff19c709ec18ad8e1765f7600ec/pages/index.js#L40) for getting all the blog post titles and excerpts.
 
 `pages/posts/[slug].js` [also contains `getStaticPaths`](https://github.com/aleccool213/nextjs-cosmic-graphql-app/blob/661144a8eddebff19c709ec18ad8e1765f7600ec/pages/posts/%5Bslug%5D.js#L73) which tells our Next.js app which routes to generate.
 
-[https://gist.github.com/aleccool213/09fc09f9f3756f7c90b22bd8dbda70fc](https://gist.github.com/aleccool213/09fc09f9f3756f7c90b22bd8dbda70fc)
+```javascript
+export async function getStaticPaths() {
+  // Get all post data (including content)
+  const allPosts = (await getAllPostsWithSlug()) || [];
+  return {
+    // Tell Next.js all of the potential URL routes based on slugs
+    paths: allPosts.map((post) => `/posts/${post.slug}`),
+    fallback: true,
+  };
+}
+```
 
 After understanding these two aspects, the blog is just a regular React app.
 
@@ -135,7 +200,7 @@ When deployed, all pushes to your default Git branch will have Vercel deploy a n
 
 ### Previewing
 
-The Next.js docs on preview mode are right [here](https://nextjs.org/docs/advanced-features/preview-mode).
+> The Next.js docs on preview mode are right [here](https://nextjs.org/docs/advanced-features/preview-mode).
 
 Local development and deploying the website to production will cover most of your use-cases. Another common workflow is saving a draft of changes on your CMS and then previewing those changes on your local machine. To do so, we will enable "Preview" mode both on Cosmic and our Next.js app.
 
@@ -161,7 +226,7 @@ Our preview mode!
 
 ### Webhooks
 
-Note this feature requires a Cosmic paid plan
+> Note this feature requires a Cosmic paid plan
 
 The only way to deploy new content to our blog is to have a developer push to the default git branch. This action will trigger Vercel take the new code and push a new version of our website. We ideally want our content creators to have the same control. Webhooks are a way we can do this.
 
