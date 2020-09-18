@@ -15,9 +15,10 @@ With so many choices for which technology to use when building a website, it can
 
 Static websites are built using static assets. The next question becomes where to store this content. If you are a solo webmaster, the content can be files in a Git repo. If you have clients or other developers who will want to manage the content, a CMS (Content Management System) is what you need. A CMS is service which stores your website content, for example blog posts and concert dates.
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443356/next-js-cosmic-post/CleanShot_2020-09-18_at_10.15.26_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443356/next-js-cosmic-post/CleanShot_2020-09-18_at_10.15.26_2x.png)
-
-Cosmic CMS!
+<div class="Image__Medium">
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443356/next-js-cosmic-post/CleanShot_2020-09-18_at_10.15.26_2x.png" alt="Cosmic homepage screenshot"/>
+  <figcaption>Cosmic CMS!</figcaption>
+</div>
 
 With [Next.js SSG](https://nextjs.org/docs/basic-features/pages#static-generation-recommended), we are using the CMS in a ["headless" fashion](https://www.cosmicjs.com/headless-cms). After trying a bunch of Headless CMS offerings, one I've stuck with is Cosmic. [Cosmic](under 10 min) is an intuitive, powerful, and simple-to-use service which lets us get up and running quickly. They provide many starter apps that you can preview or fork. For example, I chose the Next.js Static Blog and had a production version of the website running in under **5 minutes**.
 
