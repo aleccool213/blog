@@ -20,6 +20,7 @@ const postSlugs = [
   "publishing-javascript-package-automatically-with-github-actions",
   "better-way-to-use-graphql-in-react",
   "hey-app-review-changing-how-you-feel-about-email",
+  "build-next-js-blog-with-cosmics-graphql-api",
 ];
 
 module.exports = postSlugs;
