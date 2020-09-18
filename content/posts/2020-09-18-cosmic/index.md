@@ -1,7 +1,7 @@
 ---
 title: "Build a Next.JS Blog with Cosmic’s GraphQL API"
 author: Alec Brunelle
-hero: ./images/photo1.png
+hero: ./images/photo1.jpg
 date: "2020-09-18T22:12:03.284Z"
 canonical_url: ""
 excerpt: With so many choices for which technology to use when building a website, it can get overwhelming.
