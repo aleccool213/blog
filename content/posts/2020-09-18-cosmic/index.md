@@ -9,7 +9,7 @@ slug: "/build-next-js-blog-with-cosmics-graphql-api/"
 ---
 
 > Want to see the website we will build? Click [here](http://nextjs-cosmic-graphql-app.vercel.app) to go to a live demo version.
-> Want to get straight to building? Click [here](#Tutorial) to go right to the tutorial!
+> Want to get straight to building? Click [here](#tutorial) to go right to the tutorial!
 
 With so many choices for which technology to use when building a website, it can get overwhelming. You need to consider who is going to use it, what content to display and who will maintain it. A static website is a great choice when creating a blog, band website or e-commerce store. Static websites are an ode to the past when websites were just plain-ol files on a server you accessed via URL. They provide benefits like being fast, having great SEO and not being dependent on a certain runtime like PHP. This is in comparison to a server-rendered website like what you would have with Wordpress, Drupal or Ruby on Rails.
 
