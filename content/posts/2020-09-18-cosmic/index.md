@@ -9,7 +9,6 @@ slug: "/build-next-js-blog-with-cosmics-graphql-api/"
 ---
 
 > Want to see the website we will build? Click [here](http://nextjs-cosmic-graphql-app.vercel.app) to go to a live demo version.
-> Want to get straight to building? Click [here](#tutorial) to go right to the tutorial!
 
 With so many choices for which technology to use when building a website, it can get overwhelming. You need to consider who is going to use it, what content to display and who will maintain it. A static website is a great choice when creating a blog, band website or e-commerce store. Static websites are an ode to the past when websites were just plain-ol files on a server you accessed via URL. They provide benefits like being fast, having great SEO and not being dependent on a certain runtime like PHP. This is in comparison to a server-rendered website like what you would have with Wordpress, Drupal or Ruby on Rails.
 
@@ -20,7 +19,7 @@ Static websites are built using static assets. The next question becomes where t
   <figcaption>Cosmic CMS!</figcaption>
 </div>
 
-With [Next.js SSG](https://nextjs.org/docs/basic-features/pages#static-generation-recommended), we are using the CMS in a ["headless" fashion](https://www.cosmicjs.com/headless-cms). After trying a bunch of Headless CMS offerings, one I've stuck with is Cosmic. [Cosmic](under 10 min) is an intuitive, powerful, and simple-to-use service which lets us get up and running quickly. They provide many starter apps that you can preview or fork. For example, I chose the Next.js Static Blog and had a production version of the website running in under **5 minutes**.
+With [Next.js SSG](https://nextjs.org/docs/basic-features/pages#static-generation-recommended), we are using the CMS in a ["headless" fashion](https://www.cosmicjs.com/headless-cms). After trying a bunch of Headless CMS offerings, one I've stuck with is Cosmic. [Cosmic](https://www.cosmicjs.com) is an intuitive, powerful, and simple-to-use service which lets us get up and running quickly. They provide many starter apps that you can preview or fork. For example, I chose the Next.js Static Blog and had a production version of the website running in under **5 minutes**.
 
 ### Choosing the Tech
 
@@ -64,7 +63,7 @@ Once inside the new directory, make sure you are using the correct Node.js versi
 nvm use v12.18.3
 ```
 
-Install Yarn and install the project dependancies.
+Install Yarn and install the project dependencies.
 
 ```bash
 brew install yarn && yarn
