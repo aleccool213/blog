@@ -8,7 +8,7 @@ excerpt: With so many choices for which technology to use when building a websit
 slug: "/build-next-js-blog-with-cosmics-graphql-api/"
 ---
 
-<bold>Want to follow along with the build? <a href="https://www.cosmicjs.com/apps/nextjs-static-blog" target="_blank">Click here to grab the app or fork the project.</a></bold>
+<strong style="margin: 0 auto 35px;">Want to follow along with the build? <a href="https://www.cosmicjs.com/apps/nextjs-static-blog" target="_blank">Click here to grab the app or fork the project.</a></strong>
 
 ---
 
