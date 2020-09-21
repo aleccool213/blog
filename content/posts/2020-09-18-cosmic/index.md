@@ -8,9 +8,7 @@ excerpt: With so many choices for which technology to use when building a websit
 slug: "/build-next-js-blog-with-cosmics-graphql-api/"
 ---
 
----
-
-Want to follow along with the build? [Click here to grab the app or fork the project.](https://www.cosmicjs.com/apps/nextjs-static-blog)
+<bold>Want to follow along with the build? [Click here to grab the app or fork the project.](https://www.cosmicjs.com/apps/nextjs-static-blog)</bold>
 
 ---
 
