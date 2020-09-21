@@ -1,5 +1,5 @@
 ---
-title: "Build a Next.JS Blog with Cosmic’s GraphQL API"
+title: "Build a Next.js Blog with Cosmic’s GraphQL API"
 author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-09-18T22:12:03.284Z"
@@ -8,24 +8,28 @@ excerpt: With so many choices for which technology to use when building a websit
 slug: "/build-next-js-blog-with-cosmics-graphql-api/"
 ---
 
-> Want to see the website we will build? Click [here](http://nextjs-cosmic-graphql-app.vercel.app) to go to a live demo version.
+---
+
+Want to follow along with the build? [Click here to grab the app or fork the project.](https://www.cosmicjs.com/apps/nextjs-static-blog)
+
+---
 
 With so many choices for which technology to use when building a website, it can get overwhelming. You need to consider who is going to use it, what content to display and who will maintain it. A static website is a great choice when creating a blog, band website or e-commerce store. Static websites are an ode to the past when websites were just plain-ol files on a server you accessed via URL. They provide benefits like being fast, having great SEO and not being dependent on a certain runtime like PHP. This is in comparison to a server-rendered website like what you would have with Wordpress, Drupal or Ruby on Rails.
 
-Static websites are built using static assets. The next question becomes where to store this content. If you are a solo webmaster, the content can be files in a Git repo. If you have clients or other developers who will want to manage the content, a CMS (Content Management System) is what you need. A CMS is service which stores your website content, for example blog posts and concert dates.
+Static websites are built using static assets. The next question becomes where to store (and manage) this content. If you are a solo webmaster, the content can be files in a Git repo. If you have clients or other developers who will want to manage the content, a CMS (Content Management System) is what you need. A CMS is a service which stores your website content, for example blog posts and concert dates.
 
 <div class="Image__Medium">
-  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443356/next-js-cosmic-post/CleanShot_2020-09-18_at_10.15.26_2x.png" alt="Cosmic homepage screenshot"/>
+  <img src="https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443356/next-js-cosmic-post/CleanShot_2020-09-18_at_10.15.26_2x.png" alt="Screenshot of the Cosmic CMS Dashboard"/>
   <figcaption>Cosmic CMS!</figcaption>
 </div>
 
-With [Next.js SSG](https://nextjs.org/docs/basic-features/pages#static-generation-recommended), we are using the CMS in a ["headless" fashion](https://www.cosmicjs.com/headless-cms). After trying a bunch of Headless CMS offerings, one I've stuck with is Cosmic. [Cosmic](https://www.cosmicjs.com) is an intuitive, powerful, and simple-to-use service which lets us get up and running quickly. They provide many starter apps that you can preview or fork. For example, I chose the Next.js Static Blog and had a production version of the website running in under **5 minutes**.
+With [Next.js SSG](https://nextjs.org/docs/basic-features/pages#static-generation-recommended), we are using the CMS in a ["headless" fashion](https://www.cosmicjs.com/headless-cms). After trying a bunch of Headless CMS offerings, one I've stuck with is Cosmic. [Cosmic](https://www.cosmicjs.com) is an intuitive, powerful, and simple-to-use service which lets us get up and running quickly. They provide [many starter apps](https://www.cosmicjs.com/apps) that you can preview or fork. For example, I chose the Next.js Static Blog and had a production version of the website running in under **5 minutes**.
 
 ### Choosing the Tech
 
-[Next.js](https://nextjs.org/) with GraphQL is my personal choice when it comes to Static site development. Next.js a hybrid React framework which supports building static websites. It also lets you build [server-side rendered pages](https://nextjs.org/docs/basic-features/pages#server-side-rendering) when the need arises. It handles routing, has a large community supporting it. It's one of the best ways to build a React app in 2020. The other tech you may have heard also does this is [Gatsby.js](https://www.gatsbyjs.com/). Gatsby is more user-friendly but is more opinionated with its technology choices (forced use of GraphQL versus it being a choice).
+[Next.js](https://nextjs.org/) with GraphQL is my personal choice when it comes to Static site development. Next.js is a hybrid React framework which supports building static websites. It also lets you build [server-side rendered pages](https://nextjs.org/docs/basic-features/pages#server-side-rendering) when the need arises. It handles routing, has a large community supporting it making it one of the best ways to build a React app in 2020. The other tech you may have heard also does this is [Gatsby.js](https://www.gatsbyjs.com/). Gatsby is more user-friendly but is more opinionated with its technology choices (forced use of GraphQL versus it being a choice).
 
-We are choosing to use GraphQL over the Cosmic NPM module. [GraphQL](https://www.cosmicjs.com/blog/what-is-graphql) is a standardized way to get data from services and is a great choice when needing to get data from a CMS. As you create custom data types in Cosmic, you are able to query for it in the GraphQL API. One of the benefits of using GraphQL is that you are less dependent on a specific SDK.
+We are choosing to use GraphQL over [the Cosmic NPM module](https://www.npmjs.com/package/cosmicjs). [GraphQL](https://www.cosmicjs.com/blog/what-is-graphql) is a standardized way to get data from services and is a great choice when needing to get data from a CMS. As you create custom data types in Cosmic, you are able to query for it in the GraphQL API. One of the benefits of using GraphQL is that you are less dependent on a specific SDK.
 
 ## Tutorial
 
@@ -35,7 +39,7 @@ We are choosing to use GraphQL over the Cosmic NPM module. [GraphQL](https://www
 
 After creating an account on Cosmic and going through the product tour, you will be shown the “Create New Bucket” screen.
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443361/next-js-cosmic-post/CleanShot_2020-09-18_at_08.34.47_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443361/next-js-cosmic-post/CleanShot_2020-09-18_at_08.34.47_2x.png)
+![Screenshot of the Cosmic CMS App Search Page](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443361/next-js-cosmic-post/CleanShot_2020-09-18_at_08.34.47_2x.png)
 
 Click "Start with an App" then search and select "[Next.js Static Blog](https://www.cosmicjs.com/apps/nextjs-static-blog)" from the list of apps presented. This will do many of things.
 
@@ -43,7 +47,7 @@ Click "Start with an App" then search and select "[Next.js Static Blog](https://
 2. Create sane data-types inside the bucket for use with a blog
 3. Fill the bucket with demo content
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1599827352/next-js-cosmic-post/CleanShot_2020-09-11_at_08.28.20_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1599827352/next-js-cosmic-post/CleanShot_2020-09-11_at_08.28.20_2x.png)
+![Screenshot of the Cosmic CMS Dashboard after creating a bucket](https://res.cloudinary.com/dscgr6mcw/image/upload/v1599827352/next-js-cosmic-post/CleanShot_2020-09-11_at_08.28.20_2x.png)
 
 Here is what the created bucket looks like on your Cosmic dashboard
 
@@ -55,7 +59,7 @@ The next thing we need to do is clone the Next.js code to our local environments
 git clone git@github.com:aleccool213/nextjs-cosmic-graphql-app.git
 ```
 
-You can also choose to create a Github repository for yourself using [the template](https://github.com/aleccool213/nextjs-cosmic-graphql-app/generate).
+You can also choose to create a GitHub repository for yourself using [the template](https://github.com/aleccool213/nextjs-cosmic-graphql-app/generate).
 
 Once inside the new directory, make sure you are using the correct Node.js version by using [NVM](https://github.com/nvm-sh/nvm).
 
@@ -75,7 +79,7 @@ Run the app!
 yarn dev
 ```
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1599828409/next-js-cosmic-post/CleanShot_2020-09-11_at_08.46.14_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1599828409/next-js-cosmic-post/CleanShot_2020-09-11_at_08.46.14_2x.png)
+![Screenshot of the app running locally but encountering an error due to no environment variables being set](https://res.cloudinary.com/dscgr6mcw/image/upload/v1599828409/next-js-cosmic-post/CleanShot_2020-09-11_at_08.46.14_2x.png)
 
 Almost there!
 
@@ -96,7 +100,7 @@ To get these values, head over to the Settings sidebar menu in your bucket, and 
 
 Run the app again with `yarn dev`
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1599829500/next-js-cosmic-post/CleanShot_2020-09-11_at_09.04.40_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1599829500/next-js-cosmic-post/CleanShot_2020-09-11_at_09.04.40_2x.png)
+![Screenshot of the example blog running on a local machine](https://res.cloudinary.com/dscgr6mcw/image/upload/v1599829500/next-js-cosmic-post/CleanShot_2020-09-11_at_09.04.40_2x.png)
 
 And we are up!
 
@@ -185,11 +189,11 @@ After understanding these two aspects, the blog is just a regular React app.
 
 Now that we have our website working locally, let's deploy it to [Vercel](https://vercel.com/). The first step is making sure you have the code in a Git repository.
 
-I recommend you have the code in Github. You can use the [Github CLI](https://cli.github.com/) to create a repo in your current directory with `gh repo create`.
+I recommend you have the code in GitHub. You can use the [GitHub CLI](https://cli.github.com/) to create a repo in your current directory with `gh repo create`.
 
-We now need to sign up for Vercel and have it use the code from the Github repo. You can sign up for Vercel with your Github account [here](https://vercel.com/signup). You can import the code from Github using the "Import Project" feature.
+We now need to sign up for Vercel and have it use the code from the GitHub repo. You can sign up for Vercel with your GitHub account [here](https://vercel.com/signup). You can import the code from GitHub using the "Import Project" feature.
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443380/next-js-cosmic-post/CleanShot_2020-09-16_at_08.34.54_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443380/next-js-cosmic-post/CleanShot_2020-09-16_at_08.34.54_2x.png)
+![Screenshot of the Vercel project view with the Import Project button highlighted](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443380/next-js-cosmic-post/CleanShot_2020-09-16_at_08.34.54_2x.png)
 
 When importing the project, make sure you define the environment variables, `COSMIC_BUCKET_SLUG`, `COSMIC_READ_KEY`, and `COSMIC_PREVIEW_SECRET`.
 
@@ -213,13 +217,13 @@ When finished, click "Save Object Type".
 
 Let's try editing a post and see it show up on our local machine. Try changing the title of "Learn How to Pre-render Pages Using Static Generation with Next.js" and click "Save Draft" instead of "Publish".
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443385/next-js-cosmic-post/CleanShot_2020-09-16_at_08.45.27_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443385/next-js-cosmic-post/CleanShot_2020-09-16_at_08.45.27_2x.png)
+![Screenshot of the Cosmic CMS Post data type editing page with Save Draft button highlighted](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443385/next-js-cosmic-post/CleanShot_2020-09-16_at_08.45.27_2x.png)
 
 The `Save Draft` button
 
 We now have unpublished changes. Run the app locally with `yarn dev` and then click "Preview" right under "Save Draft".
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443400/next-js-cosmic-post/CleanShot_2020-09-16_at_09.20.58_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443400/next-js-cosmic-post/CleanShot_2020-09-16_at_09.20.58_2x.png)
+![Screenshot of the example blog running on a local machine with the preview edits being shown](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443400/next-js-cosmic-post/CleanShot_2020-09-16_at_09.20.58_2x.png)
 
 Our preview mode!
 
@@ -233,14 +237,18 @@ Let's set up a webhook which lets Vercel know when our posts in Cosmic have new 
 
 Go to the Git integration settings page (https://vercel.com/[project]/settings/git-integration) in your Vercel project and create a new Deploy Hook named "Cosmic Hook".
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443413/next-js-cosmic-post/CleanShot_2020-09-18_at_08.02.26_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443413/next-js-cosmic-post/CleanShot_2020-09-18_at_08.02.26_2x.png)
+![Screenshot of the Vercel webhook settings](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443413/next-js-cosmic-post/CleanShot_2020-09-18_at_08.02.26_2x.png)
 
 What your settings should look like when the webhook is created
 
 Now over in Cosmic settings, we can add this webhook. Let's add Cosmic notify Vercel when changes get published. You can see how we can do this for previews as well if we wanted to in the future.
 
-![https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443424/next-js-cosmic-post/CleanShot_2020-09-18_at_08.05.34_2x.png](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443424/next-js-cosmic-post/CleanShot_2020-09-18_at_08.05.34_2x.png)
+![Screenshot of the Cosmic CMS webhooks settings](https://res.cloudinary.com/dscgr6mcw/image/upload/v1600443424/next-js-cosmic-post/CleanShot_2020-09-18_at_08.05.34_2x.png)
 
 Edited/Created and Published!
 
 To test this go to the same post we tested Previews with and add some content to the end of the article and publish. You should see a deploy happen on Vercel with the new content deployed to the live version of your website!
+
+## Conclusion
+
+Want to see what the final website looks like? [Click here to check it out.](https://nextjs-cosmic-graphql-app.vercel.app/)
