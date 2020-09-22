@@ -4,7 +4,7 @@ author: Alec Brunelle
 hero: ./images/photo1.jpg
 date: "2020-09-18T22:12:03.284Z"
 canonical_url: ""
-excerpt: With so many choices for which technology to use when building a website, it can get overwhelming.
+excerpt: Cosmic CMS is a great choice when creating a blog, band website or e-commerce store
 slug: "/build-next-js-blog-with-cosmics-graphql-api/"
 ---
 
